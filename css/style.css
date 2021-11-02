@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Philosopher&display=swap');
+/*@import ('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Philosopher&display=swap');*/
 
 body {
     font-family: 'Philosopher', sans-serif;
@@ -17,7 +17,7 @@ main {
 }
 
 main h2 {
-    border-bottom: 1px  solid black;
+    border-bottom: 1px  solid #000;
     color: #160c28;
 }
 
@@ -32,7 +32,7 @@ header h1 {
     border-radius: 8px;
     max-width: 25%;
     height: auto;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px #000;
     float: right;
 }
 
