@@ -1,0 +1,105 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Philosopher&display=swap');*/
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: #284B63;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Henny Penny', cursive;
+    font-size: 4em;
+    margin: 0;
+    padding-top: 10px;
+}
+
+header h2 {
+    margin: .3em 0em 0em;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: .4em;
+    max-width: 385.5px;
+    justify-self: center;
+    line-height: 1.5;
+}
+
+section img{
+    width: 100%;
+    padding: .2em;
+    border: 0.1em solid #1fc7ff;
+}
+
+section h3 {
+    background-color: #234257;
+    color: white;
+    margin-top: 0;
+    padding: .5em;
+}
+
+.content {
+    margin: .5em 1em .5em .5em;  
+    font-size: 1.3em;
+}
+
+.content h4 {
+    margin: -.5em .1em .1em .1em;
+
+}
+
+.content a {
+    margin-bottom: .4em;
+    display: block;
+}
+
+.content p {
+    max-width: inherit;
+}
+
+header, footer {
+    background-color: #677db7;
+    color: #160c28;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+footer p.legal {
+    margin-bottom: 9px;
+    font-size: 1.5em;
+}
+
+footer p.highlight {
+    color: #0d0221;
+    font-size: .9em;
+    margin-top: 0;
+}
+
+footer a {
+    color: #000411;
+}
+
+footer a:hover {
+    color: #FFF7CF;
+}

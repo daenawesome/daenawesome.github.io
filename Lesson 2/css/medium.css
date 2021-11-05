@@ -1,0 +1,10 @@
+@media only screen and (min-width: 38.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        /* max-width: fit-content; */
+        justify-self: center;
+    }
+}
