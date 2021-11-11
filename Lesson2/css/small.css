@@ -124,10 +124,11 @@ footer {
     width: 100%;
     /* margin: 0 auto; */
     background-color: #677db7;
-    color: white;
+    color: #0d0221;
     font-family: 'Playfair Display', serif;
     clear: both;
     text-align: center;
+    padding-bottom: 10px;
 }
     
 
