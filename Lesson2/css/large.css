@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1024px) {
+    #navigation {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    /* Color Scheme Styles */
+    .color-scheme {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+}
