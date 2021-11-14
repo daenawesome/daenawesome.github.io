@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap');
+
+body {
+    margin: 0 auto;
+    background-color: #fdfffc;
+    max-width: 425px;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #677db7;
+    /* max-width: 425px; */
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-box {
+    margin: 0;
+    display: inline-block;
+    grid-row: 1;
+    grid-column: 1/2;
+    padding-bottom: 5px;
+}
+
+.logo-box img{
+    float: left;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 70px;
+}
+
+.logo-box h1 {
+    font-size: 2em;
+    margin: 0;
+    padding-top: 10px;
+    color: #0d0221;
+}
+
+.logo-box p {
+    margin: 0;
+    color: white;
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    list-style: none;
+    font-size: 1.3em;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li:first-child a {
+    display: inline;
+    float: right;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: white;
+    background-color: #467599;
+}
+
+#navigation a.active {
+    background-color: rgba(0, 0, 0, .55);
+    color: white;
+    /* border-bottom: 5px solid black; */
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    color: #1D3354;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: .7em;
+}
+
+h6 {
+    font-size: .5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+li {
+    font-size: 1em;
+}
+
+main {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9em;
+
+}
+
+footer h3 {
+    color: white;
+    margin-top: 0;
+}
+
+main section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#preston-header {
+    margin: 0;
+    padding: 10px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: inherit;
+}
+
+.banner h2 {
+    margin-bottom: 0;
+}
+
+.banner p {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.social {
+    display: none;
+}
+
+.forecast {
+    display: none;
+}
+
+.forecast.show {
+    display: block;
+    background-color: #467599;
+    color: white;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+.forecast div {
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.forecast img {
+    display: inline-block;
+    align-items: center;
+    width: 100px;
+    padding-top: 20px; 
+    padding-left: 20px;
+}
+
+.forecast p {
+    display: inline-block;
+    margin: 0;
+}
+
+#forecast-header {
+    background-color: #467599;
+    color: white;
+    margin: 0;
+    padding: 60px 0 20px 0;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    padding-top: 10px;
+}
+
+article h2 {
+    margin-bottom: 0;
+}
+
+article p {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 15px 15px 15px;
+    margin: 5px auto 0 auto;
+}
+
+article p img {
+    grid-row: 2/3;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    margin: 0 5px;
+}
+
+li {
+    font-size: 1em;
+    text-align: left;
+    line-height: 2em;
+}
+
+
+footer {
+    color: white;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center ;        
+    background-color: #677db7;
+    height: 500px;
+}
+
+.map {
+    width: auto;
+    height: 300px;
+    padding-top: 5px;
+ 
+}
+
+.contact {
+    padding: 10px;   
+    grid-row-start: 1;
+}
+
+footer section {
+    clear: both;
+}
+
+.footer-bottom{
+    padding: 10px;
+    display: grid;
+    justify-content: center; 
+    background-color: #1d3354;
+    font-size: 2em;   
+}
