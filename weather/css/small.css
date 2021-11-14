@@ -146,8 +146,14 @@ main {
 }
 
 footer h3 {
-    color: white;
+    color: #0D0221;
     margin-top: 0;
+}
+
+section h2 {
+    font-size: 1em;
+    color: white;
+    padding-left: 10px;
 }
 
 main section {
@@ -272,6 +278,7 @@ footer {
 .contact {
     padding: 10px;   
     grid-row-start: 1;
+    color: #0D0221;
 }
 
 footer section {
