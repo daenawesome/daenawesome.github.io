@@ -1,3 +1,4 @@
+
 function showForecast() {
     const forecast = document.querySelector('.forecast');
     const forecastHeader = document.querySelector('#forecast-header');
@@ -8,11 +9,21 @@ function showForecast() {
         if (window.matchMedia("(min-width: 768px)").matches || window.matchMedia("(min-width: 1024px)").matches)
             return;
         forecast.classList.toggle('show');
+        // Flip the arrow around
         if (forecast.classList.contains('show'))
             arrow.innerHTML = "&#9651;";
         else
             arrow.innerHTML = "&#9661;";
     });
+}
+
+function showPancakes(day) {
+    // Only show the pancake message if it is Friday
+    if (day == "Friday") {
+        const pancakes = document.querySelector('.pancakes');
+        pancakes.style.display = "grid";
+    }
+    return;
 }
 
 window.addEventListener('load', () => {
@@ -26,7 +37,7 @@ window.addEventListener('load', () => {
 
     // To resolve the mid resizing issue with class on
     window.onresize = () => {
-        if (window.innerWidth > 760) mainnav.classList.remove('responsive')
+        if (window.innerWidth > 768) mainnav.classList.remove('responsive')
     };
 
     // Set the date on the footer
@@ -36,6 +47,7 @@ window.addEventListener('load', () => {
     const day = days[date.getDay()];
     const month = months[date.getMonth()];
     document.querySelector('.footer-bottom').innerHTML = day + ", " + date.getDate() + " " + month + " " + date.getFullYear();
-
+    
+    showPancakes(day);
     showForecast();
 });

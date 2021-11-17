@@ -49,7 +49,7 @@ nav {
 
 #navigation {
     margin: 0;
-    padding: 0;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: auto;
     list-style: none;
@@ -151,8 +151,8 @@ footer h3 {
 }
 
 section h4 {
-    font-size: .9em;
-    color: white;
+    font-size: 1.3em;
+    color: #1D3354;
     padding-left: 10px;
     margin: 0;
 }
@@ -292,4 +292,28 @@ footer section {
     justify-content: center; 
     background-color: #1d3354;
     font-size: 2em;   
+}
+
+.pancakes {
+    display: none;
+    background-color: #467599;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.pancakes h3 {
+    margin: 0;
+    color: white;
+}
+
+.pancakes p {
+    margin: 0;
+}
+
+.pancakes img {
+    display: none;
 }

@@ -25,6 +25,8 @@
 
     #navigation {
         grid-gap: 10px;
+        padding-top: 0;
+
     }
 
     footer {
@@ -49,6 +51,9 @@
         padding: 10px;
         color: #0D0221;
     }
+    .contact p {
+        text-align: left;
+    }
 
 
     header {
@@ -62,9 +67,9 @@
     }
 
     .footer-bottom{
-        padding: 10px;
+        padding: 10px 10px 10px 20px;
         display: grid;
-        justify-content: center; 
+        justify-content: left; 
         background-color: #1d3354;
     }
     

@@ -76,6 +76,7 @@
         background-color: #1D3354;
         grid-template-columns: repeat(6, auto);
         justify-content: center;
+        padding-top: 0;
     }
 
     #navigation li:first-child {
@@ -132,6 +133,19 @@
     }
 
 
+    .pancakes {
+        /* display: grid; */
+        grid-template-columns: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+    }
 
+    .pancakes p {
+        grid-column: 2/3;
+    }
+
+    .pancakes img {
+        display: inline;
+    }
 
 }
