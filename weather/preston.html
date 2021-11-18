@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js"></script>
+    <script src="js/windChill.js"></script>
   </head>
 
   <body>
@@ -42,11 +43,19 @@
         <img src="images/pancakes(1).png" alt="pancakes">
       </section>
       <section class="banner">
-        <img src="images/noaa-99F4mC79j1I-unsplash.jpg" alt="banner for weather-tastic home">
-        <div>
+        <picture>
+          <source media="(max-width: 425px)" srcset="images/424x206.jpg">
+          <source media="(max-width: 768px)" srcset="images/768x372.jpg">
+          <source media="(max-width: 1024px)" srcset="images/1024x496.jpg">
+          <img src="images/1024x496.jpg" alt="banner">
+        </picture>
+        <div class="weather-summary">
           <h2>Weather Summary</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ipsam velit nam dolorem, voluptatibus
-            assumenda!</p>
+          <p>Currently: Cloudy</p>
+          <p>High: <span id="tempature">45</span>&deg; F</p>
+          <p>Wind Chill: <span id="wind-chill"></span>&deg; F</p>
+          <p>Humidity: 75%</p>
+          <p>Wind Speed: <span id="wind-speed">6.3</span> mph</p>
         </div>
       </section>
       <h2 id="forecast-header">Five Day Forecast <p>&#9661;</p></h2>

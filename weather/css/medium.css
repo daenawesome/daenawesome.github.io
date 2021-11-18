@@ -148,4 +148,10 @@
         display: inline;
     }
 
+    .banner div {
+        background-color: rgba(233,255,249,0.9);
+        padding: 15px;
+    }
+
+
 }

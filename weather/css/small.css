@@ -167,11 +167,20 @@ main section {
     padding: 10px;
 }
 
+.banner div {
+    background-color: rgba(233,255,249,0.9);
+    padding: 15px;
+}
+
 .banner {
     width: 100%;
 }
 
-.banner img {
+.banner picture img {
+    width: 100%;
+}
+
+.banner picture {
     width: inherit;
 }
 
@@ -182,6 +191,7 @@ main section {
 .banner p {
     padding-left: 15px;
     margin-top: 5px;
+    font-size: 1.5em;
 }
 
 .social {
