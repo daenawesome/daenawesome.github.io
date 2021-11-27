@@ -327,3 +327,35 @@ footer section {
 .pancakes img {
     display: none;
 }
+
+
+/* Gallery Styles */
+img[data-src] {
+    filter: blur(5px);
+  }
+  
+img {
+    filter: blur(0px);
+    transition: filter 0.5s;
+  }
+  
+#gallery_imgs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  #gallery_imgs figure {
+    margin: 0;
+    padding: .3em;
+  }
+  
+  #gallery_imgs figcaption {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .galleryImage {
+    width: 100%;
+    box-shadow: 3px 3px 3px lightgray;
+  }

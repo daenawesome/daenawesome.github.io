@@ -105,4 +105,14 @@
         width: 270px;
         padding: 10px;
     }
+
+
+/* Gallery Styles */
+    #gallery_imgs {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
+      #gallery_imgs figure:hover {
+        box-shadow: 0 0 50px #1d3354;
+      }
 }

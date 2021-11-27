@@ -154,4 +154,9 @@
     }
 
 
+
+/* Gallery Styles */
+    #gallery_imgs {
+        grid-template-columns: 1fr 1fr;
+      }
 }
