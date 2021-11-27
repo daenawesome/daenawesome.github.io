@@ -336,7 +336,7 @@ img[data-src] {
   
 img {
     filter: blur(0px);
-    transition: filter 0.5s;
+    transition: filter 2s;
   }
   
 #gallery_imgs {
