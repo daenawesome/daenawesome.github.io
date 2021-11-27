@@ -389,6 +389,9 @@ img {
     display: grid;
     grid-template-columns: 1fr;
 }
+form {
+    color: #1d3354;
+}
 
 #storm-main input, #storm-main select {
     margin-bottom: 1em;
@@ -448,15 +451,7 @@ img {
     padding-top: 0;
 }
 
-/* #storm-main form label {
-    display: none;
-}
-
-#storm-main #radio-label {
-    display: inline;
-} */
-
-/*----- Clearfix: Force an Element not to collapse -----*/
+/*----- Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;
