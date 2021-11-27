@@ -159,4 +159,14 @@
     #gallery_imgs {
         grid-template-columns: 1fr 1fr;
       }
+
+
+
+         /* Storm center */
+    #thanks-main p {
+        /* width: 400px; */
+        margin: 0 auto;
+        padding-bottom: 1em;
+        text-align: left;
+    }
 }

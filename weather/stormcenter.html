@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <meta name="description" content="Storm center. Report storms to help a fellow in Idaho.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <section class="logo-box">
+        <img class="logo" src="images/weather-tastic.png" alt="logo of weather-tastic">
+        <h2>Weather-Tastic</h2>
+        <h4>Have a Weather-Tastic Day!</h4>
+      </section>
+      <ul id="navigation">
+        <li><a class="ham" href="#">&#9776;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main id="storm-main">
+      <h1>Storm Center</h1>
+      <h3>Report storms here:</h3>
+      <form action="thanks.html">
+        <h2>Personal Info</h2>
+        <label for="name">Full name<span class="required">*</span></label>
+        <input type="text" name="name" id="name" pattern="[A-Za-z\s]{5,}[A-Za-z]" placeholder="Full name..." required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@example.com">
+        <label for="phone">Phone<span class="required">*</span></label>
+        <input type="tel" name="phone" id="phone" required>
+        <label for="zip">Zip<span class="required">*</span></label>
+        <input type="number" name="zip" id="zip" required>
+        <h2>Storm Info</h2>
+        <label for="storm-date">Storm date</label>
+        <input type="date" name="storm-date" id="storm-date">
+        <label for="storm-type">Storm type</label>
+        <input list="storm-types" name="storm-type" id="storm-type">
+        <label for="storm-severity">Storm severity (1-10)</label>
+        <input type="range" name="storm-severity" id="storm-severity" min="1" max="10">
+        <datalist id="storm-types">
+          <option value="Flash Flood">
+          <option value="Hail">
+          <option value="Hurricane">
+          <option value="Thunderstorm">
+          <option value="Tornado">
+        </datalist>
+        <label for="storm-region">Storm region</label>
+        <select name="storm-region" id="storm-region">
+          <option value="0" disabled>Select Region...</option>
+          <option value="preston">Preston</option>
+          <option value="soda-springs">Soda Springs</option>
+          <option value="fish-haven">Fish Haven</option>
+        </select>
+        <p>User in danger?</p>
+        <section>
+          <div class="radio">
+            <input type="radio" name="in-danger" id="yes" value="yes">
+            <label for="yes" id="radio-label"> Yes</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="in-danger" id="maybe" value="maybe">
+            <label for="maybe" id="radio-label">Maybe</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="in-danger" id="no" value="no">
+            <label for="no" id="radio-label">No</label>
+          </div>
+        </section>
+        <label for="comments">Additional info </label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </main>
+    <footer>
+        <section class="footer-top">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288040.70159752236!2d-111.
+      89638330332957!3d42.09142189358302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78
+      c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sbh!4v1636823379413!5m2!1sen!2sbh" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="contact">
+            <h3>Contact Information</h3>
+            <p>&#128205; Address</p>
+            <p>&#9742; Phone</p>
+            <p>&#9993; Email</p>
+            <div class="social">
+              <a href="#">
+                <img src="images/FB.png" alt="social link icon for facebook">
+              </a>
+              <a href="#">
+                <img src="images/YT.png" alt="social link icon for youtube">
+              </a>
+              <a href="#">
+                <img src="images/TWTR.png" alt="social link icon for tweeter">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="footer-bottom">
+          <h4>Date</h4>
+        </section>
+      </footer>
+  </body>
+</html>

@@ -359,3 +359,105 @@ img {
     width: 100%;
     box-shadow: 3px 3px 3px lightgray;
   }
+
+
+
+
+
+  /* Storm center */
+#storm-main h1 {
+    margin-left: .5em;
+    margin-bottom: 0;
+}
+
+#storm-main form h2 {
+    margin-bottom: .2em;
+}
+
+#storm-main h2:nth-of-type(1) {
+    margin-top: 0;
+}
+
+#storm-main h3 {
+    margin-top: 0;
+    margin-left: 1.25em;
+}
+
+#storm-main form {
+    width: 80%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#storm-main input, #storm-main select {
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: .7em;
+}
+
+#storm-main input:focus {
+    border-color: #467599;
+}
+
+.required {
+    color: red;
+}
+
+.submit-btn {
+    width: 75px;
+    justify-self: end;
+    margin-top: 1em;
+    background-color: #467599;
+    color: white;
+    font-size: 1em;
+    transition: 300ms;
+}
+
+.submit-btn:hover {
+    background-color: #1D3354;
+}
+
+.radio {
+    display: inline-block;
+    padding: .5em;
+}
+
+#storm-main textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: .5em;
+    font-family: 'Lato', sans-serif;
+}
+
+#thanks-main {
+    text-align: center;
+}
+
+#thanks-main p, #thanks-main a {
+    font-size: 1.5em;
+}
+
+#thanks-main p {
+    /* width: 300px; */
+    /* margin: 0 auto; */
+    padding: 1em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* #storm-main form label {
+    display: none;
+}
+
+#storm-main #radio-label {
+    display: inline;
+} */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
