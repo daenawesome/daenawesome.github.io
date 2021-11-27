@@ -405,6 +405,7 @@ form {
 }
 
 .required {
+    font-size: 25px;
     color: red;
 }
 
