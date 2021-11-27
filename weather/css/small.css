@@ -417,6 +417,7 @@ img {
 
 .submit-btn:hover {
     background-color: #1D3354;
+    cursor: pointer;
 }
 
 .radio {
