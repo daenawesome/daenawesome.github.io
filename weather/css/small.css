@@ -198,6 +198,14 @@ main section {
     display: none;
 }
 
+.social a {
+    color: #677db7;
+}
+
+.social img {
+    border-radius: 20px;
+}
+
 .forecast {
     display: none;
 }
