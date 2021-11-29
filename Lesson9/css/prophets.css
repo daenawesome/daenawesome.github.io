@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap');
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+header, main, footer {
+    text-align: center;
+    color: #0d0221;
+}
+
+header h1 {
+    color: #0d0221;
+    font-size: 3.5em;
+}
+
+h1, h2, p {
+    color: #fdfffc;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: .3em;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 1em;
+    box-shadow: 5px 5px 30px black;
+}
+
+.cards section {
+    background-color: #677db7;
+    border: 2px solid #1d3354;
+    width: 250px;
+}
+
+.cards section img {
+    width: 50%;
+    box-shadow: 3px 3px 20px black;
+}
+
+footer {
+    margin: 3em;
+    font-size: 1.5em;
+}

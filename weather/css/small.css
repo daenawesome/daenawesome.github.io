@@ -452,7 +452,52 @@ form {
     padding-top: 0;
 }
 
-/*----- Element not to collapse -----*/
+
+
+  /* Home styles */
+#home-main {
+    width: 100%;
+}
+
+#home-header {
+    padding-left: .3em;
+}
+
+#towns {
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+#towns section {
+    box-shadow: 0px 3px 7px 2px lightgray;
+    width: 300px;
+    margin: 1em auto;
+    text-align: left;
+    background-color: #fdfffc;
+}
+
+.town-info {
+    padding: .6em;
+}
+
+#towns section h3 {
+    color: #677db7;
+    margin: 0;
+    font-size: 1em;
+}
+
+#towns section h2 {
+    color: #0d0221;
+    margin: 10px;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1em;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;

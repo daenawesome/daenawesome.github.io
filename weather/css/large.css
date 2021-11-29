@@ -107,7 +107,8 @@
     }
 
 
-/* Gallery Styles */
+
+    /* Gallery Styles */
     #gallery_imgs {
         grid-template-columns: 1fr 1fr 1fr;
       }
@@ -118,5 +119,36 @@
 
 
 
-      
+    /* Storm Center */
+    #thanks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #thanks img {
+        display: block;
+    }
+
+
+    
+     /* Home */
+     #home-main {
+        max-width: 90%;
+    }
+
+    #towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    #towns section {
+        display: block;
+        width: 90%;
+    }
+
+    #towns section img {
+        width: 95%;
+        padding: .5em;
+    }  
 }
