@@ -1,3 +1,5 @@
+//APi from Openweathermap.org
+//APi Key: d74b44aa3356c559c263a8574eb61950
 
 async function getFiveDay() {
     const url = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d74b44aa3356c559c263a8574eb61950";
