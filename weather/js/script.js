@@ -5,11 +5,11 @@ function showForecast() {
   const arrow = document.querySelector('#forecast-header p');
 
   forecastHeader.addEventListener('click', () => {
-      // Only toggle the class if we are on the small view size
+      // Only toggle if on the small view
       if (window.matchMedia("(min-width: 768px)").matches || window.matchMedia("(min-width: 1024px)").matches)
           return;
       forecast.classList.toggle('show');
-      // Flip the arrow around
+      // Flip arrow
       if (forecast.classList.contains('show'))
           arrow.innerHTML = "&#9651;";
       else
@@ -27,7 +27,7 @@ function showPancakes(day) {
 }
 
 window.addEventListener('load', () => {
-  // Create responsive nav
+  //  responsive nav
   const hambutton = document.querySelector('.ham');
   const mainnav = document.querySelector('#navigation');
 
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
       if (window.innerWidth > 768) mainnav.classList.remove('responsive')
   };
 
-  // Set the date on the footer
+  //  Date on the footer
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const date = new Date();

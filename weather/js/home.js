@@ -24,7 +24,7 @@ function townData() {
                     var sd = item;
             }
 
-            // Select the places we want to add info
+            // Select places to add info
             const prestonImgBox = document.querySelector('#preston');
             const fishHavenImgBox = document.querySelector('#fish-haven');
             const sodaSpringsImgBox = document.querySelector('#soda-springs');
@@ -32,7 +32,7 @@ function townData() {
             const fishHaven = document.querySelector('#fish-haven .town-info');
             const sodaSprings = document.querySelector('#soda-springs .town-info');
 
-            // Create the elements
+            // Create elements
             let prestonMotto = document.createElement('h3');
             let fishHavenMotto = document.createElement('h3');
             let sodaSpringsMotto = document.createElement('h3');
@@ -53,7 +53,7 @@ function townData() {
             let fishHavenImg = document.createElement('img');
             let sodaSpringsImg = document.createElement('img');
 
-            // Set the elements content
+            // Set elements content
             prestonMotto.textContent = town["towns"][prs].motto;
             fishHavenMotto.textContent = town["towns"][fh].motto;
             sodaSpringsMotto.textContent = town["towns"][sd].motto;

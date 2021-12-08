@@ -76,7 +76,7 @@ function events() {
 
             // Find the index for the towns
             for (item in town["towns"]) {
-                if (town["towns"][item].name == "Preston")
+                if (town["towns"][item].name == "Soda Springs")
                     var prs = item;
             }
 
