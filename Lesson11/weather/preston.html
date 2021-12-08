@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js"></script>
     <script src="js/windChill.js"></script>
+    <script src="js/prestonAPi.js"></script>
   </head>
   <body>
     <nav>
@@ -62,35 +63,35 @@
           <img src="images/1024x496.jpg" alt="banner">
         </picture>
         <div class="weather-summary">
-          <h2>Weather Summary</h2>
-          <p>Currently: Cloudy</p>
-          <p>High: <span id="tempature">45</span>&deg; F </p>
-          <p>Wind Chill: <span id="wind-chill"></span>&deg; F </p>
-          <p>Humidity: 75%</p>
-          <p>Wind Speed: <span id="wind-speed">6.3</span> mph </p>
+            <h2>Weather Summary</h2>
+            <p>Currently: <span id="weather-desc">Cloudy</span></p>
+            <p>Temp: <span id="tempature"></span>&deg;F</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span> mph</p>
         </div>
       </section>
       <h2 id="forecast-header">Five Day Forecast &#9661; </h2>
       <section class="forecast">
-        <div>
-          <img src="images/good-weather.svg" alt="forecast">
-          <h5>The weather is really awesome!</h5>
+        <div id="day1">
+          <img src="images/cloudy.svg" alt="forecast">
+          <p><span class="temp">69</span>&deg; <span class="day-desc">Cloudy</span></p>
         </div>
-        <div>
-          <img src="images/good-weather.svg" alt="forecast">
-          <h5>The weather is really fantastic!</h5>
+        <div id="day2">
+          <img src="images/cloudy.svg" alt="forecast">
+          <p><span class="temp">69</span>&deg; <span class="day-desc">Cloudy</span></p>
         </div>
-        <div>
-          <img src="images/good-weather.svg" alt="forecast">
-          <h5>The weather is really nice!</h5>
+        <div id="day3">
+          <img src="images/cloudy.svg" alt="forecast">
+          <p><span class="temp">69</span>&deg; <span class="day-desc">Cloudy</span></p>
         </div>
-        <div>
-          <img src="images/good-weather.svg" alt="forecast">
-          <h5>The weather is really great!</h5>
+        <div id="day4">
+          <img src="images/cloudy.svg" alt="forecast">
+          <p><span class="temp">69</span>&deg; <span class="day-desc">Cloudy</span></p>
         </div>
-        <div>
-          <img src="images/good-weather.svg" alt="forecast">
-          <h5>The weather is really wonderful!</h5>
+        <div id="day5">
+          <img src="images/cloudy.svg" alt="forecast">
+          <p><span class="temp">69</span>&deg; <span class="day-desc">Cloudy</span></p>
         </div>
       </section>
       <article>

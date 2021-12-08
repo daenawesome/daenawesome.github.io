@@ -251,7 +251,7 @@ header {
 }
 
 article h2 {
-    margin-bottom: 0;
+    margin-bottom: .5em;
 }
 
 article p {
@@ -505,9 +505,38 @@ form {
     font-size: 1em;
 }
 
+
+#events {
+    text-align: center;
+    background-color: rgba(13, 2, 33, .9);
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#events h3 {
+    color: white;
+    margin: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: .6em;
+}
+
+#events p {
+    font-size: 1.5em;
+}
+
+
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
+
+
+
+
+

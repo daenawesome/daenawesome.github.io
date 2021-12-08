@@ -58,4 +58,39 @@ function weather() {
     });
 }
 
-window.addEventListener('load', weather());
+async function getTownData() {
+    const url = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+    const response = await fetch(url);
+    if (response.status == 200) {
+        return response.json()
+    } else {
+        throw new Error("No town data found " + response.status)
+    }
+}
+
+function events() {
+    const data = getTownData()
+        .then(function(town) {
+            console.log(town);
+
+            // Find the index for the towns
+            for (item in town["towns"]) {
+                if (town["towns"][item].name == "Preston")
+                    var prs = item;
+            }
+
+            const eventSection = document.querySelector('#events');
+            for (item of town["towns"][prs].events) {
+                console.log(item)
+                let p = document.createElement('p');
+                p.textContent = item;
+                eventSection.appendChild(p);
+            }
+        });
+}
+
+window.addEventListener('load', () => {
+    weather();
+    events();
+});
