@@ -141,7 +141,7 @@ function rotateImage(pos) {
 }
 
 function cozumelWeather() {
-   const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5';
+   const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=d74b44aa3356c559c263a8574eb61950';
 fetch(apiURL)
  .then((response) => response.json())
  .then((town) => {
@@ -154,7 +154,7 @@ fetch(apiURL)
  });
 }
 function playaDelCarmenWeather() {
-   const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3521342&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5';
+   const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3521342&units=imperial&APPID=d74b44aa3356c559c263a8574eb61950';
 fetch(apiURL)
  .then((response) => response.json())
  .then((town) => {
@@ -169,7 +169,7 @@ fetch(apiURL)
 
 /* 5 day forecasts */
 function buildCozumelForecast() {
-   url ="https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+   url ="https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=d74b44aa3356c559c263a8574eb61950";
    fetch(url)
    .then((response) => response.json())
    .then((town) => {
@@ -207,7 +207,7 @@ function buildCozumelForecast() {
 }
 
 function buildPlayaDelCarmenForecast() {
-   url ="https://api.openweathermap.org/data/2.5/forecast?id=3521342&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+   url ="https://api.openweathermap.org/data/2.5/forecast?id=3521342&units=imperial&APPID=d74b44aa3356c559c263a8574eb61950";
    fetch(url)
    .then((response) => response.json())
    .then((town) => {
