@@ -1,0 +1,183 @@
+@media only screen and (min-width: 500px) { 
+    h3 {
+       font-size: 1.5em;
+     }
+    main {
+       grid-template-columns: 1fr 1fr;
+    }
+    nav ul {
+       display: flex;
+       margin-top:20px;
+    }
+    nav li {
+       flex: 1 1 100%;
+       border: none;
+       margin: 0px;
+    }
+    #call_to_action {
+       max-width:500px;
+       font-size: 1em;
+    }
+    #cozumel_forecast, #pdc_forecast {
+       grid-column: 1/3;
+       gap: 5px;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #cozumel_forecast h3, #pdc_forecast h3 {
+       grid-column: 1 /6;
+    }
+    #locations {
+       grid-column: 1/3;
+    }
+    #logo {
+       width:400px;
+    }
+    #menu_button {
+       display: none;
+    }
+    /* Home Page */
+    #div_call_to_action {
+       grid-column: 1/3;
+    }
+    #div_image_rotate {
+       grid-row: 1;
+       grid-column: 1;
+    }
+    #home_welcome {
+       grid-row: 1;
+       grid-column: 2;
+       font-size: 1em;
+       margin-bottom: 4px;
+    }
+    #we_rent {
+       grid-column: 1/3;
+    }
+    .nav_hidden {
+       display: flex;
+    }
+    /* Rentals */
+    #rentals {
+       grid-column: 1 / 3;
+       grid-template-columns: 1fr 1fr;
+       gap: 15px;
+    }
+    .rental_detail {
+       min-height: 90px;
+    }
+    .rental_hr {
+       display: none;
+    }
+    .rental_price {
+       margin-top:15px;
+    }
+    /* Reservations */
+ 
+    #agreement {
+       grid-column: 1/4;
+    }
+    #btnChart {
+       grid-column: 1/4;
+       width: 50%;
+       margin-left: 25%;
+    }
+    #chart {
+       font-size: 1em;
+       grid-column: 1/4;
+     }
+     #complete_reservation_div {
+       grid-column: 1/4;
+    }
+    #complete_reservation_div button {
+       width: 40%;
+    }
+     #date {
+        width: 178px;
+     }
+     #main_reservations h2 {
+        grid-column: 1/4;
+     }
+     #numdays, #rental_type {
+        width: 183px;
+     }
+     .input-control {
+       width: 175px;
+     }
+ 
+    /* Tours */
+    #main_tours {
+       grid-template-columns: 1fr 1fr;
+       gap: 20px;
+    }
+    #main_tours h1 {
+       grid-column: 1 / 3;
+    }
+    #main_tours h2 {
+       grid-column: 1 / 3;
+    }
+    #main_tours picture {
+       grid-column: 1;
+    }
+    #tour_info {
+       grid-column: 1/3;
+       max-width: 600px;
+       margin: 0 auto 0 auto;
+    }
+ 
+    /* Contact */
+    #contact_message {
+       height: 100px;
+    }
+    #contact_intro {
+    grid-column: 2 / 3;
+ }
+    #map {
+       display:block;
+     }
+    #main_contact {
+       gap: 20px;
+    }
+    #main_contact .input-control {
+       width: 200px;
+    }
+    #main_contact h1 {
+       grid-column: 1 / 3;
+    }
+    #main_contact .form-group label {
+       display: inline-block;
+       width: 100px;
+       vertical-align: top;
+    }
+    #map {
+       grid-column: 1;
+       grid-row: 2/7;
+    }
+    #send_message_div {
+       grid-row: 7;
+       grid-column: 2/3;
+    }
+    #send_message_div button {
+       width: 50%;
+    }
+ 
+    /* Footer */
+    footer {
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    footer h2 {
+       grid-column: 1/6;
+       text-align: center;
+       margin-top:0;
+    }
+    #footer_name {
+       grid-column: 1 / 3;
+    }
+    #footer_phone {
+       grid-column: 3 / 5;
+    }
+    #social {
+       grid-column: 5;
+       margin-top:0;
+    }
+ 
+ }

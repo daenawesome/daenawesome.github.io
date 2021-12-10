@@ -1,0 +1,127 @@
+{
+    "types":[
+       {
+          "type":"Scooters",
+          "rentals":[
+             {
+                "rental_type":"Honda Metro Scooter",
+                "max_persons":1,
+                "pricing":{
+                   "reservation":{
+                      "half_day":20,
+                      "full_day":30
+                   },
+                   "walk_in":{
+                      "half_day":25,
+                      "full_day":35
+                   }
+                },
+                "description": "The Metropolitan features a liquid-cooled 49cc four-stroke engine with fuel injection. It's quiet, economical, and super reliable.",
+                "image": "images/metro.jpg"
+             },
+             {
+                "rental_type":"Honda Dio Scooter",
+                "max_persons":2,
+                "pricing":{
+                   "reservation":{
+                      "half_day":30,
+                      "full_day":40
+                   },
+                   "walk_in":{
+                      "half_day":35,
+                      "full_day":45
+                   }
+                },
+                "description": "Honda Dio scooter comes with cool graphics, LED headlamps, mobile charging socket & more exciting features along with dream mileage.",
+                "image":"images/dio.jpg"
+             },
+             {
+                "rental_type":"Honda PCX150 Scooter",
+                "max_persons":2,
+                "pricing":{
+                   "reservation":{
+                      "half_day":40,
+                      "full_day":50
+                   },
+                   "walk_in":{
+                      "half_day":45,
+                      "full_day":55
+                   }
+                },
+                "description":"There's heavy traffic, tight parking and plenty of stoplight-to-stoplight action. Fortunately, the Honda PCX150 is purpose-built to tackle these challenges and deliver loads of fun along the way.",
+                "image": "images/pcx150.jpg"
+             }
+          ]
+       },
+       {
+          "type":"ATV Side-by-Side",
+          "rentals":[
+             {
+                "rental_type":"Honda Pioneer ATV",
+                "max_persons":4,
+                "pricing":{
+                   "reservation":{
+                      "half_day":50,
+                      "full_day":70
+                   },
+                   "walk_in":{
+                      "half_day":60,
+                      "full_day":80
+                   }
+                },
+                "description": "Considered an off-road vehicle in which two people sit beside each other. The seating configuration is the same as in a car or truck. You have a steering wheel, pedals, and a gear shift just like a vehicle",
+                "image": "images/pioneer.jpg"
+             }
+          ]
+       },
+       {
+          "type":"Jeep",
+          "rentals":[
+             {
+                "rental_type":"Jeep Wrangler - 4 door with a/c",
+                "max_persons":5,
+                "pricing":{
+                   "reservation":{
+                      "half_day":70,
+                      "full_day":100
+                   },
+                   "walk_in":{
+                      "half_day":85,
+                      "full_day":125
+                   }
+                },
+                "description": "The Wrangler Unlimited is a four-door version of Jeep's iconic Wrangler SUV.",
+                "image": "images/jeep4door.jpg"
+             },
+             {
+                "rental_type":"Jeep Wrangler - 2 door",
+                "max_persons":4,
+                "pricing":{
+                   "reservation":{
+                      "half_day":60,
+                      "full_day":85
+                   },
+                   "walk_in":{
+                      "half_day":70,
+                      "full_day":90
+                   }
+                },
+                "description": "Close your eyes-now imagine trekking through the world's roughest terrain",
+                "image": "images/jeep2door.jpg"               
+             }
+          ]
+       }
+    ],
+    "information": [
+       "A $50 security deposit is required to confirm reservations.",
+       "A valid drivers license is required in hand at time of rental.",
+       "No one under 12 years of ag are allowed to ride on the scooters",
+       "Fuel charge not included.",
+       "Unlimited mileage.",
+       "Liability insurance is free of charge.",
+       "Reservations rate requires 24 hour prior notification.",
+       "Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.",
+       "Payment via Google Pay, cash, credit card, debit card, or PayPal",
+       "Rentals may be returned to either location."
+    ]   
+ }

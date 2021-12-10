@@ -1,0 +1,89 @@
+@media only screen and (min-width: 1000px) { 
+    body {
+       background-image: url("/scoots/images/background.jpg");
+       
+    }
+    main {
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    #cozumel_forecast, #pdc_forecast {
+       grid-column: 1/4;
+    }
+    #div_call_to_action {
+       grid-column: 1/4;
+    }
+    #div_image_rotate {
+       position: relative;
+       left: 33%;
+    }
+ 
+    #home_welcome {
+       font-size: 1.2em;
+       grid-column: 3;
+       position: relative;
+       left: -33%;
+    }
+    #locations {
+       grid-column: 1/4;
+    }
+    #logo {
+       width:740px;
+    }
+    #cWeather {
+       grid-column: 3;
+       position: relative;
+       left: -33%;
+       margin-top: 20px;
+    }
+    #pdcWeather {
+       grid-column: 1;
+       position: relative;
+       left: 33%;
+       margin-top: 20px;
+    }   
+    #we_rent {
+       grid-column: 1/4;
+    }
+    /* Rentals */
+    #main_rentals h2 {
+       grid-column: 1/4;
+    }
+ 
+    #rentals {
+       grid-column: 1 / 4;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    #rental_conditions {
+       grid-column: 1/4;
+    }   
+ 
+    /* Contact */
+    #main_contact h1 {
+       grid-column: 1 / 4;
+    }
+    #contact_intro {
+       grid-column: 2 / 4;
+    }
+    #send_message_div {
+       grid-column: 2/4;
+    }
+ 
+    /* Reservations */
+    #agreement {
+       grid-column: 1/4;
+    }   
+    #btnChart {
+       grid-column: 1/4;
+       width: 30%;
+       margin-left: 35%;
+    }
+    #complete_reservation_div {
+       grid-column: 1/4;
+    }
+    #chart {
+       grid-column: 1/4;
+       margin-bottom: 20px;
+     }
+     /* Tours */
+ 
+ }
