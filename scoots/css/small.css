@@ -1,21 +1,29 @@
+/*#a7e351 - green
+#2ace82 - dark green
+#32e7c8 - blue
+#f9c629 - yellow
+#f29d46 - brown orange */
+
+
+
 body {
     font-family: 'Nanum Gothic', sans-serif;
-    background-color: #fcfcfc;
+    background-color: none;
   }
   button:hover {
     cursor: pointer;
   }
   footer {
-    background-color: #062d5c;
-    color: #FBFBFB;
+    background-color: #2ace82;
+    color: #000;
     text-align: center;
     padding: 10px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 20px auto 0 auto;
   }
   
   footer a {
-    color: #FBFBFB;
+    color: red;
   }
   
   header {
@@ -65,9 +73,9 @@ body {
   }
   
   nav li {
-    border: solid thin rgba(0, 0, 0, .33);
+    border: solid thin rgba(0, 0, 0, .55);
     margin-bottom: 2px;
-    background-color: #062d5c;
+    background-color: #2ace82;
   }
   
   nav li a {
@@ -289,6 +297,7 @@ body {
   }
   
   #social {
+    padding-top: 1em;
     clear:both;
     float:none;
     margin-top: 20px;

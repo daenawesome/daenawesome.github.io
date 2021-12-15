@@ -17,7 +17,7 @@
                    }
                 },
                 "description": "The Metropolitan features a liquid-cooled 49cc four-stroke engine with fuel injection. It's quiet, economical, and super reliable.",
-                "image": "images/metro.jpg"
+                "image": "images/metro.png"
              },
              {
                 "rental_type":"Honda Dio Scooter",
@@ -33,7 +33,7 @@
                    }
                 },
                 "description": "Honda Dio scooter comes with cool graphics, LED headlamps, mobile charging socket & more exciting features along with dream mileage.",
-                "image":"images/dio.jpg"
+                "image":"images/dio.png"
              },
              {
                 "rental_type":"Honda PCX150 Scooter",
@@ -49,7 +49,7 @@
                    }
                 },
                 "description":"There's heavy traffic, tight parking and plenty of stoplight-to-stoplight action. Fortunately, the Honda PCX150 is purpose-built to tackle these challenges and deliver loads of fun along the way.",
-                "image": "images/pcx150.jpg"
+                "image": "images/pcx150.png"
              }
           ]
        },
@@ -70,7 +70,7 @@
                    }
                 },
                 "description": "Considered an off-road vehicle in which two people sit beside each other. The seating configuration is the same as in a car or truck. You have a steering wheel, pedals, and a gear shift just like a vehicle",
-                "image": "images/pioneer.jpg"
+                "image": "images/pioneer.png"
              }
           ]
        },
@@ -91,7 +91,7 @@
                    }
                 },
                 "description": "The Wrangler Unlimited is a four-door version of Jeep's iconic Wrangler SUV.",
-                "image": "images/jeep4door.jpg"
+                "image": "images/jeep4door.png"
              },
              {
                 "rental_type":"Jeep Wrangler - 2 door",
@@ -107,7 +107,7 @@
                    }
                 },
                 "description": "Close your eyes-now imagine trekking through the world's roughest terrain",
-                "image": "images/jeep2door.jpg"               
+                "image": "images/jeep2door.png"               
              }
           ]
        }
