@@ -144,6 +144,7 @@
  }
     #map {
        display:block;
+       margin: 20px;
      }
     #main_contact {
        gap: 20px;
