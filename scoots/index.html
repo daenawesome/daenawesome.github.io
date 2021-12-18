@@ -6,7 +6,6 @@
   <meta name="description" content="Rent a scooter or Jeep from Scoots to tour Cozumel">
   <meta name="keywords" content="Cozumel, scooters, Jeeps, rentals, Playa del Carmen, Puerta Maya" />
   <title>Scoots - Home</title>
-  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
@@ -17,12 +16,11 @@
    <header>
       <div id="logo">
       <picture>
-         <source media="(max-width: 500px)" srcset="images/logo_small.jpg">
-         <source media="(max-width: 1000px)" srcset="images/logo_medium.jpg">
-         <img src="images/logo_large.jpg" alt="Scoots Logo">
+         <source media="(max-width: 500px)" srcset="images/logo_small.png">
+         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+         <img src="images/logo_large.png" alt="Scoots Logo">
      </picture>
    </div>
-   <h3>The best way to see Cozumel!</h3>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -51,7 +49,7 @@
       <div id="div_call_to_action">
          <button class="button" type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
       </div>
-      <h2 id="locations">Two Locations to Serve You</h2>
+      <h2 id="locations">Now Serving At Two Locations</h2>
 <!-- Weather Area -->
 <fieldset id="pdcWeather">
    <legend>Playa del Carmen</legend>
@@ -78,10 +76,9 @@
    <div class="view_forecast"><button class="button2" onclick="showCozumelForecast()">View 5 Day Forecast</button></div>
 </fieldset>
 
-
+<!-- Forecasts -->
 <section id="cozumel_forecast">
    <h3>Puerta Maya 5 Day Forecast</h3>
-
       <div class="forecast">
           <h3 id="c_day1">Day 1</h3>
           <div><img src="#" alt="" id='c_icon1'></div>
@@ -158,21 +155,21 @@
       </div>
 </section>
 
-      <h1 id="we_rent">We Rent</h1>
+<!-- Rental Display -->
+      <h1 id="we_rent">Available Wheels for Rent</h1>
    </main>
-   <footer>
-     <h2>Contact Us</h2>
-     <div id="footer_name">Scoots Inc.<br>
-      1st Ave CALLE 14 NTE<br>
-      Playa del Carmen, Mexico
-   </div>
-   <div id="footer_phone">Phone: 9-999-9999<br>
-      Fax: 9-999-9999<br>
-      Email: info@scoots.com
-   </div>
 
-   <div id="social">
+   <footer>
+<!-- Contact Info -->
+   <div class="contact">
+      <h3>Contact Information</h3>
+      <p>&#128205; 1st Ave CALLE 14 NTE<br>
+         Playa del Carmen, Mexico</p>
+      <p>&#9993; Scoots.me@po.com</p>
+      <p>&#9742; (+1) 2345 6789</p>
+  
       <!-- Social Media Links -->
+   <div id="social">
       <a href="http://www.facebook.com" target="_blank">
         <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
       </a>
@@ -183,12 +180,25 @@
         <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
       </a>
     </div>
-   <div><a href="resources.html">Resources</a></div>
+
+   <!-- Resources & Others -->
+   <div class="resources">
+      <p>
+         &#169; 2021 - Juffair, Bahrain<br> By <a
+             href="https://daenawesome.github.io/">Daen Antule</a> - Web
+         Developer<br>
+         Last updated: <span id="date"></span>
+         <script src="js/lastModified.js"></script><br>
+         Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
+         & Featured <a href="resources.html">Resources</a>
+     </p>
+   </div>
    </footer>
 </div>
+
  <script src="js/script.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-   <script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>
       WebFont.load({
         google: {
           families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
@@ -200,6 +210,8 @@
       buildPlayaDelCarmenForecast();
       buildRentals();
       rotateImage(0);
-    </script>
+ </script>
+
+
 </body>
 </html>  

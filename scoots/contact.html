@@ -6,7 +6,6 @@
   <meta name="description" content="Contact Us with any questions or comments you might have.">
   <meta name="keywords" content="Contact us, questions, comments, map, address" />
   <title>Scoots - Contact Us</title>
-  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
@@ -16,13 +15,12 @@
    <div id="content">
    <header>
       <div id="logo">
-         <picture>
-            <source media="(max-width: 500px)" srcset="images/logo_small.jpg">
-            <source media="(max-width: 1000px)" srcset="images/logo_medium.jpg">
-            <img src="images/logo_large.jpg" alt="Scoots Logo">
-         </picture>
-         <h3>The best way to see Cozumel!</h3>
-      </div>
+      <picture>
+         <source media="(max-width: 500px)" srcset="images/logo_small.png">
+         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+         <img src="images/logo_large.png" alt="Scoots Logo">
+     </picture>
+   </div>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -61,19 +59,40 @@
        <div id="map"></div>
    </main>
    <footer>
-
-      <div id="footer_name">Scoots Inc.<br>
-         1st Ave CALLE 14 NTE<br>
-         Playa del Carmen, Mexico
-      </div>
-      <div id="footer_phone">Phone: 9-999-9999<br>
-         Fax: 9-999-9999<br>
-         Email: info@scoots.com
-      </div>
-
-      <img id="social" src="images/social.jpg" alt="social">
-      <div><a href="resources.html">Resources</a></div>
-   </footer>
+      <!-- Contact Info -->
+         <div class="contact">
+            <h3>Contact Information</h3>
+            <p>&#128205; 1st Ave CALLE 14 NTE<br>
+               Playa del Carmen, Mexico</p>
+            <p>&#9993; Scoots.me@po.com</p>
+            <p>&#9742; (+1) 2345 6789</p>
+        
+            <!-- Social Media Links -->
+         <div id="social">
+            <a href="http://www.facebook.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
+            </a>
+            <a href="http://www.youtube.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
+            </a>
+          </div>
+      
+         <!-- Resources & Others -->
+         <div class="resources">
+            <p>
+               &#169; 2021 - Juffair, Bahrain<br> By <a
+                   href="https://daenawesome.github.io/">Daen Antule</a> - Web
+               Developer<br>
+               Last updated: <span id="date"></span>
+               <script src="js/lastModified.js"></script><br>
+               Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
+               & Featured <a href="resources.html">Resources</a>
+           </p>
+         </div>
+         </footer>
 </div>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
 <script src="js/script.js"></script>

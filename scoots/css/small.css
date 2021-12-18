@@ -1,10 +1,18 @@
 /*#a7e351 - green
+#1F3A93 - dark blue
+1c2a43
 #2ace82 - dark green
-#32e7c8 - blue
+#32e7c8 - gree blue
 #f9c629 - yellow
 #f29d46 - brown orange */
 
-
+body {
+  background-image: url("/scoots/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  background-size:cover
+}
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
@@ -13,22 +21,86 @@ body {
   button:hover {
     cursor: pointer;
   }
-  footer {
-    background-color: #2ace82;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    max-width: 1200px;
-    margin: 20px auto 0 auto;
+
+
+  /* buttons */
+  button:hover {
+    cursor: pointer;
   }
-  
-  footer a {
-    color: red;
+
+  .button {
+    box-shadow: 5px 5px 10px #000;
+    background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
+    color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px 0px 10px 0px;
   }
+  .button:hover {
+    color: #1F3A93;
+    background: #f9c629;
+    border: 1px solid #000;
+  }
+
+
+  .button2, .button3 {
+background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;  
+  width: 60%;
+  border-radius: 10px;
+  font-family: 'Balsamiq Sans', cursive;
+  padding: 10px 0 10px 0;
+}
+.button3 {
+  font-size: 1em;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  box-shadow: 10px 10px 30px #000;
+}
+.button3:hover {
+  color: #1F3A93;
+  background: #f9c629;
+  border: 1px solid #000;
+}
+.button2:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.button2:hover {
+  color: #1F3A93;
+  border: none;
+  background: transparent;
+}
+.button2:hover:after {
+  background: red;
+/* background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%); */
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+
   
   header {
     text-align: left;
   }
+  
+
   
   h1 {
     font-family: 'Permanent Marker', cursive;
@@ -48,7 +120,7 @@ body {
     text-align: center;
     font-size: 1em;
     font-style: italic;
-    position: relative;
+
     top: -15px;
   }
   
@@ -56,6 +128,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 2% 0 2%;
+    background-color: rgba(252, 252, 252, .75);
   }
   
   nav {
@@ -64,6 +137,9 @@ body {
     margin-bottom: 20px;
     position: relative;
     top: -20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+
   }
   
   nav ul {
@@ -75,7 +151,7 @@ body {
   nav li {
     border: solid thin rgba(0, 0, 0, .55);
     margin-bottom: 2px;
-    background-color: #2ace82;
+    background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
   }
   
   nav li a {
@@ -89,7 +165,7 @@ body {
   .active {
     font-weight: bold;
     color: #062d5c;
-    background-color: #CCC;
+    background-color: #f9c629;
   }
   
   nav ul {
@@ -104,7 +180,7 @@ body {
   #content {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #FCFCFC;
+    background-color: rgba(249, 198, 41, .55);
   }
   #ham {
     position: absolute;
@@ -113,11 +189,17 @@ body {
   }
   #image_rotate {
     width: 100%;
+    margin-top: 2.5em;
+    box-shadow: -5px 5px 10px #f9c629;
+    border-radius: 1em;
   }
   #logo {
-    width:200px;
-    margin: 25px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(50, 231, 200,.66) 0%, rgba(49,110,244,.66) 100%);
   }
+
   
   #menu_button {
     background-color: transparent;
@@ -131,27 +213,9 @@ body {
   .bold {
     font-weight: bold;
   }
-  .button {
-    background-color: #5c3506;
-    color: #fcfcfc;
-    width: 90%;
-    border-radius: 20px;
-    font-size: .8em;
-    padding: 10px 0 10px 0;
-  }
+
   
-  .button2, .button3 {
-    background-color: #CCC;
-    color: #000;
-    width: 60%;
-    border-radius: 10px;
-    font-size: .8em;
-    padding: 10px 0 10px 0;
-  }
-  .button3 {
-    width: 90%;
-    margin-top:20px;
-  }
+
   .center {
     text-align: center;
   }
@@ -171,6 +235,11 @@ body {
     transition: visibility 0s .25s, opacity .25s linear;
   }
   
+  h1#we_rent  {
+    color: #1F3A93;
+    font-size: 4em;
+    text-shadow: 10px 10px 5px #fff;
+  }
   
   /* Home Page */
   
@@ -181,16 +250,20 @@ body {
   }
   #cozumel_forecast h3, #pdc_forecast h3 {
     grid-column: 1 /3;
+    text-shadow: 5px 5px 5px #fff;
+    font-size: 2em;
   }
   #div_call_to_action {
     text-align: center;
-    margin:15px 0 25px 0;
+    margin:30px 0 15px 0;
   }
   #home_welcome {
-    background-color: #065c0a;
-    color: #fcfcfc;
+    margin-top: 1em;
+    background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
+    color: #fff;
     padding: 15px;
-    border-radius: 3px;
+    border-radius: 1em;
+
   }
   #home_welcome > div {
     padding: 10px;
@@ -198,9 +271,13 @@ body {
   #locations {
     margin: 20px 0 20px 0;
     text-align: center;
+    color: #1F3A93;
+    font-size: 3em;
+    /* text-shadow: 10px 10px 5px #fff; */
   }
   .maplink {
-    font-size: .8em;
+    font-size: 1.5em;
+    padding-left: 5em;
   }
   .forecast {
     text-align: center;
@@ -213,6 +290,8 @@ body {
     width: 100%;
   }
   .txt_div {
+    color: #1F3A93;
+    line-height: 2em;
     width: 50%;
     float:left;  
     font-size: .9em;
@@ -224,40 +303,92 @@ body {
     margin-top:15px;
   } 
   /* Confirmation */
-  
-  #main_confirmation {
-    display:block;
-    text-align: left;
-  }
   #main_confirmation h1 {
-    text-align: center;
+    font-size: 4em;
+    text-shadow: 5px 5px 5px #fff;
+    color: #1F3A93;
   }
-  #payment_type {
-    margin-top: 25px;
-  }
+
   /* Rentals */
+  
+  #main_rentals h2 {
+    font-size: 3em;
+    margin: 20px 20px 5px 20px;
+    text-align: center;
+ }
+ #main_rentals li {
+  line-height: 2em;
+}
   #rentals {
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 20px 0;
+  }
+  #rentals h3{
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #fff;
+    color: #1F3A93;
   }
   /* Contact */
   #map {
     display:none;
   }
+  #send_message_div {
+    grid-column: 2/4;
+    margin-bottom: 30px;
+    font-size: 1em;
+ }
+ #main_contact h1 {
+  grid-column: 1 / 4;
+  font-size: 4em;
+  text-shadow: 5px 5px 5px #fff;
+  color: #1F3A93;
+  margin: 20px
+}
+
+
+
   /* Reservations */
   #btnChart {
-    margin-left: 20%;
-    margin-bottom: 25px;
+    /* margin-left: 20%;
+    margin-bottom: 25px; */
+    margin:20px;
   }
   #chart {
+    font-size: 1em;
+    line-height: 3em;
+    margin:20px;
     display: none;
-    font-size: .8em;
-    margin-bottom:20px;
   }
+
   
   #main_reservations label {
     display: inline-block;
     width:120px;
+  }
+  #main_reservations h2 {
+    margin: 10px 20px 10px;
+  }
+  #complete_reservation_div button {
+    margin-bottom: 20px;
+  }
+  #agreement {
+    margin: 20px;
+  }
+  #agreement h3{
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #fff;
+    color: #1F3A93;
+    margin: 20px
+  }
+  #agreement p{
+    line-height: 1.5em;
+    margin: 20px 200px 20px;
+  }
+  #agreement span {
+    font-size: 3em;
   }
   
   /* Resources */
@@ -271,34 +402,108 @@ body {
     width: 100%;
     max-width: 500px;
   }
+
+
+  
    /* Tours */
   #main_tours {
     grid-template-columns: 1fr;
   }
+  #main_tours h1{
+   color: #1F3A93;
+  font-size: 4em;
+  text-shadow: 10px 10px 5px #fff; 
+  margin: 10px;
+  }
+  
+
+  #main_tours h2 {
+    text-align: center;
+  }
   #main_tours picture img {
-    width: 100%;
-  }  
+    width: 95%;
+    margin: 0 10px 0;
+    border-radius: 1em;
+  }
+ .tour_img1 {
+    box-shadow: -5px 5px 10px #f9c629;
+  }
+  .tour_img2 {
+    box-shadow: 5px 5px 10px #f9c629;
+  }
+  
+  #tour_info, .tour_text {
+    line-height: 2em;
+    margin: 0 20px 20px;
+    text-align: center;
+  }
   
   .input-control {
     width: 100%;
   }
   .form-group {
-    margin: 5px 0 5px 0;
+    margin: 5px 20px 5px;
   }
   
   /* Footer */
+
+
   
-  #footer_name,#footer_phone {
-    width: 45%;
-    float: left;
-    text-align: left;
-    font-size: .8em;
-  
+  footer {
+    background: linear-gradient(0deg, rgba(50, 231, 200,.55) 0%, rgba(49,110,244,.55) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
   }
   
+  footer a {
+    color: #f9c629;
+    font-weight: 800px;
+  }
+  
+  footer img{
+    transition: transform .2s; 
+    border-radius: 1em;
+    border-color: red;
+  }
+
   #social {
-    padding-top: 1em;
     clear:both;
     float:none;
-    margin-top: 20px;
+  }
+
+  #social img {
+    margin: 20px;
+    box-shadow: 5px 5px 10px #000;
+  }
+
+  footer img:hover {
+    transform: scale(1.8); 
+    cursor: pointer;
+  }
+
+  #social a {
+    color: #2ace82;
+  }
+
+  .resources p{
+    line-height: 1.5em;
+  }
+
+.contact h3 {
+  font-size: 2.5em;
+  text-shadow: 7px 7px 5px #000;
+}
+
+
+
+ img.rental_image  {
+    transition: transform .2s;
+     
+  }
+  img.rental_image:hover  {
+    transform: scale(1.8); 
+    cursor: pointer;
   }

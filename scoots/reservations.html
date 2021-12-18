@@ -6,7 +6,6 @@
   <meta name="description" content="Reserve your scooter or Jeep before they are gone.">
   <meta name="keywords" content="Reservations, reserve, scooter, Jeep, agreement" />
   <title>Scoots - Reservations</title>
-  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
@@ -15,14 +14,13 @@
 <body>
    <div id="content">
    <header>
-         <div id="logo">
-            <picture>
-               <source media="(max-width: 500px)" srcset="images/logo_small.jpg">
-               <source media="(max-width: 1000px)" srcset="images/logo_medium.jpg">
-               <img src="images/logo_large.jpg" alt="Scoots Logo">
-            </picture>
-         </div>
-         <h3>The best way to see Cozumel!</h3>
+      <div id="logo">
+      <picture>
+         <source media="(max-width: 500px)" srcset="images/logo_small.png">
+         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+         <img src="images/logo_large.png" alt="Scoots Logo">
+     </picture>
+   </div>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -37,8 +35,9 @@
    <form method="POST" action="confirmation.html">
    <main id="main_reservations">
       
-      <button id="btnChart" type="button" class="button2" onclick="showChart()">View Pricing Chart</button>
+      <button id="btnChart" type="button" class="button3" onclick="showChart()">View Pricing Chart</button>
       <div id="chart"></div>
+      <h2>Rental Form</h2>
       <div class="form-group">
          <label for="date">Rental Date</label>
          <input id="date" type="date" class="input-control" />
@@ -98,20 +97,22 @@
          <input id="comments" type="text" class="input-control" />
        </div>
 
-       <h2>Rental Agreement</h2>
+       
       <div id="agreement">
-         <p>I authorize a deposit equal to $50.00 USD plus local state tax to be charged to my credit card for each scooter rented and the final amount due 
+         <h2>Rental Agreement</h2>
+         <h3>General</h3>
+         <p><span>&#10003;</span>  I authorize a deposit equal to $50.00 USD plus local state tax to be charged to my credit card for each scooter rented and the final amount due 
             24 hours before equipment rental begins. I understand I am fully responsible for the scooter during the rental period and any damage or loss 
             incurred while in my possession and affirm I have provided accurate height and weight information to assure proper use and performance of the 
             equipment I am renting. I may cancel my rental and receive a full refund up to 48 hours prior to my rental delivery time and must call in my 
             cancellation to Scoots at 1.800.333.0594 and receive a cancellation confirmation number. I understand that I qualify for free 
             delivery only if I choose to rent a scooter for two (2) days or more and that my delivery can be made to a Cozumel hotel, Airbnb, or 
             private residence. </p>
-            <p>I affirm that non one under 12 years of age will be allowed to ride on the scooters. I am aware that fuel
+            <p><span>&#10003;</span>  I affirm that non one under 12 years of age will be allowed to ride on the scooters. I am aware that fuel
                charge is not included in the rental price.
             </p>
 
-         <p>I hereby agree to take sole responsibility for any damages outside of normal wear and tear of the mobility scooter unit including accessories 
+         <p><span>&#10003;</span>  I hereby agree to take sole responsibility for any damages outside of normal wear and tear of the mobility scooter unit including accessories 
             such as the battery charger and key while in my possession; my possession starts when my rental equipment is delivered and ends when the rental 
             equipment is back in the possession of Scoots. I understand that I am personally responsible for all vandalism and or loss of equipment 
             and I authorize Scoots to charge any damages to my credit card provided for rental. I understand and authorize 
@@ -120,41 +121,60 @@
             not properly charged my original batteries after each use.</p>
 
 
-         <p>Waiver of Liability and Hold Harmless Agreement</p>
+         <h3>Waiver of Liability and Hold Harmless Agreement</h3>
 
-         <p>I hereby release, waive, and discharge the right to seek medical reimbursement or the legal prosecution of Scoots for 
+         <p><span>&#10003;</span>  I hereby release, waive, and discharge the right to seek medical reimbursement or the legal prosecution of Scoots for 
             any physical injury resulting or property damage from the use of the rental equipment provided by Scoots.  I agree to be the sole person driving the 
             rental scooter and I am fully responsible for any person/s who, with or without my consent, sit on, stand, ride on or operate the mobility scooter.</p>
 
-         <p>I agree to immediately cease using the rental equipment if I find or suspect any fault with the equipment. I hereby indemnify Scoots for any legal 
+         <p><span>&#10003;</span> I agree to immediately cease using the rental equipment if I find or suspect any fault with the equipment. I hereby indemnify Scoots for any legal 
             prosecution from my rental or use of the equipment including but not limited to physical injury resulting to myself or someone else or property damage 
             from the rental equipment provided by Scoots.</p>
 
-         <p>It is my express intent that this Release and Hold Harmless Agreement shall bind my family if I am alive and my heirs, assigns and personal 
+         <p><span>&#10003;</span>  It is my express intent that this Release and Hold Harmless Agreement shall bind my family if I am alive and my heirs, assigns and personal 
             representative if I am deceased. It shall be deemed as a release, waiver, discharge, and covenant not to sue Scoots, independent contractors, officers, 
             agents, employees, and affiliates.</p>
       </div>
-      <div id="complete_reservation_div" class="center"><button class="button">Complete My Reservation</button></div>
+      <div id="complete_reservation_div" class="center"><button class="button" >Complete My Reservation</button></div>
    </main>
 </form>
-   <footer>
-      <h2>Contact Us</h2>
-      <div id="footer_name">Scoots Inc.<br>
-         1st Ave CALLE 14 NTE<br>
-         Playa del Carmen, Mexico
-         Mexico
+<footer>
+   <!-- Contact Info -->
+      <div class="contact">
+         <h3>Contact Information</h3>
+         <p>&#128205; 1st Ave CALLE 14 NTE<br>
+            Playa del Carmen, Mexico</p>
+         <p>&#9993; Scoots.me@po.com</p>
+         <p>&#9742; (+1) 2345 6789</p>
+     
+         <!-- Social Media Links -->
+      <div id="social">
+         <a href="http://www.facebook.com" target="_blank">
+           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
+         </a>
+         <a href="http://www.twitter.com" target="_blank">
+           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
+         </a>
+         <a href="http://www.youtube.com" target="_blank">
+           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
+         </a>
+       </div>
+   
+      <!-- Resources & Others -->
+      <div class="resources">
+         <p>
+            &#169; 2021 - Juffair, Bahrain<br> By <a
+                href="https://daenawesome.github.io/">Daen Antule</a> - Web
+            Developer<br>
+            Last updated: <span id="date"></span>
+            <script src="js/lastModified.js"></script><br>
+            Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
+            & Featured <a href="resources.html">Resources</a>
+        </p>
       </div>
-      <div id="footer_phone">Phone: 1.800.333.0594<br>
-         Fax: 1.800.333.0595<br>
-         Email: info@scoots.com
-      </div>
-
-      <img id="social" src="images/social.jpg" alt="social">
-      <div><a href="resources.html">Resources</a></div>
-   </footer>
+      </footer>
 </div>
  <script src="js/script.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
    <script>
       WebFont.load({
         google: {
