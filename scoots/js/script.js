@@ -54,7 +54,7 @@ function buildRates() {
          data.types.forEach(type => {
             type.rentals.forEach(rental => {
                html += '<div><h3>' + rental.rental_type + '</h3>';
-               html += '<div><img class="rental_image" src="' + rental.image + '"></div>';
+               html += '<div><img class="rental_image"  src="' + rental.image + '" alt="' + rental.rental_type + '"></div>';
                html += '<div class="rental_detail">' + rental.description  + '</div>';
                html += '<div class="rental_price">';
                html += 'Max Persons - ' + rental.max_persons + '<br><br>';
