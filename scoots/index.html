@@ -1,208 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Rent a scooter or Jeep from Scoots to tour Cozumel">
-  <meta name="keywords" content="Cozumel, scooters, Jeeps, rentals, Playa del Carmen, Puerta Maya" />
-  <title>Scoots - Home</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
-</head>
-<body>
-   <div id="content">
-   <header>
-      <div id="logo">
-      <picture>
-         <source media="(max-width: 500px)" srcset="images/logo_small.png">
-         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
-         <img src="images/logo_large.png" alt="Scoots Logo">
-     </picture>
-   </div>
-      <nav>
-         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
-         <ul id="main_nav" class="nav_hidden">
-            <li><a class="active" title="Home" href="index.html">Home</a></li>
-            <li><a title="Rentals" href="rentals.html">Rentals</a></li>
-            <li><a title="Tours" href="tours.html">Tours</a></li>
-            <li><a title="Reservations" href="reservations.html">Reservations</a></li>
-            <li><a title="Contact Us" href="contact.html">Contact Us</a></li>
-         </ul>
-      </nav>
-   </header>
-   <main id="home_main">
-      <!-- Home Welcome -->
-      <div id="home_welcome">
-         <div class="center bold">Welcome to Scoots!</div>
-         <div>We are your one stop shop for touring Cozumel. Whether you want to cruise the streets with one of our scooters, or explore
-            all that Cozumel has to offer with one of our Jeeps; we are here for you. Make your reservation now and let the fun begin! 
-         </div>
-      </div>
-      <div id="div_image_rotate">
-         <picture>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Rent a scooter or Jeep from Scoots to tour Cozumel">
+    <meta name="keywords" content="Cozumel, scooters, Jeeps, rentals, Playa del Carmen, Puerta Maya" />
+    <title>Scoots - Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div id="logo">
+          <picture>
+            <source media="(max-width: 500px)" srcset="images/logo_small.png">
+            <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+            <img src="images/logo_large.png" alt="Scoots Logo">
+          </picture>
+        </div>
+        <nav>
+          <button onclick="toggle_nav()" id="menu_button">
+            <span id="ham" class="fade_in">&#9776; Menu</span>
+            <span id="close" class="fade_out">&Otimes;</span>
+          </button>
+          <ul id="main_nav" class="nav_hidden">
+            <li>
+              <a class="active" title="Home" href="index.html">Home</a>
+            </li>
+            <li>
+              <a title="Rentals" href="rentals.html">Rentals</a>
+            </li>
+            <li>
+              <a title="Tours" href="tours.html">Tours</a>
+            </li>
+            <li>
+              <a title="Reservations" href="reservations.html">Reservations</a>
+            </li>
+            <li>
+              <a title="Contact Us" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="home_main">
+        <!-- Home Welcome -->
+        <div id="home_welcome">
+          <div class="center bold">Welcome to Scoots!</div>
+          <div>We are your one stop shop for touring Cozumel. Whether you want to cruise the streets with one of our scooters, or explore all that Cozumel has to offer with one of our Jeeps; we are here for you. Make your reservation now and let the fun begin! </div>
+        </div>
+        <div id="div_image_rotate">
+          <picture>
             <source id="image_source" media="(max-width: 400px)" srcset="images/rotate/scooters_small.jpg">
             <img id="image_rotate" src="images/rotate/scooters_large.jpg" alt="Scooters">
-        </picture>
-      </div>
-      <div id="div_call_to_action">
-         <button class="button" type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
-      </div>
-      <h2 id="locations">Now Serving At Two Locations</h2>
-<!-- Weather Area -->
-<fieldset id="pdcWeather">
-   <legend>Playa del Carmen</legend>
-   <div>1st Ave CALLE 14 NTE <a class="maplink" href="contact.html">Map</a></div>
-   <div>Playa del Carmen, Mexico</div>
-   <div class="center">----</div>
-   <div>Temperature: <span id="pTemp"></span>&deg;</div>
-   <div>Conditions: <span id="pCurrent"></span></div>
-   <div>High: <span id="pHigh"></span>&deg;</div>
-   <div>Humidity: <span id="pHumidity"></span>%</div>
-   <div>Wind Speed: <span id="pWindspeed"></span> mph</div>
-   <div class="view_forecast"><button class="button2" onclick="showPDCForecast()">View 5 Day Forecast</button></div>
-</fieldset>
-<fieldset id="cWeather">
-   <legend>Puerta Maya</legend>
-   <div>Quintana Roo C-1 <a class="maplink" href="contact.html">Map</a></div>
-   <div>Puerta Maya, Mexico</div>
-   <div class="center">----</div>
-   <div>Temperature: <span id="cTemp"></span>&deg;</div>
-   <div>Conditions: <span id="cCurrent"></span></div>
-   <div>High: <span id="cHigh"></span>&deg;</div>
-   <div>Humidity: <span id="cHumidity">%</span>%</div>
-   <div>Wind Speed: <span id="cWindspeed"></span> mph</div>
-   <div class="view_forecast"><button class="button2" onclick="showCozumelForecast()">View 5 Day Forecast</button></div>
-</fieldset>
-
-<!-- Forecasts -->
-<section id="cozumel_forecast">
-   <h3>Puerta Maya 5 Day Forecast</h3>
-      <div class="forecast">
-          <h3 id="c_day1">Day 1</h3>
-          <div><img src="#" alt="" id='c_icon1'></div>
-          <div id="c_temp1"></div>
-          <div id="c_condition1"></div>
-          <div id="c_weather1"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="c_day2">Day 2</h3>
-          <div><img src="#" alt="" id='c_icon2'></div>
-          <div id="c_temp2"></div>
-          <div id="c_condition2"></div>
-          <div id="c_weather2"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="c_day3">Day 3</h3>
-          <div><img src="#" alt="" id='c_icon3'></div>
-          <div id="c_temp3"></div>
-          <div id="c_condition3"></div>
-          <div id="c_weather3"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="c_day4">Day 4</h3>
-          <div><img src="#" alt="" id='c_icon4'></div>
-          <div id="c_temp4"></div>
-          <div id="c_condition4"></div>
-          <div id="c_weather4"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="c_day5">Day 5</h3>
-          <div><img src="#" alt="" id='c_icon5'></div>
-          <div id="c_temp5"></div>
-          <div id="c_condition5"></div>
-          <div id="c_weather5"></div>
-      </div>
-</section>
-
-<section id="pdc_forecast">
-   <h3>Playa Del Carmen 5 Day Forecast</h3>
-      <div class="forecast">
-          <h3 id="p_day1">Day 1</h3>
-          <div><img src="#" alt="" id='p_icon1'></div>
-          <div id="p_temp1"></div>
-          <div id="p_condition1"></div>
-          <div id="p_weather1"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="p_day2">Day 2</h3>
-          <div><img src="#" alt="" id='p_icon2'></div>
-          <div id="p_temp2"></div>
-          <div id="p_condition2"></div>
-          <div id="p_weather2"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="p_day3">Day 3</h3>
-          <div><img src="#" alt="" id='p_icon3'></div>
-          <div id="p_temp3"></div>
-          <div id="p_condition3"></div>
-          <div id="p_weather3"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="p_day4">Day 4</h3>
-          <div><img src="#" alt="" id='p_icon4'></div>
-          <div id="p_temp4"></div>
-          <div id="p_condition4"></div>
-          <div id="p_weather4"></div>
-      </div>
-      <div class="forecast">
-          <h3 id="p_day5">Day 5</h3>
-          <div><img src="#" alt="" id='p_icon5'></div>
-          <div id="p_temp5"></div>
-          <div id="p_condition5"></div>
-          <div id="p_weather5"></div>
-      </div>
-</section>
-
-<!-- Rental Display -->
-      <h1 id="we_rent">Available Wheels for Rent</h1>
-   </main>
-
-   <footer>
-<!-- Contact Info -->
-   <div class="contact">
-      <h3>Contact Information</h3>
-      <p>&#128205; 1st Ave CALLE 14 NTE<br>
-         Playa del Carmen, Mexico</p>
-      <p>&#9993; Scoots.me@po.com</p>
-      <p>&#9742; (+1) 2345 6789</p>
-  
-      <!-- Social Media Links -->
-   <div id="social">
-      <a href="http://www.facebook.com" target="_blank">
-        <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
-      </a>
-      <a href="http://www.twitter.com" target="_blank">
-        <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
-      </a>
-      <a href="http://www.youtube.com" target="_blank">
-        <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
-      </a>
+          </picture>
+        </div>
+        <div id="div_call_to_action">
+          <button class="button" type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
+        </div>
+        <h2 id="locations">Now Serving At Two Locations</h2>
+        <!-- Weather Area -->
+        <fieldset id="pdcWeather">
+          <legend>Playa del Carmen</legend>
+          <div>1st Ave CALLE 14 NTE <a class="maplink" href="contact.html">Map</a>
+          </div>
+          <div>Playa del Carmen, Mexico</div>
+          <div class="center">----</div>
+          <div>Temperature: <span id="pTemp"></span>&deg; </div>
+          <div>Conditions: <span id="pCurrent"></span>
+          </div>
+          <div>High: <span id="pHigh"></span>&deg; </div>
+          <div>Humidity: <span id="pHumidity"></span>% </div>
+          <div>Wind Speed: <span id="pWindspeed"></span> mph </div>
+          <div class="view_forecast">
+            <button class="button2" onclick="showPDCForecast()">View 5 Day Forecast</button>
+          </div>
+        </fieldset>
+        <fieldset id="cWeather">
+          <legend>Puerta Maya</legend>
+          <div>Quintana Roo C-1 <a class="maplink" href="contact.html">Map</a>
+          </div>
+          <div>Puerta Maya, Mexico</div>
+          <div class="center">----</div>
+          <div>Temperature: <span id="cTemp"></span>&deg; </div>
+          <div>Conditions: <span id="cCurrent"></span>
+          </div>
+          <div>High: <span id="cHigh"></span>&deg; </div>
+          <div>Humidity: <span id="cHumidity">%</span>% </div>
+          <div>Wind Speed: <span id="cWindspeed"></span> mph </div>
+          <div class="view_forecast">
+            <button class="button2" onclick="showCozumelForecast()">View 5 Day Forecast</button>
+          </div>
+        </fieldset>
+        <!-- Forecasts -->
+        <section id="cozumel_forecast">
+          <h3>Puerta Maya 5 Day Forecast</h3>
+          <div class="forecast">
+            <h3 id="c_day1">Day 1</h3>
+            <div>
+              <img src="#" alt="" id='c_icon1'>
+            </div>
+            <div id="c_temp1"></div>
+            <div id="c_condition1"></div>
+            <div id="c_weather1"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="c_day2">Day 2</h3>
+            <div>
+              <img src="#" alt="" id='c_icon2'>
+            </div>
+            <div id="c_temp2"></div>
+            <div id="c_condition2"></div>
+            <div id="c_weather2"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="c_day3">Day 3</h3>
+            <div>
+              <img src="#" alt="" id='c_icon3'>
+            </div>
+            <div id="c_temp3"></div>
+            <div id="c_condition3"></div>
+            <div id="c_weather3"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="c_day4">Day 4</h3>
+            <div>
+              <img src="#" alt="" id='c_icon4'>
+            </div>
+            <div id="c_temp4"></div>
+            <div id="c_condition4"></div>
+            <div id="c_weather4"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="c_day5">Day 5</h3>
+            <div>
+              <img src="#" alt="" id='c_icon5'>
+            </div>
+            <div id="c_temp5"></div>
+            <div id="c_condition5"></div>
+            <div id="c_weather5"></div>
+          </div>
+        </section>
+        <section id="pdc_forecast">
+          <h3>Playa Del Carmen 5 Day Forecast</h3>
+          <div class="forecast">
+            <h3 id="p_day1">Day 1</h3>
+            <div>
+              <img src="#" alt="" id='p_icon1'>
+            </div>
+            <div id="p_temp1"></div>
+            <div id="p_condition1"></div>
+            <div id="p_weather1"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="p_day2">Day 2</h3>
+            <div>
+              <img src="#" alt="" id='p_icon2'>
+            </div>
+            <div id="p_temp2"></div>
+            <div id="p_condition2"></div>
+            <div id="p_weather2"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="p_day3">Day 3</h3>
+            <div>
+              <img src="#" alt="" id='p_icon3'>
+            </div>
+            <div id="p_temp3"></div>
+            <div id="p_condition3"></div>
+            <div id="p_weather3"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="p_day4">Day 4</h3>
+            <div>
+              <img src="#" alt="" id='p_icon4'>
+            </div>
+            <div id="p_temp4"></div>
+            <div id="p_condition4"></div>
+            <div id="p_weather4"></div>
+          </div>
+          <div class="forecast">
+            <h3 id="p_day5">Day 5</h3>
+            <div>
+              <img src="#" alt="" id='p_icon5'>
+            </div>
+            <div id="p_temp5"></div>
+            <div id="p_condition5"></div>
+            <div id="p_weather5"></div>
+          </div>
+        </section>
+        <!-- Rental Display -->
+        <h1 id="we_rent">Available Wheels for Rent</h1>
+      </main>
+      <footer>
+        <!-- Contact Info -->
+        <div class="contact">
+          <h3>Contact Information</h3>
+          <p>&#128205; 1st Ave CALLE 14 NTE <br> Playa del Carmen, Mexico </p>
+          <p>&#9993; Scoots.me@po.com</p>
+          <p>&#9742; (+1) 2345 6789</p>
+          <!-- Social Media Links -->
+          <div id="social">
+            <a href="http://www.facebook.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
+            </a>
+            <a href="http://www.youtube.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
+            </a>
+          </div>
+          <!-- Resources & Others -->
+          <div class="resources">
+            <p> &#169; 2021 - Juffair, Bahrain <br> By <a href="https://daenawesome.github.io/">Daen Antule</a> - Web Developer <br> Last updated: <span id="date"></span>
+              <script src="js/lastModified.js"></script>
+              <br> Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a> & Featured <a href="resources.html">Resources</a>
+              <br>
+              <a href="plan/index.html">Site Plan</a>
+            </p>
+          </div>
+      </footer>
     </div>
-
-   <!-- Resources & Others -->
-   <div class="resources">
-      <p>
-         &#169; 2021 - Juffair, Bahrain<br> By <a
-             href="https://daenawesome.github.io/">Daen Antule</a> - Web
-         Developer<br>
-         Last updated: <span id="date"></span>
-         <script src="js/lastModified.js"></script><br>
-         Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
-         & Featured <a href="resources.html">Resources</a>
-         <br><a href="plan/index.html">Site Plan</a>
-     </p>
-   </div>
-   </footer>
-</div>
-
- <script src="js/script.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
- <script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
       WebFont.load({
         google: {
-          families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
+          families: ['Nanum Gothic', 'Balsamiq Sans', 'Permanent Marker']
         }
       });
       cozumelWeather();
@@ -211,8 +238,6 @@
       buildPlayaDelCarmenForecast();
       buildRentals();
       rotateImage(0);
- </script>
-
-
-</body>
-</html>  
+    </script>
+  </body>
+</html>

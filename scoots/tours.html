@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Tours available for your scooter or Jeep rental.">
-  <meta name="keywords" content="Cozumel, tour, seaside, lush forest, nature, Jeep" />
-  <title>Scoots - Tours</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
-</head>
-<body>
-   <div id="content">
-   <header>
-      <div id="logo">
-      <picture>
-         <source media="(max-width: 500px)" srcset="images/logo_small.png">
-         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
-         <img src="images/logo_large.png" alt="Scoots Logo">
-     </picture>
-   </div>
-      <nav>
-         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
-         <ul id="main_nav" class="nav_hidden">
-            <li><a title="Home" href="index.html">Home</a></li>
-            <li><a title="Rentals" href="rentals.html">Rentals</a></li>
-            <li><a class="active" title="Tours" href="tours.html">Tours</a></li>
-            <li><a title="Reservations" href="reservations.html">Reservations</a></li>
-            <li><a title="Contact Us" href="contact.html">Contact Us</a></li>
-         </ul>
-      </nav>
-   </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Tours available for your scooter or Jeep rental.">
+    <meta name="keywords" content="Cozumel, tour, seaside, lush forest, nature, Jeep" />
+    <title>Scoots - Tours</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div id="logo">
+          <picture>
+            <source media="(max-width: 500px)" srcset="images/logo_small.png">
+            <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+            <img src="images/logo_large.png" alt="Scoots Logo">
+          </picture>
+        </div>
+        <nav>
+          <button onclick="toggle_nav()" id="menu_button">
+            <span id="ham" class="fade_in">&#9776; Menu</span>
+            <span id="close" class="fade_out">&Otimes;</span>
+          </button>
+          <ul id="main_nav" class="nav_hidden">
+            <li>
+              <a title="Home" href="index.html">Home</a>
+            </li>
+            <li>
+              <a title="Rentals" href="rentals.html">Rentals</a>
+            </li>
+            <li>
+              <a class="active" title="Tours" href="tours.html">Tours</a>
+            </li>
+            <li>
+              <a title="Reservations" href="reservations.html">Reservations</a>
+            </li>
+            <li>
+              <a title="Contact Us" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main id="main_tours">
-              <h1>Tours</h1>
-               <div id="tour_info">
-                  We are your one stop shop for touring Cozumel. Whether you would like help finding the beauty available on the island or want to take things at your own pace, we are here to help. <br>
-                  <span class="bold">Cozumel awaits</span>.
-               </div>
-               <div>
-               <h2>Seaside Tour</h2>
-               <picture>
-                  <source media="(max-width: 400px)" srcset="images/tour_coast_small.jpg">
-                  <img class="tour_img1" src="images/tour_coast.jpg" alt="Coastal Tour">
-               </picture>
-               <div class="tour_text">
-                  The waters surrounding Cozumel are a vision. We will take you to some of the most scenic spots for your ocean viewing pleasure and we challenge you to describe the beauty of the ocean waters.
-               </div>
-            </div>
-            <div>
-               <h2>Lush Forest Tour</h2>
-               <picture>
-                  <source media="(max-width: 400px)" srcset="images/tour_forest_small.jpg">
-                  <img class="tour_img2" src="images/tour_forest.jpg" alt="Forest Tour">
-               </picture>
-               <div class="tour_text">
-                  Besides the incredible ocean views, Cozumel hosts a whole other terrain waiting for exploration. Enjoy the beauty of the forest, view the local wildlife and enjoy the mysteries of the island only the locals know.
-               </div>
-            </div>
-            <div>
-               <h2>Nature Tour</h2>
-               <picture>
-                  <source media="(max-width: 400px)" srcset="images/tour_nature.jpg">
-                  <img class="tour_img1" src="images/tour_nature.jpg" alt="Nature Tour">
-               </picture>
-               <div class="tour_text">
-                  Join other nature lovers on this informational tour of the Cozumel Wildlife Preserve. Guides are knowledge about the local flora and fauna. Areas set up to allow you the opportunity to catch the perfect landscape picture.
-               </div>
-            </div>
-            <div>
-               <h2>Day Long Jeep Tour</h2>
-               <picture>
-                  <source media="(max-width: 400px)" srcset="images/tour_jeep_small.jpg">
-                  <img class="tour_img2" src="images/tour_jeep.jpg" alt="Day Long Jeep Tour">
-               </picture>
-               <div class="tour_text">
-                  This tour is all encompassing. Includes areas of interest from all the tours. Lunch is provided at a secret grotto with time to swim in the crystal clear waters found there. Fall in love with Cozumel.
-               </div>    
-            </div> 
-   </main>
-   <footer>
-      <!-- Contact Info -->
-         <div class="contact">
-            <h3>Contact Information</h3>
-            <p>&#128205; 1st Ave CALLE 14 NTE<br>
-               Playa del Carmen, Mexico</p>
-            <p>&#9993; Scoots.me@po.com</p>
-            <p>&#9742; (+1) 2345 6789</p>
-        
-            <!-- Social Media Links -->
-         <div id="social">
+        <h1>Tours</h1>
+        <div id="tour_info"> We are your one stop shop for touring Cozumel. Whether you would like help finding the beauty available on the island or want to take things at your own pace, we are here to help. <br>
+          <span class="bold">Cozumel awaits</span>.
+        </div>
+        <div>
+          <h2>Seaside Tour</h2>
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/tour_coast_small.jpg">
+            <img class="tour_img1" src="images/tour_coast.jpg" alt="Coastal Tour">
+          </picture>
+          <div class="tour_text"> The waters surrounding Cozumel are a vision. We will take you to some of the most scenic spots for your ocean viewing pleasure and we challenge you to describe the beauty of the ocean waters. </div>
+        </div>
+        <div>
+          <h2>Lush Forest Tour</h2>
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/tour_forest_small.jpg">
+            <img class="tour_img2" src="images/tour_forest.jpg" alt="Forest Tour">
+          </picture>
+          <div class="tour_text"> Besides the incredible ocean views, Cozumel hosts a whole other terrain waiting for exploration. Enjoy the beauty of the forest, view the local wildlife and enjoy the mysteries of the island only the locals know. </div>
+        </div>
+        <div>
+          <h2>Nature Tour</h2>
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/tour_nature.jpg">
+            <img class="tour_img1" src="images/tour_nature.jpg" alt="Nature Tour">
+          </picture>
+          <div class="tour_text"> Join other nature lovers on this informational tour of the Cozumel Wildlife Preserve. Guides are knowledge about the local flora and fauna. Areas set up to allow you the opportunity to catch the perfect landscape picture. </div>
+        </div>
+        <div>
+          <h2>Day Long Jeep Tour</h2>
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/tour_jeep_small.jpg">
+            <img class="tour_img2" src="images/tour_jeep.jpg" alt="Day Long Jeep Tour">
+          </picture>
+          <div class="tour_text"> This tour is all encompassing. Includes areas of interest from all the tours. Lunch is provided at a secret grotto with time to swim in the crystal clear waters found there. Fall in love with Cozumel. </div>
+        </div>
+      </main>
+      <footer>
+        <!-- Contact Info -->
+        <div class="contact">
+          <h3>Contact Information</h3>
+          <p>&#128205; 1st Ave CALLE 14 NTE <br> Playa del Carmen, Mexico </p>
+          <p>&#9993; Scoots.me@po.com</p>
+          <p>&#9742; (+1) 2345 6789</p>
+          <!-- Social Media Links -->
+          <div id="social">
             <a href="http://www.facebook.com" target="_blank">
               <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
             </a>
@@ -100,29 +102,24 @@
               <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
             </a>
           </div>
-      
-         <!-- Resources & Others -->
-         <div class="resources">
-            <p>
-               &#169; 2021 - Juffair, Bahrain<br> By <a
-                   href="https://daenawesome.github.io/">Daen Antule</a> - Web
-               Developer<br>
-               Last updated: <span id="date"></span>
-               <script src="js/lastModified.js"></script><br>
-               Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
-               & Featured <a href="resources.html">Resources</a>
-               <br><a href="plan/index.html">Site Plan</a>
-           </p>
-         </div>
-         </footer>
-</div>
- <script src="js/script.js"></script>
-   <script>
+          <!-- Resources & Others -->
+          <div class="resources">
+            <p> &#169; 2021 - Juffair, Bahrain <br> By <a href="https://daenawesome.github.io/">Daen Antule</a> - Web Developer <br> Last updated: <span id="date"></span>
+              <script src="js/lastModified.js"></script>
+              <br> Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a> & Featured <a href="resources.html">Resources</a>
+              <br>
+              <a href="plan/index.html">Site Plan</a>
+            </p>
+          </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
       WebFont.load({
         google: {
-          families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
+          families: ['Nanum Gothic', 'Balsamiq Sans', 'Permanent Marker']
         }
       });
     </script>
-</body>
-</html>  
+  </body>
+</html>

@@ -1,192 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Reserve your scooter or Jeep before they are gone.">
-  <meta name="keywords" content="Reservations, reserve, scooter, Jeep, agreement" />
-  <title>Scoots - Reservations</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
-</head>
-<body>
-   <div id="content">
-   <header>
-      <div id="logo">
-      <picture>
-         <source media="(max-width: 500px)" srcset="images/logo_small.png">
-         <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
-         <img src="images/logo_large.png" alt="Scoots Logo">
-     </picture>
-   </div>
-      <nav>
-         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
-         <ul id="main_nav" class="nav_hidden">
-            <li><a title="Home" href="index.html">Home</a></li>
-            <li><a title="Rentals" href="rentals.html">Rentals</a></li>
-            <li><a title="Tours" href="tours.html">Tours</a></li>
-            <li><a class="active" title="Reservations" href="reservations.html">Reservations</a></li>
-            <li><a title="Contact Us" href="contact.html">Contact Us</a></li>
-         </ul>
-      </nav>
-   </header>
-   <form method="POST" action="confirmation.html">
-   <main id="main_reservations">
-      
-      <button id="btnChart" type="button" class="button3" onclick="showChart()">View Pricing Chart</button>
-      <div id="chart"></div>
-      <h2>Rental Form</h2>
-      <div class="form-group">
-         <label for="date">Rental Date</label>
-         <input id="date" type="date" class="input-control" />
-      </div>
-     
-      <div class="form-group">   
-         <label for="numdays">Duration</label>
-         <select id="numdays" class="input-control">
-            <option>Half Day</option>
-            <option>1 Day</option>
-            <option>2 Days</option>
-            <option>3 Days</option>
-            <option>4 Days</option>
-            <option>5 Days</option>
-            <option>6 Days</option>
-            <option>1 Week</option>
-         </select>
-       </div>
-       <div class="form-group">
-         <label for="rental_type">Rental Type</label>
-         <select id="rental_type" class="input-control">
-            <option>Honda Metro Scooter</option>
-            <option>Honda Dio Scooter</option>
-            <option>Honda PCX150 Scooter</option>
-            <option>Honda Pioneer ATV</option>
-            <option>Jeep Wrangler - 4 door with a/c </option>
-            <option>Jeep Wrangler 2 door</option>
-         </select>
-      </div>
-      <div class="form-group">
-         <label for="first_name">First Name</label>
-         <input type="text" id="first_name" class="input-control" />
-      </div>
-     
-      <div class="form-group">
-         <label for="last_name" class="right-inline">Last Name</label>
-         <input id="last_name" type="text" class="input-control" />
-       </div>
-     
-       <div class="form-group">
-         <label for="email">Email</label>
-         <input id="email" type="text" class="input-control" />
-       </div>
-       <div class="form-group">
-         <label for="phone_number" class="right-inline">Phone Number</label>
-         <input id="phone_number" type="text" class="input-control" />
-       </div>       
-
-       <div class="form-group">
-         <label for="state_province">State/Province</label>
-         <input id="state_province" type="text" class="input-control" />
-       </div>
-       <div class="form-group">
-         <label for="country" class="right-inline">Country</label>
-         <input id="country" type="text" class="input-control" />
-       </div>       
-
-       <div class="form-group">
-         <label for="cruise_line">Cruise Line</label>
-         <input id="cruise_line" type="text" class="input-control" />
-       </div>
-       <div class="form-group">
-         <label for="comments">Comments</label>
-         <input id="comments" type="text" class="input-control" />
-       </div>
-
-       
-      <div id="agreement">
-         <h2>Rental Agreement</h2>
-         <h3>General</h3>
-         <p><span>&#10003;</span>  I authorize a deposit equal to $50.00 USD plus local state tax to be charged to my credit card for each scooter rented and the final amount due 
-            24 hours before equipment rental begins. I accept that I am solely responsible for the vehicle during the rental term, as well as any damage or loss that occurs while 
-            it is in my possession, and that I have supplied accurate height and weight information to ensure proper usage and performance of the equipment I am renting. I may cancel 
-            my rental and get a full refund if I phone Scoots at 1.800.333.0594 and get a cancellation confirmation number up to 48 hours before my rental is scheduled to arrive. 
-            I accept that I am only eligible for free delivery if I hire a scooter for two (2) days or longer, and that delivery can be to a hotel, Airbnb, or private property in Cozumel. </p>
-            <p><span>&#10003;</span>  I hereby declare that nobody under the age of 12 will be permitted to ride on the scooters. I am aware that the rental fee does not include 
-               the cost of petrol.
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Reserve your scooter or Jeep before they are gone.">
+    <meta name="keywords" content="Reservations, reserve, scooter, Jeep, agreement" />
+    <title>Scoots - Reservations</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div id="logo">
+          <picture>
+            <source media="(max-width: 500px)" srcset="images/logo_small.png">
+            <source media="(max-width: 1000px)" srcset="images/logo_medium.png">
+            <img src="images/logo_large.png" alt="Scoots Logo">
+          </picture>
+        </div>
+        <nav>
+          <button onclick="toggle_nav()" id="menu_button">
+            <span id="ham" class="fade_in">&#9776; Menu</span>
+            <span id="close" class="fade_out">&Otimes;</span>
+          </button>
+          <ul id="main_nav" class="nav_hidden">
+            <li>
+              <a title="Home" href="index.html">Home</a>
+            </li>
+            <li>
+              <a title="Rentals" href="rentals.html">Rentals</a>
+            </li>
+            <li>
+              <a title="Tours" href="tours.html">Tours</a>
+            </li>
+            <li>
+              <a class="active" title="Reservations" href="reservations.html">Reservations</a>
+            </li>
+            <li>
+              <a title="Contact Us" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <form method="POST" action="confirmation.html">
+        <main id="main_reservations">
+          <button id="btnChart" type="button" class="button3" onclick="showChart()">View Pricing Chart</button>
+          <div id="chart"></div>
+          <h2>Rental Form</h2>
+          <div class="form-group">
+            <label for="date">Rental Date</label>
+            <input id="date" type="date" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="numdays">Duration</label>
+            <select id="numdays" class="input-control">
+              <option>Half Day</option>
+              <option>1 Day</option>
+              <option>2 Days</option>
+              <option>3 Days</option>
+              <option>4 Days</option>
+              <option>5 Days</option>
+              <option>6 Days</option>
+              <option>1 Week</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rental_type">Rental Type</label>
+            <select id="rental_type" class="input-control">
+              <option>Honda Metro Scooter</option>
+              <option>Honda Dio Scooter</option>
+              <option>Honda PCX150 Scooter</option>
+              <option>Honda Pioneer ATV</option>
+              <option>Jeep Wrangler - 4 door with a/c </option>
+              <option>Jeep Wrangler 2 door</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="right-inline">Last Name</label>
+            <input id="last_name" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="phone_number" class="right-inline">Phone Number</label>
+            <input id="phone_number" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="state_province">State/Province</label>
+            <input id="state_province" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="country" class="right-inline">Country</label>
+            <input id="country" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="cruise_line">Cruise Line</label>
+            <input id="cruise_line" type="text" class="input-control" />
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <input id="comments" type="text" class="input-control" />
+          </div>
+          <div id="agreement">
+            <h2>Rental Agreement</h2>
+            <h3>General</h3>
+            <p>
+              <span>&#10003;</span> I authorize a deposit equal to $50.00 USD plus local state tax to be charged to my credit card for each scooter rented and the final amount due 24 hours before equipment rental begins. I accept that I am solely responsible for the vehicle during the rental term, as well as any damage or loss that occurs while it is in my possession, and that I have supplied accurate height and weight information to ensure proper usage and performance of the equipment I am renting. I may cancel my rental and get a full refund if I phone Scoots at 1.800.333.0594 and get a cancellation confirmation number up to 48 hours before my rental is scheduled to arrive. I accept that I am only eligible for free delivery if I hire a scooter for two (2) days or longer, and that delivery can be to a hotel, Airbnb, or private property in Cozumel.
             </p>
-
-         <p><span>&#10003;</span>  I agree to be solely responsible for any damages to the mobility scooter unit, including accessories such as the battery charger and key, 
-            while it is in my possession; my possession begins when the rental equipment is delivered and ends when the rental equipment is returned to Scoots. I accept that 
-            I am solely liable for any vandalism or equipment loss, and I give Scoots permission to charge any damages to the credit card I gave for the rental. I understand 
-            and agree that Scoots may charge my credit card a $80 cost for a lost battery charger and a $10 fee for a lost key. If I request that Scooter Vacations supply a 
-            replacement battery charger or key, or if I request that more batteries be delivered because I have not properly charged my original batteries after each usage.</p>
-
-
-         <h3>Waiver of Liability and Hold Harmless Agreement</h3>
-
-         <p><span>&#10003;</span>  I hereby relinquish, waive, and dismiss my right to seek medical reimbursement or legal action against Scoots for any bodily harm or property 
-            damage stemming from my use of Scoots' rental equipment. I agree to be the only person driving the rental scooter, and I accept full responsibility for anybody who 
-            sits on, stands on, rides on, or operates the mobility scooter with or without my permission.</p>
-
-         <p><span>&#10003;</span> I agree to stop using it immediately once I discover or suspect a problem with the rented equipment. I hereby hold Scoots harmless from any 
-            legal action arising from my rental or use of the equipment, including but not limited to physical injury to myself or others or property damage caused by Scoots' 
-            rental equipment.</p>
-
-         <p><span>&#10003;</span>  While I am living, this Release and Hold Harmless Agreement will bind my family, and if I am deceased, this Release and Hold Harmless Agreement 
-            will bind my heirs, assigns, and personal representative. Scoots, independent contractors, officers, agents, employees, and affiliates are thus released, waived, 
-            discharged, and covenanted not to sue.</p>
-      </div>
-      <div id="complete_reservation_div" class="center"><button class="button" >Complete My Reservation</button></div>
-   </main>
-</form>
-<footer>
-   <!-- Contact Info -->
-      <div class="contact">
-         <h3>Contact Information</h3>
-         <p>&#128205; 1st Ave CALLE 14 NTE<br>
-            Playa del Carmen, Mexico</p>
-         <p>&#9993; Scoots.me@po.com</p>
-         <p>&#9742; (+1) 2345 6789</p>
-     
-         <!-- Social Media Links -->
-      <div id="social">
-         <a href="http://www.facebook.com" target="_blank">
-           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
-         </a>
-         <a href="http://www.twitter.com" target="_blank">
-           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
-         </a>
-         <a href="http://www.youtube.com" target="_blank">
-           <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
-         </a>
-       </div>
-   
-      <!-- Resources & Others -->
-      <div class="resources">
-         <p>
-            &#169; 2021 - Juffair, Bahrain<br> By <a
-                href="https://daenawesome.github.io/">Daen Antule</a> - Web
-            Developer<br>
-            Last updated: <span id="date"></span>
-            <script src="js/lastModified.js"></script><br>
-            Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a>
-            & Featured <a href="resources.html">Resources</a>
-            <br><a href="plan/index.html">Site Plan</a>
-        </p>
-      </div>
+            <p>
+              <span>&#10003;</span> I hereby declare that nobody under the age of 12 will be permitted to ride on the scooters. I am aware that the rental fee does not include the cost of petrol.
+            </p>
+            <p>
+              <span>&#10003;</span> I agree to be solely responsible for any damages to the mobility scooter unit, including accessories such as the battery charger and key, while it is in my possession; my possession begins when the rental equipment is delivered and ends when the rental equipment is returned to Scoots. I accept that I am solely liable for any vandalism or equipment loss, and I give Scoots permission to charge any damages to the credit card I gave for the rental. I understand and agree that Scoots may charge my credit card a $80 cost for a lost battery charger and a $10 fee for a lost key. If I request that Scooter Vacations supply a replacement battery charger or key, or if I request that more batteries be delivered because I have not properly charged my original batteries after each usage.
+            </p>
+            <h3>Waiver of Liability and Hold Harmless Agreement</h3>
+            <p>
+              <span>&#10003;</span> I hereby relinquish, waive, and dismiss my right to seek medical reimbursement or legal action against Scoots for any bodily harm or property damage stemming from my use of Scoots' rental equipment. I agree to be the only person driving the rental scooter, and I accept full responsibility for anybody who sits on, stands on, rides on, or operates the mobility scooter with or without my permission.
+            </p>
+            <p>
+              <span>&#10003;</span> I agree to stop using it immediately once I discover or suspect a problem with the rented equipment. I hereby hold Scoots harmless from any legal action arising from my rental or use of the equipment, including but not limited to physical injury to myself or others or property damage caused by Scoots' rental equipment.
+            </p>
+            <p>
+              <span>&#10003;</span> While I am living, this Release and Hold Harmless Agreement will bind my family, and if I am deceased, this Release and Hold Harmless Agreement will bind my heirs, assigns, and personal representative. Scoots, independent contractors, officers, agents, employees, and affiliates are thus released, waived, discharged, and covenanted not to sue.
+            </p>
+          </div>
+          <div id="complete_reservation_div" class="center">
+            <button class="button">Complete My Reservation</button>
+          </div>
+        </main>
+      </form>
+      <footer>
+        <!-- Contact Info -->
+        <div class="contact">
+          <h3>Contact Information</h3>
+          <p>&#128205; 1st Ave CALLE 14 NTE <br> Playa del Carmen, Mexico </p>
+          <p>&#9993; Scoots.me@po.com</p>
+          <p>&#9742; (+1) 2345 6789</p>
+          <!-- Social Media Links -->
+          <div id="social">
+            <a href="http://www.facebook.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_facebook.png?v=1632739463584" alt="facebook icon">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_twitter.png?v=1632739467819" alt="twitter icon">
+            </a>
+            <a href="http://www.youtube.com" target="_blank">
+              <img src="https://cdn.glitch.com/d07a5e7a-3d33-4dc5-a910-77e13810940d%2Fa1a7d992-1c34-42ad-984a-c6dc42449471_youtube.png?v=1632739472142" alt="youtube icon">
+            </a>
+          </div>
+          <!-- Resources & Others -->
+          <div class="resources">
+            <p> &#169; 2021 - Juffair, Bahrain <br> By <a href="https://daenawesome.github.io/">Daen Antule</a> - Web Developer <br> Last updated: <span id="date"></span>
+              <script src="js/lastModified.js"></script>
+              <br> Weather by <a href="https://openweathermap.org/city/3530103">OpenWeatherMaps</a> & Featured <a href="resources.html">Resources</a>
+              <br>
+              <a href="plan/index.html">Site Plan</a>
+            </p>
+          </div>
       </footer>
-</div>
- <script src="js/script.js"></script>
-   <script>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
       WebFont.load({
         google: {
-          families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
+          families: ['Nanum Gothic', 'Balsamiq Sans', 'Permanent Marker']
         }
       });
       buildChart();
       loadRentalTypes();
     </script>
-</body>
-</html>  
+  </body>
+</html>

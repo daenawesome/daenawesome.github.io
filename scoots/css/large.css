@@ -1,148 +1,137 @@
-@media only screen and (min-width: 1000px) { 
-
-
-
-    main {
-       grid-template-columns: 1fr 1fr 1fr;
-    }
-    nav {
-      font-size: 2em;
-  
-    }
-    #cozumel_forecast, #pdc_forecast {
-       grid-column: 1/4;
-    }
-    #div_call_to_action {
-       grid-column: 1/4;
-    }
-    #div_image_rotate {
-       position: relative;
-       left: 33%;
-    }
- 
-    #home_welcome {
-       padding-top: 1em;
-       font-size: 1.2em;
-       grid-column: 3;
-       position: relative;
-       left: -33%;
-       line-height: 1.5em;
-       box-shadow: 5px 5px 10px #f9c629;
-    }
-    #locations {
-       grid-column: 1/4;
-    }
-    /* #logo {
+@media only screen and (min-width: 1000px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	nav {
+		font-size: 2em;
+	}
+	#cozumel_forecast,
+	#pdc_forecast {
+		grid-column: 1/4;
+	}
+	#div_call_to_action {
+		grid-column: 1/4;
+	}
+	#div_image_rotate {
+		position: relative;
+		left: 33%;
+	}
+	#home_welcome {
+		padding-top: 1em;
+		font-size: 1.2em;
+		grid-column: 3;
+		position: relative;
+		left: -33%;
+		line-height: 1.5em;
+		box-shadow: 5px 5px 10px #f9c629;
+	}
+	#locations {
+		grid-column: 1/4;
+	}
+	/* #logo {
       display: flex;
       justify-content: center;
     } */
-    /* #logo {
+	/* #logo {
        width:900px;
        overflow: hidden;
        height: 500px;
     } */
-    #cWeather {
-       grid-column: 3;
-       position: relative;
-       left: -33%;
-       margin-top: 20px;
-       line-height: 1.7em;
-    }
-    #pdcWeather {
-       line-height: 1.7em;
-       grid-column: 1;
-       position: relative;
-       left: 33%;
-       margin-top: 20px;
-    }   
-    #we_rent {
-       grid-column: 1/4;
-    }
-    /* Rentals */
-    #main_rentals h2 {
-       grid-column: 1/4;
-       margin: 20px 20px 5px 20px;
-    }
-    /* #main_rentals li {
+	#cWeather {
+		grid-column: 3;
+		position: relative;
+		left: -33%;
+		margin-top: 20px;
+		line-height: 1.7em;
+	}
+	#pdcWeather {
+		line-height: 1.7em;
+		grid-column: 1;
+		position: relative;
+		left: 33%;
+		margin-top: 20px;
+	}
+	#we_rent {
+		grid-column: 1/4;
+	}
+	/* Rentals */
+	#main_rentals h2 {
+		grid-column: 1/4;
+		margin: 20px 20px 5px 20px;
+	}
+	/* #main_rentals li {
        line-height: 2em;
     } */
- 
-    #rentals {
-       grid-column: 1 / 4;
-       grid-template-columns: 1fr 1fr 1fr;
-    }
-    #rental_conditions {
-       grid-column: 1/4;
-    }   
- 
-    /* Contact */
-    #main_contact h1 {
-       grid-column: 1 / 4;
-       font-size: 4em;
-       text-shadow: 5px 5px 5px #fff;
-       color: #1F3A93;
-       margin: 20px
-    }
-    #contact_intro {
-       grid-column: 2 / 4;
-       margin: 0 20px 0;
-    }
-    #send_message_div {
-       grid-column: 2/4;
-       margin-bottom: 30px;
-       font-size: 2em;
-    }
- 
-    /* Reservations */
-    #agreement {
-       grid-column: 1/4;
-    }  
-     
-    #btnChart {
-       grid-column: 1/4;
-       width: 30%;
-       margin-left: 35%;
-       margin-bottom: 40px;
-    }
-    #complete_reservation_div {
-       grid-column: 1/4;
-    }
-    #chart {
-       grid-column: 1/4;
-       margin-bottom: 20px;
-       margin:20px 20px 20px 250px;
-       display: none;
-     }
-
-    /* Confirmation */
-  
-  #main_confirmation {
-   display:block;
-   text-align: left;
- }
- #main_confirmation p {
-   margin: 10px 150px 30px;
-   line-height: 2em;
- }
- #main_confirmation h1 {
-   text-align: center;
-   padding-top: 20px;
- }
- #main_confirmation label{
-   font-size: 1.5em;
-font-weight: bold;
-   padding-left:  3em ;
- }
- #payment_type {
-   margin-right: 20px;
-   text-align: center;
-   /* display: flex;
+	#rentals {
+		grid-column: 1 / 4;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#rental_conditions {
+		grid-column: 1/4;
+	}
+	/* Contact */
+	#main_contact h1 {
+		grid-column: 1 / 4;
+		font-size: 4em;
+		text-shadow: 5px 5px 5px #fff;
+		color: #1F3A93;
+		margin: 20px
+	}
+	#contact_intro {
+		grid-column: 2 / 4;
+		margin: 0 20px 0;
+	}
+	#send_message_div {
+		grid-column: 2/4;
+		margin-bottom: 30px;
+		font-size: 2em;
+	}
+	/* Reservations */
+	#agreement {
+		grid-column: 1/4;
+	}
+	#btnChart {
+		grid-column: 1/4;
+		width: 30%;
+		margin-left: 35%;
+		margin-bottom: 40px;
+	}
+	#complete_reservation_div {
+		grid-column: 1/4;
+	}
+	#chart {
+		grid-column: 1/4;
+		margin-bottom: 20px;
+		margin: 20px 20px 20px 250px;
+		display: none;
+	}
+	/* Confirmation */
+	#main_confirmation {
+		display: block;
+		text-align: left;
+	}
+	#main_confirmation p {
+		margin: 10px 150px 30px;
+		line-height: 2em;
+	}
+	#main_confirmation h1 {
+		text-align: center;
+		padding-top: 20px;
+	}
+	#main_confirmation label {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-left: 3em;
+	}
+	#payment_type {
+		margin-right: 20px;
+		text-align: center;
+		/* display: flex;
    justify-content: space-between; */
- }
- #payment_type .button {
-   margin-bottom: 30px;
-   max-width: 50%;
-   font-size: 2em;
- }
- 
- }
+	}
+	#payment_type .button {
+		margin-bottom: 30px;
+		max-width: 50%;
+		font-size: 2em;
+	}
+}
