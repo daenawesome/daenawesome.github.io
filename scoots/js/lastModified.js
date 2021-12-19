@@ -1,1 +1,1 @@
-document.getElementById("date").innerHTML = document.lastModified;
+document.getElementById("date1").innerHTML = document.lastModified;

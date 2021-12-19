@@ -415,8 +415,8 @@ h1#we_rent {
 }
 
 #agreement p {
-	line-height: .6em;
-	margin: 20px 70px 20px;
+	line-height: 1em;
+	margin: 20px 20px 20px;
 }
 
 #agreement span {
