@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    main {
+        max-width: 80%;
+    }
+
+    /* Color Scheme Styles */
+    .color-img {
+        float: left;
+        padding: 15px;
+    }
+
+    #color-scheme p:first-of-type {
+        margin-top: 45px;
+    }
+
+    .color-examples {
+        margin-top: 235px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 40px;
+    }
+}

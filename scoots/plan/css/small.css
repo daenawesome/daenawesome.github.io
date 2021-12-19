@@ -1,0 +1,230 @@
+/* https://coolors.co/0d0221-677db7-467599-1d3354-fdfffc */
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nanum+Gothic&family=Permanent+Marker&display=swap');
+
+
+/* General Styles */
+html {
+    height: fit-content;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #677db7;
+    max-width: 425px;
+    font-family: 'Playfair Display', serif;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    list-style: none;
+    font-size: 1.3em;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: white;
+    background-color: #467599;
+}
+
+#navigation a.active {
+    background-color: rgba(0, 0, 0, .55);
+    color: white;
+    /* border-bottom: 5px solid black; */
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+body {
+    font-family:  'Nanum Gothic', sans-serif;
+    height: 100%;
+    background-color: #FDFFFC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Permanent Marker', cursive;
+    color: #1F3A93;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .7em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    /* margin: 0 auto; */
+    background-color: #677db7;
+    color: #0d0221;
+    font-family: 'Playfair Display', serif;
+    clear: both;
+    text-align: center;
+    padding-bottom: 10px;
+}
+    
+
+
+
+footer a {
+    color: #000411;
+}
+
+footer a:hover {
+    color: #FDFFFC;
+}
+
+
+footer p {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+button {
+    background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.underline {
+    border-bottom: #467599 solid 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+.logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 40%;
+        max-width: 100%;
+        height: auto;
+}
+
+
+
+
+
+
+
+/* Color Scheme Styles */
+.color-img {
+    max-width: 100%;
+}
+
+.color-examples h1 {
+    text-align: left;
+}
+
+.color-examples p {
+    background: linear-gradient(0deg, rgba(50, 231, 200,1) 0%, rgba(49,110,244,1) 100%);
+    color: white;
+    padding: 15px;
+    max-width: 400px;
+    max-height: fit-content;
+}
+
+
+
+
+
+
+
+/* Typography styles */
+#typography-p {
+    text-align: center;
+}
+
+.typography-grid {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.view {
+    margin: 20px;
+    text-align: center;
+}
+
+.view img {
+/* display: flex;  */
+align-content: center; 
+}
