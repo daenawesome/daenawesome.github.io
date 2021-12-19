@@ -82,6 +82,10 @@
 	#agreement {
 		grid-column: 1/4;
 	}
+	#agreement p {
+		line-height: 1em;
+		margin: 20px 130px 20px;
+	}
 	#btnChart {
 		grid-column: 1/4;
 		width: 50%;
