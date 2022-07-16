@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+    background-image: url(background-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    background-attachment: fixed;
+    /* animation: backgroundColor 40s linear infinite;  */
+}
+
+
+@mixin sidebar {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 72px 0px 16px 0px;
+    padding-left: calc(88px - 1vw);
+    padding-right: calc(88px - 1vw);
+    margin-right: 24px;
+    margin-top: 32px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: rgba(247, 179, 52, 0.75);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    
+}
+
+@mixin pagewraps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    padding-top: 48px;
+    padding-left: calc(240px - 1vw);
+    padding-right: calc(240px - 1vw);
+}
+
+
+@mixin cardContents {
+    margin: 16px 24px 48px 0;
+    padding: 32px 32px 20px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+//comment
+@mixin backgrounds {
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.explanation {
+    @include cardContents();
+}
+
+.explanation a {
+    color: #EFEFEF;
+    font-weight: 600;
+}
+
+.participation {
+    @include cardContents();
+}
+
+.participation a {
+    color: #EFEFEF;
+    font-weight: 600;
+}
+
+.benefits {
+    @include cardContents();
+}
+
+.requirements {
+    @include cardContents();
+}
+
+.requirements a {
+    color: #EFEFEF;
+    font-weight: 600;
+}
+
+#zen-supporting {
+    margin: 48px 0 0;
+    order: 2;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 20px 20px 0;
+}
+
+
+.sidebar{
+    @include sidebar();
+}
+
+ul {
+    list-style-type: none;
+    line-height: 24px;
+}
+
+
+@keyframes spin {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+
+li:hover {
+    list-style-image: url("https://img.icons8.com/fluency/25/000000/flower.png"); 
+}
+  
+  /************************** Slide Show **************************/
+  #zen-supporting {
+    height: 480px; /*slide show window size */
+    width: 1920px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+ #zen-supporting > * {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation: 300s autoplay2 infinite ease-in-out; /* Slide time 5min*/
+  }
+  
+  @keyframes autoplay2 {
+    0% { 
+      top: 100%;
+    }
+     2% { /*30s going up */
+        top: 0%;
+      } 
+     20% { /*55s stop */
+      top: 0%;
+    }
+     22% { /*5s go up up */
+      top: -100%;
+    }
+    100% {   /* stop */
+      top: -100%;
+    }
+  }
+  /* EXPLAIN */
+ #zen-supporting > *:nth-child(1) {
+    animation-delay: 0s;
+  }
+  /* PARTICIPATION */
+ #zen-supporting > *:nth-child(2) {
+    animation-delay: 60s;
+  }
+  /* BENEFITS */
+ #zen-supporting > *:nth-child(3) {
+    animation-delay: 120s;
+  }
+  /* REQUIREMENTS */
+  #zen-supporting > *:nth-child(4) {
+    animation-delay: 180s; 
+  }
+  /* FOOTER */
+  #zen-supporting > *:nth-child(5) {
+    animation-delay: 240s;
+  }
+
+
+/*************************** FOOTER PROPERTIES ***************************/
+footer {
+    margin: 80px 24px 0 0;
+    padding: 32px 32px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 1440px;
+    height: 80px;
+}
+
+footer a {
+    color: #EFEFEF;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 24px;
+}
+li:hover {
+    list-style-image: url("https://img.icons8.com/fluency/25/000000/flower.png"); 
+}
+  
+/*************************** Footer ICONS ***************************/
+footer a {
+    height: 50px;
+    width: 50px;
+    text-indent: 200%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.zen-validate-html {
+    background-image: url("https://img.icons8.com/nolan/64/html-5.png");
+    @include backgrounds();
+}
+
+.zen-validate-css {
+    background-image: url("https://img.icons8.com/nolan/64/css-filetype.png");
+    @include backgrounds();
+}
+
+.zen-license {
+    background-image: url("https://img.icons8.com/nolan/64/guarantee.png");
+    @include backgrounds();
+
+}
+
+.zen-accessibility {
+    background-image: url("https://img.icons8.com/external-bearicons-gradient-bearicons/64/000000/external-approved-approved-and-rejected-bearicons-gradient-bearicons-1.png");
+    @include backgrounds();
+}
+
+.zen-github {
+    background-image: url("https://img.icons8.com/nolan/64/github.png");
+    @include backgrounds();
+}
+
+
+@keyframes backgroundColor {
+    0% {filter: hue-rotate(0deg);}
+    50% {filter: hue-rotate(360deg);}
+    100% {filter: hue-rotate(0deg);}
+}
+
+.page-wrapper {
+    @include pagewraps();
+}
+
+
+.intro {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    max-width: 560px;
+    padding: 20px 52px 20px;
+}
+
+
+/*************************** PAD VIEW ***************************/
+@media screen and (max-width: 1080px) {
+    .page-wrapper::before {
+    background-image: none;
+    }
+    
+    .page-wrapper {
+    background-attachment: fixed;
+    }
+    * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    animation: none !important;
+    }
+
+    h1 {
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 28px;
+    }
+
+    .page-wrapper {
+    padding: 0 80px 0;
+    justify-content: center;
+    }
+
+    #zen-intro {
+    padding: 8px;
+    }
+
+    p {
+    padding: 0 32px 0;
+    }
+
+    .sidebar {
+    margin: 0;
+    padding: 16px;
+    }
+
+    #zen-supporting > * {
+    margin-top: 16px;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    }
+
+    #zen-supporting {
+    padding: 0;
+    height: auto !important;
+    width: auto !important;
+    position: relative !important;
+    overflow: visible !important;
+    }
+
+    footer {
+    margin: 16px 0 ;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    }
+
+    .extra1, .extra3 {
+        display: none;
+    }
+
+
+}
+
+
+/*************************** MOBILE ***************************/
+@media screen and (max-width: 700px) {
+  .page-wrapper {
+    padding: 0 16px 0;
+  }
+  .extra4 {
+        max-width: 100px;
+        max-height: 100px;
+        
+  }
+
+
+
+}
+
+
+
+h1 {
+    margin: 0 0 48px;
+    font-size: 48px;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    line-height: 24px;
+    padding: 0 80px 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+abbr {
+    font-weight: bold;
+}
+/*MOBILE  PADDING*/
+.intro p {
+    line-height: 24px;
+}
+
+@mixin mobile() {
+    padding-left: calc(10px - 1vw);
+    padding-right: calc(10px - 1vw);
+
+}
+
+.intro p{
+    @include mobile();
+}
+
+#zen-supporting p {
+    @include mobile();
+}
+
+
+
+
+
+/*************************** Links on hover color ***************************/
+a {
+    box-shadow: inset 0 0 0 0 #4089A3;
+    color: #4089A3;
+    margin: 0 -4px;
+    padding: 0 4px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+a:hover {
+    box-shadow: inset 0px 0px 0px 10px #4089A3;
+    color: white;
+  }
+
