@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Week 13: Assignement</title>
+<script>
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the countEvens function by calling it two times.
+    let count1 = countEvens(list1);
+    let count2 = countEvens(list2);
+
+    // Test the multiply function by calling it two times.
+    let mult1 = multiply(list1,3);
+    let mult2 = multiply(list2,2);
+
+    // Build a string to display to the user.
+    let output =
+            count1 + '<br>' +
+            count2 + '<br>' +
+            mult1 + '<br>' +
+            mult2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+
+
+/* function that counts and returns the number of even integers in an array. */
+function countEvens(list){
+    var sumEven = 0;
+    for (var i = 0; i < list.length; i++) {
+    if (list[i] % 2 === 0) {
+        sumEven++; // for every even numbers found, add 1
+    } 
+    }
+    return sumEven;  /* return the value */
+}
+
+/* function to multiply each element in an array by some value and to return the products in an array. */
+
+function multiply(list, multiplier){
+    var output = list.map(x => x * multiplier);  // this will multiply each number in array
+    return output; /* return the next value */
+}
+
+</script>
+</head>
+<body style="text-align: center">
+<header>
+      <h1>Arrays</h1>
+    </header>
+<!-- this will display the result from javascript function -->
+<div id="output"></div>
+
+<!--- this button will call the javascript function  -->
+<button value="Click me" onclick="test()">View</button> 
+
+<footer><br> &copy;2021 &bull; Daen Anutle &bull; BYU-Idaho &bull; CIT 160 </footer>
+</body>
+</html>

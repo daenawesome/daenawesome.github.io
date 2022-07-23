@@ -1,0 +1,216 @@
+body {
+  max-width: 400px;
+  margin: auto;
+  padding: 25px;
+}
+.cardone {
+  stroke: #fd0f65;
+  stroke-width: 5;
+  opacity: 1;
+}
+.stick {
+  fill: #e5ca9d;
+  stroke: #6b5344;
+  stroke-width: 5;
+}
+.icecreamtop {
+  fill: #6b5344;
+  stroke: #6b5344;
+  stroke-width: 5;
+}
+.vanilladrip {
+  fill: #f3e5ab;
+  stroke: #f3e5ab;
+  stroke-width: 5;
+}
+.star {
+  position: absolute;
+  transform: scale(0.5);
+}
+.star.s-1 {
+  top: 100px;
+  left: 80px;
+}
+.star.s-1 * {
+  fill: #fecc6d;
+  stroke: #f1a930;
+}
+.star.s-2 {
+  transform: scale(0.3);
+  top: 20px;
+  left: 170px;
+}
+.star.s-2 * {
+  fill: #f1a930;
+  stroke: #fecc6d;
+}
+.star.s-3 {
+  transform: scale(0.3);
+  top: 400px;
+  left: 150px;
+}
+.star.s-3 * {
+  fill: #fecc6d;
+  stroke: #f1a930;
+}
+.star.s-4 {
+  transform: scale(0.4);
+  top: 365px;
+  left: 95px;
+}
+.star.s-4 * {
+  fill: #fecc6d;
+  stroke: #f1a930;
+}
+.star.s-5 {
+  transform: scale(0.3);
+  top: 360px;
+  left: 200px;
+}
+.star.s-5 * {
+  fill: #f1a930;
+  stroke: #fecc6d;
+}
+.star.s-6 {
+  transform: scale(0.4);
+  top: 310px;
+  left: 255px;
+}
+.star.s-6 * {
+  fill: #f1a930;
+  stroke: #fecc6d;
+}
+.star.s-7 {
+  transform: scale(0.5);
+  top: 110px;
+  left: 250px;
+}
+.star.s-7 * {
+  fill: #fecc6d;
+  stroke: #f1a930;
+}
+.star.s-8 {
+  transform: scale(0.35);
+  top: 55px;
+  left: 270px;
+}
+.star.s-8 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-9 {
+  transform: scale(0.35);
+  top: 300px;
+  left: 50px;
+}
+.star.s-9 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-10 {
+  transform: scale(0.3);
+  top: 55px;
+  left: 25px;
+}
+.star.s-10 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-11 {
+  transform: scale(0.3);
+  top: 375px;
+  left: 260px;
+}
+.star.s-11 * {
+  fill: #fecc6d;
+  stroke: #fecc6d;
+}
+.star.s-12 {
+  transform: scale(0.3);
+  top: 200px;
+  left: 40px;
+}
+.star.s-12 * {
+  fill: #fecc6d;
+  stroke: #fecc6d;
+}
+.star.s-13 {
+  transform: scale(0.5);
+  top: 350px;
+  left: 120px;
+}
+.star.s-13 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-14 {
+  transform: scale(0.5);
+  top: 50px;
+  left: 100px;
+}
+.star.s-14 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-15 {
+  transform: scale(0.5);
+  top: 230px;
+  left: 245px;
+}
+.star.s-15 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-16 {
+  transform: scale(0.5);
+  top: 160px;
+  left: 60px;
+}
+.star.s-16 * {
+  fill: #fecc6d;
+  stroke: #fecc6d;
+}
+.star.s-17 {
+  transform: scale(0.3);
+  top: 200px;
+  left: 270px;
+}
+.star.s-17 * {
+  fill: #fecc6d;
+  stroke: #fecc6d;
+}
+.star.s-18 {
+  transform: scale(0.3);
+  top: 120px;
+  left: 40px;
+}
+.star.s-18 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-19 {
+  transform: scale(0.5);
+  top: 380px;
+  left: 30px;
+}
+.star.s-19 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.star.s-20 {
+  transform: scale(0.5);
+  top: 90px;
+  left: 180px;
+}
+.star.s-20 * {
+  fill: #f1a930;
+  stroke: #f1a930;
+}
+.wrapper {
+  position: relative;
+}
+#border {
+  fill: white;
+  stroke: black;
+  stroke-width: 6;
+}

@@ -1,0 +1,104 @@
+$color-white: white;
+$color-black: black;
+$color-grey: darkgrey;
+
+@mixin block($height, $width, $top-margin) {
+  display: block;
+  position: relative;
+  width: $width;
+  height: $height;
+  margin: $top-margin 0;
+  transition: all 500ms ease;
+}
+
+@mixin icon($direction, $rotation) {
+  transform: translate(200px, $direction) rotate($rotation);
+}
+
+@mixin nav($top, $left) {
+  @include block(100%, 260px, 0);
+  left: $left;
+  top: $top;
+  position: absolute;
+}
+
+.bar {
+  @include block(5px, 40px, 5px);
+  background-color: $color-grey;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.menu-icon {
+  @include block(auto, 40px, 15px);
+  cursor: pointer;
+
+  &:hover span {
+    background-color: $color-black;
+  }
+  &.open:hover span {
+    background-color: $color-white;
+  }
+}
+
+.open {
+  .bar-1 {
+    @include icon(10px, 45deg);
+  }
+  .bar-2 {
+    @include icon(0px, 45deg);
+    opacity: 0;
+  }
+  .bar-3 {
+    @include icon(-10px, -45deg);
+  }
+}
+
+.menu {
+  @include nav(0, -150px);
+}
+
+.list {
+  @include nav(0, 0);
+  opacity: 0.95;
+  background-color: $color-black;
+}
+
+ul {
+  margin-top: 60px;
+  padding-left: 60px;
+  list-style: none;
+  line-height: 2;
+  a {
+    text-decoration: none;
+    color: $color-grey;
+    font-size: 30px;
+    &:hover {
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-page {
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.move {
+    padding-left: 260px;
+    transition: all 500ms ease;
+}
+
+@media screen and (max-width: 700px) {
+    .move {
+        padding-left: 260px;
+        transition: all 500ms ease;
+        h1 {
+            font-size: calc(32px - 1vw);
+        }
+        p {
+            font-size: calc(16px - 1vw);
+        }
+    }
+}

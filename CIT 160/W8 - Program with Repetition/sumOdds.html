@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Sum Odd Calculator</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+      body {
+        background-color: #292929;
+        margin: 30px;
+      }
+
+      h1 {
+        font-family: 'Irish Grover', cursive;
+        font-size: 45px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 20px;
+        color: #ffa31a;
+        font-family: 'Irish Grover', cursive;
+      }
+
+      button {
+        background-color: #ffa31a;
+        border-radius: 23px;
+        color: black;
+        font-family: 'Irish Grover', cursive;
+        font-size: 25px;
+        padding: 5px 15px;
+        cursor: pointer;
+      }
+
+      #output {
+        font-family: 'Irish Grover', cursive;
+        font-size: 23px;
+        padding: 1em;
+        color: #fff;
+      }
+    </style>
+    <script>
+      /* Defining table for sumOdds.html
+ * Input: information inputed by the user waiting for processing
+ * Processing: where the inputed data/information being process for the user to get result
+through output
+ * Output: The user get his result through output.
+ */
+      // Function to Calculate Sum
+      function OddsCal() {
+        let sum = 0;
+        let N = parseInt(document.getElementById("NInputBox").value);
+        // applying (for loops) to provide solution to our problem;
+        for (let i = 1; i <= N; i += 2) sum += i;
+        document.getElementById('output').innerHTML = "Your input have been processed to be = " + sum;
+      }
+    </script>
+  </head>
+  <body style="text-align: center">
+    <h1>The Sum of All Odds</h1>
+    <!-- Users input/information and Display of output result -->
+    <p>Please Enter Integer Number: </p>
+    <input type="text" id="NInputBox" size="10">
+    <br>
+    <br>
+    <button type="button" onclick="OddsCal()">Press To Calculate </button>
+    <!-- div for output of Sum of Odds -->
+    <div id="output"></div>
+  </body>
+</html>

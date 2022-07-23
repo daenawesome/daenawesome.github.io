@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Loan Calculator</title>
+<script>
+    //Defining Table
+    //Input: principal, annual interest rate, years, payments/year, payments to date
+    //Processing: Compute payment and balance
+    //Output: Display computed payment and balance
+function doPayment(){
+let Principal = parseFloat(document.getElementById('principal').value);
+let Intrest = parseFloat(document.getElementById('intrest').value);
+let Years = parseFloat(document.getElementById('years').value);
+let Payments = parseFloat(document.getElementById('payments').value);
+let NumberPD = parseFloat(document.getElementById('NPD').value);
+let output =computePayment(Principal, Intrest, Years, Payments);
+document.getElementById('outputDiv1').innerHTML = "$" + output;
+}
+function computePayment(principal, annualRate, years, periodsPerYear){
+let r = annualRate / periodsPerYear;
+let n = periodsPerYear * years;
+let principalAmount = (principal*r)/(1-(1+r)**-n);
+principalAmount=principalAmount.toFixed(2);
+return principalAmount;
+}
+function doBalance(){
+let Principal = parseFloat(document.getElementById('principal').value);
+let Intrest = parseFloat(document.getElementById('intrest').value);
+let Years = parseFloat(document.getElementById('years').value);
+let Payments = parseFloat(document.getElementById('payments').value);
+let NumberPD = parseFloat(document.getElementById('NPD').value);
+let output2 =computeBalance(Principal, Intrest, Years, Payments, NumberPD);
+document.getElementById('outputDiv2').innerHTML = "$" + output2;
+}
+function computeBalance(principal, annualRate, years, periodsPerYear,
+numberOfPaymentPaidToDate){
+let r = annualRate / periodsPerYear;
+let p = computePayment(principal, annualRate, years, periodsPerYear);
+let payoffAmount = principal * (1+r)**numberOfPaymentPaidToDate-
+(p*((1+r)**numberOfPaymentPaidToDate-1))/r;
+payoffAmount=payoffAmount.toFixed(2);
+return payoffAmount;
+}
+</script>
+</head>
+<body>
+<h1>Loan calculator</h1>
+Annual borrowed (principal) <input type="text" id="principal">
+<br>
+<br>
+Annual intrest rate (example: 0.065) <input type="text" id="intrest" size=8>
+<br>
+<br>
+Number of years <input type="text" id="years" size=4>
+<br>
+<br>
+Payments per year <input type="text" id="payments" size=4>
+<br>
+<br>
+<button type="button" onclick="doPayment()">Compute payment</button>
+<br>
+<br>
+<div id="outputDiv1"></div>
+<br>
+<br>
+Number of payments maid to date <input type="text" id="NPD" size=4>
+<br>
+<br>
+<button type="button" onclick="doBalance()">Compute payoff amount</button>
+<br>
+<br>
+<div id="outputDiv2"></div>
+</body>
+</html>

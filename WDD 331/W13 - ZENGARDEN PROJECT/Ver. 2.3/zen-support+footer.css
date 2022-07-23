@@ -1,0 +1,201 @@
+/* icons from https://icons8.com/ (<a target="_blank" href="https://icons8.com/icon/59898/css-filetype">CSS Filetype icon by Icons8</a>)*/
+ 
+ /************************** Zen-support Properties **************************/
+.explanation {
+    margin: 16px 24px 48px 0;
+    padding: 32px 32px 20px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.explanation a {
+    color: #EFEFEF;
+}
+
+.participation {
+    margin: 16px 24px 48px 0;
+    padding: 32px 32px 20px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.participation a {
+    color: #EFEFEF;
+}
+
+.benefits {
+    margin: 16px 24px 48px 0;
+    padding: 32px 32px 20px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.requirements {
+    margin: 16px 24px 48px 0;
+    padding: 32px 32px 20px;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.requirements a {
+    color: #EFEFEF;
+}
+  
+#zen-supporting {
+    margin: 48px 0 0;
+    order: 2;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 20px 20px 0;
+}
+  
+  /************************** Slide Show **************************/
+  #zen-supporting {
+    height: 480px; /*slide show window size */
+    width: 1920px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+ #zen-supporting > * {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation: 300s autoplay2 infinite ease-in-out; /* Slide time 5min*/
+  }
+  
+  @keyframes autoplay2 {
+    0% { 
+      top: 100%;
+    }
+     2% { /*30s going up */
+        top: 0%;
+      } 
+     20% { /*55s stop */
+      top: 0%;
+    }
+     22% { /*5s go up up */
+      top: -100%;
+    }
+    100% {   /* stop */
+      top: -100%;
+    }
+  }
+  /* EXPLAIN */
+ #zen-supporting > *:nth-child(1) {
+    animation-delay: 0s;
+  }
+  /* PARTICIPATION */
+ #zen-supporting > *:nth-child(2) {
+    animation-delay: 60s;
+  }
+  /* BENEFITS */
+ #zen-supporting > *:nth-child(3) {
+    animation-delay: 120s;
+  }
+  /* REQUIREMENTS */
+  #zen-supporting > *:nth-child(4) {
+    animation-delay: 180s; 
+  }
+  /* FOOTER */
+  #zen-supporting > *:nth-child(5) {
+    animation-delay: 240s;
+  }
+
+
+/*************************** FOOTER PROPERTIES ***************************/
+footer {
+    margin: 80px 24px 0 0;
+    padding: 32px 32px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    box-shadow: 13px 13px 20px -10px rgba(0, 0, 0, 0.85); 
+    background: #116629;
+    opacity: .86;
+    color: #EFEFEF;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 1440px;
+    height: 80px;
+}
+
+footer a {
+    color: #EFEFEF;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 24px;
+}
+li:hover {
+    list-style-image: url("https://img.icons8.com/fluency/25/000000/flower.png"); 
+}
+  
+/*************************** Footer ICONS ***************************/
+footer a {
+    height: 50px;
+    width: 50px;
+    text-indent: 200%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.zen-validate-html {
+    background-image: url("https://img.icons8.com/nolan/64/html-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zen-validate-css {
+    background-image: url("https://img.icons8.com/nolan/64/css-filetype.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zen-license {
+    background-image: url("https://img.icons8.com/nolan/64/guarantee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zen-accessibility {
+    background-image: url("https://img.icons8.com/external-bearicons-gradient-bearicons/64/000000/external-approved-approved-and-rejected-bearicons-gradient-bearicons-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zen-github {
+    background-image: url("https://img.icons8.com/nolan/64/github.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}

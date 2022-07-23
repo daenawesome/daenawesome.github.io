@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Amount Due</title>
+    <script>
+      function findDate() {
+        var dayOfWeek = new Date().getDay();
+        //get user to input subtotal
+        var subtotal = document.getElementById("inputBox").value;
+        let rate;
+        let tax = 1.06
+        let total = 0
+        if ((dayOfWeek == 2 || dayOfWeek == 3) && subtotal > 50) {
+          rate = 0.1;
+        } else {
+          rate = 0
+        }
+        let discount = subtotal * rate;
+        //calculate total amount due
+        finaltotal = ((subtotal - discount) * tax);
+        document.getElementById('finalDiv').innerHTML = finaltotal.toFixed(2)
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Please enter SUBTOTAL</h2> Subtotal: <input type="text" id='inputBox' size="10">
+    <button type="button" onclick="findDate()">Compute</button>
+    <h2>Total Amount Due:</h2>
+    <div id="finalDiv"></div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@use 'quote-box';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: clamp(
+    var(--fluid-type-min, 1rem),
+    calc(1rem + var(--fluid-type-target, 3vw)),
+    var(--fluid-type-max, 1.3rem)
+  );
+}
+
+

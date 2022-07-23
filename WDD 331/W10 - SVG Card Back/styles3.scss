@@ -1,0 +1,233 @@
+body {
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+  }
+  
+  $pinkborder: #fd0f65;
+  $cone: #e5ca9d;
+  $chocolate: #6b5344;
+  $vanillafrost: #f3e5ab;
+  
+  .cardone {
+    stroke: $pinkborder;
+    stroke-width: 5;
+    opacity: 1;
+  }
+  .stick {
+    fill: $cone;
+    stroke: $chocolate;
+    stroke-width: 5;
+  }
+  .icecreamtop {
+    fill: $chocolate;
+    stroke: $chocolate;
+    stroke-width: 5;
+  }
+  .vanilladrip {
+    fill: $vanillafrost;
+    stroke: $vanillafrost;
+    stroke-width: 5;
+  }
+  
+  $starone: #fecc6d;
+  $startwo: #f1a930;
+  
+  .star {
+    position: absolute;
+    transform: scale(0.5);
+  
+    &.s-1 {
+      top: 100px;
+      left: 80px;
+      * {
+        fill: $starone;
+        stroke: $startwo;
+      }
+    }
+    &.s-2 {
+      transform: scale(0.3);
+      top: 20px;
+      left: 170px;
+      * {
+        fill: $startwo;
+        stroke: $starone;
+      }
+    }
+    &.s-3 {
+      transform: scale(0.3);
+      top: 400px;
+      left: 150px;
+      * {
+        fill: $starone;
+        stroke: $startwo;
+      }
+    }
+    &.s-4 {
+      transform: scale(0.4);
+      top: 365px;
+      left: 95px;
+      * {
+        fill: $starone;
+        stroke: $startwo;
+      }
+    }
+    &.s-5 {
+      transform: scale(0.3);
+      top: 360px;
+      left: 200px;
+      * {
+        fill: $startwo;
+        stroke: $starone;
+      }
+    }
+    &.s-6 {
+      transform: scale(0.4);
+      top: 310px;
+      left: 255px;
+      * {
+        fill: $startwo;
+        stroke: $starone;
+      }
+    }
+    &.s-7 {
+      transform: scale(0.5);
+      top: 110px;
+      left: 250px;
+      * {
+        fill: $starone;
+        stroke: $startwo;
+      }
+    }
+    &.s-8 {
+      transform: scale(0.35);
+      top: 55px;
+      left: 270px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+  
+    &.s-9 {
+      transform: scale(0.35);
+      top: 300px;
+      left: 50px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+  
+    &.s-10 {
+      transform: scale(0.3);
+      top: 55px;
+      left: 25px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+    &.s-11 {
+      transform: scale(0.3);
+      top: 375px;
+      left: 260px;
+      * {
+        fill: $starone;
+        stroke: $starone;
+      }
+    }
+    &.s-12 {
+      transform: scale(0.3);
+      top: 200px;
+      left: 40px;
+      * {
+        fill: $starone;
+        stroke: $starone;
+      }
+    }
+    &.s-13 {
+      transform: scale(0.5);
+      top: 350px;
+      left: 120px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+    &.s-14 {
+      transform: scale(0.5);
+      top: 50px;
+      left: 100px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+  
+    &.s-15 {
+      transform: scale(0.5);
+      top: 230px;
+      left: 245px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+    &.s-16 {
+      transform: scale(0.5);
+      top: 160px;
+      left: 60px;
+      * {
+        fill: $starone;
+        stroke: $starone;
+      }
+    }
+    &.s-17 {
+      transform: scale(0.3);
+      top: 200px;
+      left: 270px;
+      * {
+        fill: $starone;
+        stroke: $starone;
+      }
+    }
+    &.s-18 {
+      transform: scale(0.3);
+      top: 120px;
+      left: 40px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+    &.s-19 {
+      transform: scale(0.5);
+      top: 380px;
+      left: 30px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+    &.s-20 {
+      transform: scale(0.5);
+      top: 90px;
+      left: 180px;
+      * {
+        fill: $startwo;
+        stroke: $startwo;
+      }
+    }
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  #border {
+    fill: white;
+    stroke: black;
+    stroke-width: 6;
+  }
+  

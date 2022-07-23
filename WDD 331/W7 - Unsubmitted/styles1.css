@@ -1,0 +1,141 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+
+    /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.cart {
+    /* border-radius: 20px; */
+    /* background-color:  #e6ffff; */
+    max-width: fit-content;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.your {
+    font-size: 2.8vh;
+    padding-left: 0;
+    color: #9ba1a6;
+}
+
+.total-item {
+    /* padding-top: 5px; */
+    /* font-size: 3rem; */
+    /* background-color: #6c757d; */
+    /* border-radius: 30px / 20px; */
+    border-radius: 40%;
+    width: 20px;
+    /* height: 26px; */
+    padding: .1px 5px;
+   
+    background: #9ba1a6;
+    /* border: 5px solid #9ba1a6; */
+    color: #fff;
+    text-align: center;
+
+    font-size: 2.8vh;
+}
+
+.item {
+    border: .1px solid #cccccc;
+    border-radius: 3px; 
+}
+
+.item1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .1px solid #cccccc;
+    /* background-color: #fff; */
+}
+
+.amount, .promo-amount {
+    /* padding-top: 7px; */
+    /* font-size: 1rem; */
+    font-weight: 900;
+    /* font-size: 1.9vh; */
+    /* color: #9ba1a6; */
+}
+
+#item0 p {
+    color: #9ba1a6;
+}
+
+.product p, .promo p {
+    font-size: 1.5vh;
+}
+
+.product, .promo {
+    /* margin-top: 0px;
+    padding-top: 0px; */
+    line-height: .5;
+}
+
+
+#total1 {
+    border-bottom: none;
+}
+
+
+h1, h2, p {
+    padding: 0px 25px;
+    font-size: 2vh;
+}
+
+#promo-section {
+    color: #28a745;
+}
+
+.content {
+    padding: 25px;
+    /* background-color: #F3EFEE; */
+    display: block;
+}
+
+
+input {
+    /* padding: 0;
+    margin: 0;
+    color: #28a745; */
+    padding: 3px;
+    border: none;
+}
+
+.input-code + .code-submit{
+    margin: 0;
+    /* border:1px solid #a9a9a9; */
+    /* border-left:0px; */
+    height:26px;
+    /* border-radius: 0; */
+    padding: 5px;
+}
+
+.code-submit {
+    color: #fff;
+    background-color: #9ba1a6;
+
+
+}
+
+.promo-code {
+    border: .5px solid #9ba1a6;
+    width: fit-content;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.promo-wrapper {
+    border: .5px solid #9ba1a6;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+}

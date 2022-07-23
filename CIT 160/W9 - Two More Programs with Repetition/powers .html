@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+ 	<head>
+ 		<meta charset = "utf-8">
+ 		<title>Powers of Two</title>
+ 		<script>
+ 			function powers() {
+			 /* Defining Table
+			 Input: none
+			 Processing: determine powers of two from 0-31 inclusive
+			 Output: display results
+			 */
+	 		let message = ""
+ 			for (let i = 0; i <= 31; i++) {
+ 				message += Math.pow(2,i) + "<br>";
+ 			}
+			document.getElementById('powerDiv').innerHTML = message;
+ 			}
+ 		</script>
+	</head>
+ <body>
+ 	<h2>Powers Of Two!</h2>
+ 	<button type = "button" onClick = "powers()">Show the Powers of Two</button>
+ 	<div id = "powerDiv">
+	</div>
+ </body>
+</html>

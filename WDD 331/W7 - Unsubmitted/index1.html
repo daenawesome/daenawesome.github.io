@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Building a Simple Component by Daen Antule</title>
+	<link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    
+<div class="content">
+    <div class="cart">
+        <div id="title" class="title">
+            <h1 class="your">Your cart</h1>
+            <h1 class="total-item">3</h1>
+        </div>
+
+        <div class="item">
+            <div class="item1" id="item0">
+                <div class="product">
+                    <h2>Product name</h2>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="amount">
+                    <p>$12</p>
+                </div>
+            </div>
+
+            <div class="item1" id="item0">
+                <div class="product">
+                    <h2>Second product</h2>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="amount">
+                    <p>$8</p>
+                </div>
+            </div>
+
+            <div class="item1" id="item0">
+                <div class="product">
+                    <h2>Third item</h2>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="amount">
+                    <p>$5</p>
+                </div>
+            </div>
+
+            <div class="item1" id="promo-section">
+                <div class="promo">
+                    <h2>Promo code</h2>
+                    <p>EXAMPLECODE</p>
+                </div>
+
+                <div class="promo-amount">
+                    <p>-$5</p>
+                </div>
+            </div>
+
+            <div class="item1" id="total1">
+                <div class="total">
+                    <h2>Total (USD)</h2>
+                </div>
+
+                <div class="amount">
+                    <p>$20</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="promo-wrapper">
+        <div class="promo-code">
+            <!-- <form action="/url" method="GET">
+                <input class="input-code" type="text" placeholder="Promo Code">
+                <button class="btn">Redeem</button>
+            </form> -->
+            <!-- <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> -->
+                <form action="/url" method="GET">
+                <label>
+                    <!-- <span class="screen-reader-text">Search for:</span> -->
+                    <input type="text" class="input-code" placeholder="Promo Code" size="14"/><input type="submit" class="code-submit" value="Redeem" />
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

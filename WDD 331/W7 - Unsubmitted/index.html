@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Building a Simple Component by Daen Antule</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<div class="wrap cf">
+    <h1 class="projTitle">Building a Simple Component <span>Shopping Cart</span></h1>
+    <div class="heading cf">
+      <h1>Your Cart</h1>
+      <a href="#" class="continue">Continue Shopping</a>
+    </div>
+    <div class="cart">
+      <ul class="cartWrap">
+        <li class="items odd">
+          
+      <div class="infoWrap"> 
+          <div class="cartSection">
+            <h3>Product Name</h3>
+            <p class="itemNumber">Brief description</p>
+            
+          
+             <p>  x $5.00</p>
+          
+            <!-- <p class="stockStatus"> In Stock</p> -->
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        </li>
+        <li class="items even">
+          
+         <div class="infoWrap"> 
+          <div class="cartSection">
+           
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+             <p> <input type="text"  class="qty" placeholder="5"/> x $5.00</p>
+          
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        <li class="items even">
+         <div class="infoWrap"> 
+          <div class="cartSection info">
+               
+
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+            <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+          
+            <p class="stockStatus"> In Stock</p>
+            
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+      
+              <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+           </div>
+           <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+        </li>
+        
+        
+        <!--<li class="items even">Item 2</li>-->
+   
+      </ul>
+    </div>
+    
+    <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+    <a href="#" class="btn"></a></div>
+    
+    <div class="subtotal cf">
+      <ul>
+        <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+        
+            <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+        
+              <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
+              <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+        <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+      </ul>
+    </div>
+  </div>
+  

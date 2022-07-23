@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+ <head>
+ 	<meta charset = "utf-8">
+ 	<title>Five Times Table</title>
+ 	<script>
+ 		function fiveTimes() {
+		 /* Defining Table
+		 Input: None
+		 Processing: print the five times table between 1-12 inclusive
+		 Output: Five times table shown
+		 */
+		 let message = "";
+		 for (let i = 1; i <= 12; i++) {
+		 let mult = 5;
+		 let table = 5 * i;
+		 message += mult + "*" + i + "=" + table + "<br>";
+	     }
+	     document.getElementById('fiveDiv').innerHTML = message;
+	}
+ 	</script>
+ </head>
+ <body>
+ 	<h1>Five Times Table</h1>
+ 	<button type = "button" onClick = "fiveTimes()">Display the Five Times Table!</button>
+ 	<div id = "fiveDiv"></div>
+ </body>
+</html>

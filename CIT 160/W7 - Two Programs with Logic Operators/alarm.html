@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>To Sleep Or Not to Sleep</title>
+    <script>
+      function determine() {
+        var now = new Date();
+        var month = now.getMonth();
+        var dayOfMonth = now.getDate();
+        var dayOfWeek = now.getDay();
+        var sleep;
+        if (month == 0 && dayOfMonth == 1) {
+          sleep = "Nah, Go and Sleep in.";
+        } else if (month == 6 && dayOfMonth == 4) {
+          sleep = "Nah, Go and Sleep in.";
+        } else if (month == 11 && dayOfMonth == 25) {
+          sleep = "Nah, Go and Sleep in.";
+        } else if (dayOfWeek == 6 || dayOfWeek == 0) {
+          sleep = "Nah, Go and Sleep in.";
+        } else {
+          sleep = "Get up!!!";
+        }
+        document.getElementById('finalDiv').innerHTML = sleep;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Do I sleep IN or NOT?</h2>
+    <button type="button" onclick="determine()">Find Out</button>
+    <div id="finalDiv"></div>
+  </body>
+</html>

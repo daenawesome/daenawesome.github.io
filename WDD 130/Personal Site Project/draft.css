@@ -1,0 +1,57 @@
+
+body {
+    width: 100%;
+    background: #e2e2e2;
+  }
+  
+  .wrapper {
+    padding-top: 100px;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-element {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    display: block;
+    height: 98%;
+    width: 98%;
+    margin: auto;
+    align-self: center;
+  
+    z-index: 1;
+    background-color: none;
+  }
+  
+  .border {
+    position: absolute;
+    display: block;
+    top: -50%;
+    left: -50%;
+    z-index: -9;
+    display: block;
+    height: 200%;
+    width: 200%;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    background: linear-gradient(to right, #fff 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #fff 100%);
+    background-size: 200% auto;
+    
+    animation: shine 3s linear infinite;
+  }
+  
+  /*Begin shimmer code*/
+  
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  
+  
+  
+  /* Resources1× 0.5× 0.25×Rerun */

@@ -1,0 +1,68 @@
+.menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .bar {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: darkgray;
+    margin: 5px 0;
+    transition: all 1s ease;
+    z-index: 2;
+  }
+
+  .menu-icon:hover span,
+  .menu-icon:focus span,
+  .menu-icon:active span {
+      background: black;
+      cursor: pointer;
+  }
+  
+  .open .bar-1 {
+    transform: translate(200px, 10px) rotate(45deg);
+  }
+  
+  .open .bar-2 {
+    transform: translate(200px, 0px);
+    opacity: 0;
+  }
+  
+  .open .bar-3 {
+    transform: translate(200px, -10px) rotate(-45deg);
+  }
+  
+  .menu {
+    width: 280px;
+    height: 90%;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .menu.list {
+    background-color: Black;
+    height: 100%;
+    opacity: .95;
+    top: 0;
+    transition: all 1s ease;
+  }
+  
+  .menu div {
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  a:hover {
+    color: white;
+    cursor: pointer;
+  }

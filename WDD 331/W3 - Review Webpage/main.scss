@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+// Colors
+$hovercolor: #00ddff;
+$activecolor: #DEB887;
+$linescolor: #d0d0d0;
+$basecolor: #333;
+$accentcolor: #666;
+
+// Border
+$line: 1.5px solid;
+
+@mixin border ($top: $line, $left: $line){
+    border: {
+        top: $top;
+        left: $left;
+        bottom: $line;
+        color: $linescolor;   
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif; 
+    color: $basecolor;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    margin:0;
+    padding: 30px 10px 20px 10px;
+    text-align: center;
+    font-family: 'Lora';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:  'Lora', 'Serif';
+}
+
+h1{
+    text-align: center;
+    font-size: 75px;
+    
+    a:link {
+        color: $basecolor;
+    }
+}
+
+h2{
+    margin: 0px;
+    padding: 10px;
+}
+ 
+a:link{
+    text-decoration: none;
+    color: $accentcolor;
+}  
+
+ a:visited{
+    color: $accentcolor;
+}
+
+ a:active{
+    color: $activecolor;
+}
+
+ a:hover{
+    color: $hovercolor;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 55%;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+
+  nav {
+    @include border ($line, none);
+    padding:10px 0px;
+}
+
+article{
+    display: flex;
+}
+.post-date{
+    text: {
+        transform: uppercase;
+        align: right;
+    }
+
+    font: {
+        family: 'lora';
+        weight: bold;
+        size: 20px;   
+    }
+
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 130px;
+    border-bottom: none;
+}
+.post-content{
+    @include border (none,$line);
+    
+    flex: 2;
+    padding-right: 200px;
+    
+    p {
+    font: {
+        weight: bold;
+        family: arial;    
+        }
+    padding-left:10px;
+    } 
+}
+
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    width: 35%;
+}
+
+figure {
+    margin-top: 5px;
+}
+
+// Mobile View
+@media screen and (max-width: 700px){
+    ul {
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        margin: 10px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        padding: 0px;
+    }
+
+    main, article {
+        display: block;
+    }
+
+    .post-date {
+        text: {
+            transform: uppercase;
+            align: right;    
+        }
+        
+        font: {
+            family: 'lora';
+            weight: bold;
+            size: 30px;    
+        }
+        
+        border: {
+            bottom: $line;
+            color: $linescolor;     
+        }
+        
+        margin: 5px;
+        padding: 10px;
+        flex-basis: 130px;
+    }
+
+    .post-content {
+        border: {
+            left: $line;
+            bottom: $line;
+            color: $linescolor; 
+            bottom: none;    
+        }
+        
+        padding-right: 0px;
+        flex: 2;
+        
+        p {
+        font-weight: bold;
+        font-family: arial;
+        padding: 0px 10px;
+    }
+    }
+    
+}
+
+
+
+
+
+

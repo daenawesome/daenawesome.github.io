@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying Typographic Principles</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page--wrapper">
+      <div class="page--page-number">
+        <span>126</span>
+      </div>
+      <div class="page--header">
+        <p>Chapter 6</p>
+      </div>
+    </div>
+    <div class="page--content">
+      <p>For example, say your developers have come up with the perfect amortization program and you want to install it on the workgroup server for other systems to remotely mount and use. Because this is a third-party or custom application, the logical place for it is in <span class="code">/usr/local/appname</span>, possibly with a link to the program binary in the <span class="code">/usr/local/bin</span> directory (because that's in the path). </p>
+      <div class="alert-block">
+        <div class="alert-icon">
+          <div class="warning">&#9888;&#65039;&#9888;&#65039;&#9888;&#65039;</div>
+          <div class="flip">
+            <div>
+              <div>ALERT</div>
+            </div>
+            <div>
+              <div>eXaM</div>
+            </div>
+          </div>
+          <div class="warning">&#9888;&#65039;&#9888;&#65039;&#9888;&#65039;</div>
+        </div>
+        <div class="bar"></div>
+        <p class="alert">If given a choice between putting the software package <strong>bigprog</strong> in the <strong>/usr/local/bigprog</strong> section and the <strong>/opt/bigprog</strong> section, it's hard to choose. Read any relevant exam question closely--the main difference being that the <strong>/opt</strong> section is not considered to be sharable, whereas the <strong>/usr</strong> section is often shared and mounted by client systems. </p>
+      </div>
+      <h1>File Management Commands</h1>
+      <p>A major section of the 101 exam is dedicated to how to run commands properly with the right options and arguments. As a good sysadmin, you'll be expected to know how to create, delete, edit, set permissions on, display, move, copy, and determine the type of files and programs.</p>
+      <div class="alert-block">
+        <div class="alert-icon">
+          <div class="warning">&#9888;&#65039;&#9888;&#65039;&#9888;&#65039;</div>
+          <div class="flip">
+            <div>
+              <div>ALERT</div>
+            </div>
+            <div>
+              <div>eXaM</div>
+            </div>
+          </div>
+          <div class="warning">&#9888;&#65039;&#9888;&#65039;&#9888;&#65039;</div>
+        </div>
+        <div class="bar"></div>
+        <p class="alert">You must be able to pick proper and working commands out of lists of possibilities, type in appropriate strings in fill-in-the-blank boxes, and in general show that you've run the programs and utilities in question.</p>
+      </div>
+      <h2>Tips for working with Linux files</h2>
+      <p>Because most users and sysadmins come from a Windows or other OS background, a quick set of recommendations for the less-experienced can be of help here:</p>
+      <ul>
+        <li>
+          <strong>Hidden files aren't really hidden</strong> - They just begin with a ., such as the <span class="code">.bashrc</span> and <span class="code">.bash_profile</span> files. These are not viewable by normal users with conventional commands and switches and aren't deleted by commands such as <span class="code">rm -f *.*</span>.
+        </li>
+        <li>
+          <strong>Filenames can contain multiple periods or no period characters</strong> - The filenames <span class="code">this.is.a.long.file</span> and <span class="code">thisisalongfile</span> are perfectly reasonable and possible.
+        </li>
+        <li>
+          <strong>Spaces in filenames look nice, but are a pain to type</strong> - Use an _ or a - instead of spaces because it's neater and easier than prefixing all spaces with a <span class="code">\</span>. (To display a space in a filename, the system shows a space prefixes with a backslash.)
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script>
+      
+      function applyScripture() 
+     {
+        
+        let name = document.getElementById("nameInputBox").value;
+        
+        let scripture = "And it came to pass that I, " + name + ", said unto my father:"+ 
+        "I will go and do the things which the Lord hath commanded, for I know that" +
+        "the Lord giveth no bcommandments unto the children of men, save he shall cprepare a way" +
+        "for them that they may accomplish the thing which he commandeth them.1 Nephi 2:7 ";
+        
+        document.getElementById("outputDiv").innerHTML = scripture;
+      }
+    </script>
+  </head>
+  <body> Please enter your name: <input type="text" id="nameInputBox">
+    <button type="button" onclick="applyScripture()">Verse</button>
+    <div id="outputDiv"></div>
+  </body>
+</html>

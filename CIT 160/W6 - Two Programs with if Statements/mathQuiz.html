@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Math Quiz</title>
+    <script>
+      function mathQuiz() {
+        let inputnum1 = parseFloat(document.getElementById('number1InputBox').value);
+        let inputoper = document.getElementById('operatorInputBox').value;
+        let inputnum2 = parseFloat(document.getElementById('number2InputBox').value);
+        let inputresult = parseFloat(document.getElementById('resultInputBox').value);
+        let plusresult = inputnum1 + inputnum2
+        let lessresult = inputnum1 - inputnum2
+        let multiresult = inputnum1 * inputnum2
+        let overresult = inputnum1 / inputnum2
+        let message;
+        if (inputoper == "+") {
+          plusresult;
+          if (plusresult == inputresult) {
+            message = "Correct! Good job";
+          } else {
+            message = "Incorrect. Try again!"
+          }
+        }
+        if (inputoper == "-") {
+          lessresult;
+          if (lessresult == inputresult) {
+            message = "Correct! Good job";
+          } else {
+            message = "Incorrect. Try again!"
+          }
+        }
+        if (inputoper == "*") {
+          multiresult;
+          if (multiresult == inputresult) {
+            message = "Correct! Good job";
+          } else {
+            message = "Incorrect. Try again!"
+          }
+        }
+        if (inputoper == "/") {
+          overresult;
+          if (overresult == inputresult) {
+            message = "Correct! Good job";
+          } else {
+            message = "Incorrect. Try again!"
+          }
+        }
+        document.getElementById('mathqDiv').innerHTML = message
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Check Out Your Math Quiz </h1>
+    <br>Enter first number (int or dec): <input type="text" id="number1InputBox" size="18">
+    <br>Enter math operator (+ - * /): <input type="text" id="operatorInputBox">
+    <br>Enter second number (int or dec): <input type="text" id="number2InputBox" size="15">
+    <br>Enter the result (int or dec): <input type="text" id="resultInputBox" size="21">
+    <br>
+    <br>
+    <!--Creat a button-->
+    <button type="button" onclick="mathQuiz()">Click to Calculate !</button>
+    <br>
+    <br>
+    <div id="mathqDiv"></div>
+  </body>
+</html>

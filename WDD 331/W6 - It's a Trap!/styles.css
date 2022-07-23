@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+  }
+  
+  /*Box 1 */
+  .container-one {
+    padding: 1vmin;
+  }
+  
+  .orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: translate(0, 0);
+}
+    5% {
+      transform: translate(0, 0);
+    }
+    /* don't change for 5% of the time...pause */
+    25% {
+      transform: translate(300%, 0%);
+    }
+    /* start moving again */
+    30% {
+      transform: translate(300%, 0%);
+    }
+    /* pause */
+    50% {
+      transform: translate(300%, 300%);
+    }
+    /* move */
+    55% {
+      transform: translate(300%, 300%);
+    }
+    75% {
+      transform: translate(0%, 300%);
+    }
+    80% {
+      transform: translate(0%, 300%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  /* Box 2 */
+  .container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .morphing-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    transition: border-radius 0.5s ease, background-color 0.5s ease, transform 0.5s ease 0.5s;
+    animation: morphing-circle-square 3s linear infinite;
+  }
+  
+  .container-two:hover .morphing-circle {
+    border-radius: 0;
+    background-color: white;
+    transform: rotate(90deg);
+  }
+  
+  @keyframes morphing-circle-square {
+    0% {
+      border-radius: 50%;
+    }
+    25% {
+      border-radius: 50%;
+      background-color: darkred;
+    }
+    /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+    50% {
+      border-radius: 0%;
+      background-color: white;
+      transform: rotate(0deg);
+    }
+    /* now change to white square...but don't start rotating yet! */
+    75% {
+      border-radius: 0%;
+      background-color: white;
+      transform: rotate(90deg);
+    }
+    /* stay a white square, but rotate 90deg */
+    100% {
+      border-radius: 50%;
+      background-color: darkred;
+      transform: rotate(90deg);
+    }
+    /* stay rotated at 90, but change back to a circle */
+  }
+  /* Box 3 */
+  .container-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .semicircle {
+    height: 25%;
+    width: 12.5%;
+    background-color: darkred;
+  }
+  
+  .left {
+    border-bottom-left-radius: 100% 50%;
+    border-top-left-radius: 100% 50%;
+    animation: left 2s infinite;
+  }
+  
+  .right {
+    border-bottom-right-radius: 100% 50%;
+    border-top-right-radius: 100% 50%;
+    animation: right 2s infinite;
+  }
+  
+  @keyframes left {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    40% {
+      transform: translate3d(-7px, 0, 0);
+    }
+    60% {
+      transform: translate3d(-7px, 0, 0);
+    }
+    80% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes right {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    40% {
+      transform: translate3d(7px, 0, 0);
+    }
+    60% {
+      transform: translate3d(7px, 0, 0);
+    }
+    80% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  /* Box 4 */
+  .container-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart {
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    background: darkred;
+    animation: beat 3s linear infinite;
+  }
+  
+  @keyframes beat {
+    15% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.25);
+    }
+    25% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.25);
+    }
+    35% {
+      transform: scale(1);
+    }
+  }
+  
+
+  

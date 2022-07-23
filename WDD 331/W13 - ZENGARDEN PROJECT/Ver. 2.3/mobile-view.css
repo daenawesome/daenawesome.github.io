@@ -1,0 +1,85 @@
+/*************************** PAD VIEW ***************************/
+@media screen and (max-width: 1080px) {
+    .page-wrapper::before {
+    background-image: none;
+    }
+    
+    .page-wrapper {
+    background-attachment: fixed;
+    }
+    * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    animation: none !important;
+    }
+
+    h1 {
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 28px;
+    }
+
+    .page-wrapper {
+    padding: 0 80px 0;
+    justify-content: center;
+    }
+
+    #zen-intro {
+    padding: 8px;
+    }
+
+    p {
+    padding: 0 32px 0;
+    }
+
+    .sidebar {
+    margin: 0;
+    padding: 16px;
+    }
+
+    #zen-supporting > * {
+    margin-top: 16px;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    }
+
+    #zen-supporting {
+    padding: 0;
+    height: auto !important;
+    width: 500px !important;
+    position: relative !important;
+    overflow: visible !important;
+    }
+
+    footer {
+    margin: 16px 0 ;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    }
+
+    .extra1, .extra3 {
+        display: none;
+    }
+
+
+}
+
+
+/*************************** MOBILE ***************************/
+@media screen and (max-width: 700px) {
+  .page-wrapper {
+    padding: 0 16px 0;
+  }
+  .extra4 {
+        max-width: 100px;
+        max-height: 100px;
+  }
+
+
+
+}

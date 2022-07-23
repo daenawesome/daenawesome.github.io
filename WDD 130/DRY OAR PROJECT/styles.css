@@ -1,0 +1,467 @@
+/* COLOR GUIDE
+Primary:   #E5C576 Orange Yellow Crayola
+Secondary: #462255 Russian Violet 
+Backdrop:  #0B5563 Midnight Green Eagle Green
+Highlight: #0063ac Green BLUE
+White:     #E1F1FF Alice Blue (WHITE)
+*/
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=ZCOOL+KuaiLe&display=swap');
+
+*, *:before, *:after {box-sizing: border-box;} /* Box Sizing Fix */
+
+img {
+	display: block; /* Fix Whitespace under Images */
+  width: 100%;
+}
+
+#address {
+	text-align: center;
+  font-size:1.5em;
+  line-height: 1.8;
+}
+
+/* GENERAL */
+body {
+	margin: 0; 
+	color: #0B5563;
+	background: #0B5563;
+	font-family: 'Courgette', cursive;
+}
+#logo {
+	margin-top: 50px;
+  margin-left: 12px;
+	width: 110px;
+	background-color: #E1F1FF;
+	padding-left: 2.5px;
+	position: relative;
+	border: 1px solid #0063ac;
+	border-radius: 5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	margin-bottom: 6px;
+	line-height: 1;
+	color: #E1F1FF;
+  
+}
+p {
+	margin: 0;
+	margin-bottom: 12px;
+	line-height: 1.8;
+}
+h1{
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 4em;
+}
+h2,button {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+header, main, footer {
+	margin: 0 12px;
+	max-width: 960px;
+}
+.run {
+  font-size: 3.8em;
+}
+
+/* NAVIGATION*/
+nav {
+	background-color: #462255;
+	margin-top: -80px;
+	width: 100%;
+}
+nav ul {
+	margin: 0;
+	padding-left: 137px;
+	display: flex;
+	flex-flow: column wrap;
+}
+nav li {
+	list-style-type: none;
+}
+nav a, nav label {
+	font-size: 2em;
+	display: block;
+	padding: .9em;
+	color: #E5C576;
+	text-decoration: none;
+}
+nav a:hover {color: #E1F1FF; background-color: #313B72;}
+
+/* PAGE CONTENT */
+#content {
+	margin: 0 auto;
+	padding: 12px 0;
+	max-width: 960px;
+	background-color: #E5C576;
+}
+#section-3 {
+	margin: auto;
+	max-width: 60%;
+	padding: 20px 12px;
+	text-align: center;
+}
+section {
+	padding: 12px 0;
+}
+section div {
+	padding: 12px;
+}
+section img, button, #logo {
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+section img {
+	padding: 12px;
+	border: 0 solid #0063ac;
+	border-radius: 5px;
+	background-color: #E1F1FF;
+	transform: rotate(3deg);
+}
+section.dark img {
+	transform: rotate(-3deg);
+}
+
+
+
+	/* A Simple Animation - Image & CTA */
+ img, .action {
+  animation: frame 3s;
+}
+
+@keyframes frame {
+0%{
+    transform: scale(.9);
+    opacity: 0;
+}
+20%{
+    transform: scale(1);
+    opacity: 1;
+}
+80%{
+    transform: scale(1);
+    opacity: 1;
+}
+}
+
+.right {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.left {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-right: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+.line{
+  position: absolute;
+  width:100%;
+  overflow: hidden;
+  height:15%;
+  transform: rotate(180deg);
+
+}
+
+
+.line-1{
+  z-index: 15;
+  opacity: 0.5;
+}
+.line-2{
+  z-index: 10;
+  opacity: 0.7;
+}
+.line-3{
+  z-index: 5;
+}
+.wave{
+  position: absolute;
+  left:0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.wave1{
+  -webkit-background-size:50% 80px;
+  background-size: 50% 80px;
+}
+.wave2{
+  -webkit-background-size:50% 100px;
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+.wave3{
+  -webkit-background-size:50% 80px;
+  background-size: 50% 80px;
+  animation: animate 18s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50%{
+    transform: translateX(-25%) translateZ(0) scaleY(0.5);
+  }
+  100%{
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+
+
+
+
+	/* CTA */
+.action {
+  position: fixed !important;
+  z-index: 99999 !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  padding: .5em;
+  text-align: center;
+  background-color: rgba(70, 34, 85, 0.2);
+}
+
+button {
+    line-height: 1.5em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+    color: #462255;
+}
+
+.cta {
+  display:none;
+}
+
+.action:hover .cta {
+  display:block;
+}
+
+
+/* Footer */
+footer {
+	padding: 12px;
+}
+footer p {
+	margin: 12px 0;
+}
+#copyright {
+	flex: 2 auto;
+}
+#social {
+	flex: 1;
+}
+#social img {
+	float: right;
+	max-height: 55px;
+	width: 30%;
+}
+
+
+
+
+/* Checkbox Hack */
+nav label {
+	margin-left: 125px;
+}
+#toggle {
+	display: none;
+}
+#toggle[type=checkbox] ~ ul {
+	display: none;
+}
+#toggle[type=checkbox]:checked ~ ul {
+	display: flex;
+}
+
+
+
+
+/* Alternate Color for Section */
+.dark {
+	color: #E5C576;
+	background-color: #462255;
+}
+
+
+
+
+/* A Simple Grid - Container */
+
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+
+
+
+/* Flex: Centered */
+.center {
+	align-items: center;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+	/* Hide Navigation "Button" */
+	nav label {
+		display: none;
+	}
+	/* Display Navigation */
+	#toggle[type=checkbox] ~ ul {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+  
+  
+  /* Footer */
+	footer {
+		padding: 0;
+		padding-left: 12px;
+		max-height: 55px;
+		flex-flow: row wrap;
+	}
+
+  
+  
+  /* A Simple Grid -  Column Boxes */
+	.flex {
+		flex-flow: row wrap;
+	}
+  .box-4  {width: 33%}
+	.box-3  {width: 50%;}
+	.box-2  {width: 66%;} 
+  .box-1  {width: 100%;}
+	.flex-1 {flex: 1;}
+	.flex-2 {flex: 2;}
+	.flex-3 {flex: 3;}
+}
+
+
+
+  /* Accordion */
+
+.container{
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.accordion-item{
+  border-radius: .8em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-shadow: 1em 2px 1em rgba(0,0,0,.1);
+}
+
+.accordion-link{
+  font-size: 1.6em;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.accordion-link ion-icon{
+  color: white;
+  padding: 0;
+}
+
+.accordion-link .minus{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: .5em;
+  transition: max-height 2s;
+}
+
+.answer p{
+ padding: .1em;
+ font-size: 2em;
+margin: 10px;
+}
+
+answer::before{
+  content:"";
+  position: absolute;
+  width: .6em;
+  height: 90%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.accordion-item:target .answer {
+  max-height: 150em;
+}
+
+.accordion-item:target .accordion-link .plus {
+  display: none;
+}
+
+.accordion-item:target .accordion-link .minus {
+  display: block;
+}
+
+h4 {
+  color: #E1F1FF;
+  font-size: 1.3em;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}

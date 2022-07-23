@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Foot Wear</title>
+    <script>
+      /* Input: Type of weather and associated footwear.
+       * Processing: Match weather with footwear through if and else statements.
+       * Output: Footwear encouraged to wear by user
+       */
+      function footWeather() {
+        // Get user to enter in weather information.
+        let weather = document.getElementById('weatherOfDay').value;
+        // Variable declared.
+        let footwear;
+        if (weather == "hot") {
+          footwear = "sandals";
+        } else if (weather == "rain") {
+          footwear = "galoshes";
+        } else if (weather == "snow") {
+          footwear = "boots";
+        } else {
+          footwear = "shoes";
+        }
+        //Display footwear to user.
+        document.getElementById('output').innerHTML = footwear;
+      }
+    </script>
+  </head>
+  <body> Please enter type of weather: <input type="text" id="weatherOfDay">
+    <button type="button" onclick="footWeather()">Footwear</button>
+    <div id="output"></div>
+  </body>
+</html>

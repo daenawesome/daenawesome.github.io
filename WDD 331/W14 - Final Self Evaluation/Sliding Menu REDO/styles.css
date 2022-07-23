@@ -1,0 +1,87 @@
+.bar {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin: 5px 0;
+  transition: all 500ms ease;
+  background-color: darkgrey;
+  border-radius: 5px;
+  z-index: 1; }
+
+.menu-icon {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: auto;
+  margin: 15px 0;
+  transition: all 500ms ease;
+  cursor: pointer; }
+  .menu-icon:hover span {
+    background-color: black; }
+  .menu-icon.open:hover span {
+    background-color: white; }
+
+.open .bar-1 {
+  transform: translate(200px, 10px) rotate(45deg); }
+.open .bar-2 {
+  transform: translate(200px, 0px) rotate(45deg);
+  opacity: 0; }
+.open .bar-3 {
+  transform: translate(200px, -10px) rotate(-45deg); }
+
+.menu {
+  display: block;
+  position: relative;
+  width: 260px;
+  height: 100%;
+  margin: 0 0;
+  transition: all 500ms ease;
+  left: -150px;
+  top: 0;
+  position: absolute; }
+
+.list {
+  display: block;
+  position: relative;
+  width: 260px;
+  height: 100%;
+  margin: 0 0;
+  transition: all 500ms ease;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.95;
+  background-color: black; }
+
+ul {
+  margin-top: 60px;
+  padding-left: 60px;
+  list-style: none;
+  line-height: 2; }
+  ul a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 30px; }
+    ul a:hover {
+      color: white;
+      cursor: pointer; }
+
+.main-page {
+  transition: all 500ms ease;
+  z-index: 1; }
+
+.move {
+  padding-left: 260px;
+  transition: all 500ms ease; }
+
+@media screen and (max-width: 700px) {
+  .move {
+    padding-left: 260px;
+    transition: all 500ms ease; }
+    .move h1 {
+      font-size: calc(32px - 1vw); }
+    .move p {
+      font-size: calc(16px - 1vw); } }
+
+/*# sourceMappingURL=styles.css.map */

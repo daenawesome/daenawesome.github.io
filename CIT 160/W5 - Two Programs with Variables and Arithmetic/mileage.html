@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Mileage Calculator</title>
+    <script>
+      /* Defining Table
+       * Input: Floating point number of quarts.
+       * Processing: Convert quarts to liters.
+       * Output: Floating point number of liters.
+       */
+      function calculateMileage() {
+        //Declare variable
+        var startOdometer = parseFloat(document.getElementById('startOdometerInput').value);
+        var endOdometer = parseFloat(document.getElementById('endOdometerInput').value);
+        var gasolineUsed = parseFloat(document.getElementById('gasolineUsedInput').value);
+        var mileage = (endOdometer - startOdometer) / gasolineUsed;
+        document.getElementById('outputDiv').innerHTML = mileage;
+      }
+    </script>
+  </head>
+  <body> Please enter the following information to calculate your mileage: <br> Starting Odometer Reading: <input type="text" id="startOdometerInput">
+    <br> Ending Odometer Reading: <input type="text" id="endOdometerInput">
+    <br> Gallons of Gasoline Used: <input type="text" id="gasolineUsedInput">
+    <br>
+    <button type="button" onclick="calculateMileage()">CalculateMileage</button>
+    <div id="outputDiv"></div>
+  </body>
+</html>

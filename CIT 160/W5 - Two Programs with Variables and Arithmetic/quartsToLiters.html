@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Quarts to Liters</title>
+    <script>
+      /* Defining Table
+       * Input: Floating point number of quarts.
+       * Processing: Convert quarts to liters.
+       * Output: Floating point number of liters.
+       */
+      function convert2Liters() {
+        var quarts = parseFloat(document.getElementById('quartsInputBox').value);
+        var liters = quarts * 0.946353;
+        document.getElementById('outputDiv').innerHTML = liters;
+      }
+    </script>
+  </head>
+  <body> Please enter amount in quarts: <br>
+    <input type="text" id="quartsInputBox">
+    <button type="button" onclick="convert2Liters()">Convert</button>
+    <div id="outputDiv"></div>
+  </body>
+</html>
