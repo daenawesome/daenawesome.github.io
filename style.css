@@ -176,6 +176,12 @@ a:hover::before {
   text-align: center;
 }
 
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  padding: 1em;
+}
+
 @media screen and (max-width: 700px) {
   .dropdown-action,
   .dropdown-content {
