@@ -179,13 +179,13 @@ a:hover::before {
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
-  padding: 1em;
+  padding: 1em 1em 0em 1em;
 }
 
 @media screen and (max-width: 700px) {
   .dropdown-action,
   .dropdown-content {
-    width: 250px;
+    width: 350px;
   }
   a {
     display: block;
