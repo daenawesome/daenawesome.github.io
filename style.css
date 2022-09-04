@@ -182,6 +182,18 @@ h1 {
   padding: 1em 1em 0em 1em;
 }
 
+footer {
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  height: 60px;   
+  background: #6cf;
+  border-radius: 50px;
+}
+
+
 @media screen and (max-width: 700px) {
   .dropdown-action,
   .dropdown-content {
