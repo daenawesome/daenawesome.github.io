@@ -1,0 +1,21 @@
+body {
+    background-image: url(/under-construction.gif);
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: inherit;
+    background-attachment: fixed;
+    background-color: #4eb5ed;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+    font-size: larger;
+    padding: .5em;
+}

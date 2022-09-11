@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Philosopher&display=swap');
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    margin: 8px;
+    color: #000411;
+}
+
+#index-main {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+main {
+    padding: 0 15px;
+}
+
+main h2 {
+    border-bottom: 1px  solid black;
+    color: #160c28;
+}
+
+header h1 {
+    font-family: 'Henny Penny', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -4px 4px #9ca3db;
+}
+
+.profile-img {
+    border-radius: 8px;
+    max-width: 25%;
+    height: auto;
+    box-shadow: 0 0 15px black;
+    float: right;
+}
+
+header, footer {
+    background-color: #677db7;
+    color: #160c28;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+footer p.legal {
+    margin-bottom: 9px;
+    font-size: 1.1em;
+}
+
+footer p.highlight {
+    color: #0d0221 ;
+    font-size: .9em;
+    margin-top: 0;
+}
+
+footer a {
+    color: #000411;
+}
+
+footer a:hover {
+    color: #FFF7CF;
+}
