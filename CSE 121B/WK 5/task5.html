@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 05 | Sample Solution</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="/CSE 121B/index.html">Home</a></li>
+            <li><a href="/CSE 121B/WK 1/hello.html">Lesson 1</a></li>
+            <li><a href="/CSE 121B/WK 2/task2.html">Lesson 2</a></li>
+            <li><a href="/CSE 121B/WK 3/task3.html">Lesson 3</a></li>
+            <li><a href="/CSE 121B/WK 4/task4.html">Lesson 4</a></li>
+            <li><a href="#" class="active">Lesson 5</a></li>
+            <li><a href="/CSE 121B/WK 6/task6.html">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Controlling Your Code</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Today is <span id="message2"></span>.
+            </h2>
+            <h3>
+                <span id="message1"></span>
+            </h3>
+        </section>
+        <hr>
+        <section>
+            <h2>Temples in Utah</h2>
+            <p>
+                Sort by: 
+                <select id="sortBy">
+                    <option value="templeNameAscending">Temple Name Ascending</option>
+                    <option value="templeNameDescending">Temple Name Descending</option>
+                    <option value="yearDedicatedAscending">Year Dedicated Ascending</option>
+                    <option value="yearDedicatedDescending">Year Dedicated Descending</option>
+                </select>
+                <br><br>
+                Filter by month Dedicated:
+                <select id="filterByMonth">
+                  <option value="">All Months</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+            </p>
+            <div id="temples"></div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Controlling Your Code | Lesson 5
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task5.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+User_John Doe
+ID: 1111
+Running, 2022-11-03, 30, 3.0
+Cycling, 2022-11-03, 30, 6.0
+Swimming, 2022-11-03, 30, 20
+User_Jane Deo
+ID: 2222
+Running, 2023-11-04, 40, 4.0
+Cycling, 2023-11-04, 10, 5.0
+Swimming, 2023-11-04, 20, 30
+User_Doe Deo
+ID: 3333
+Running, 2023-11-05, 10, 7.0
+Cycling, 2023-11-05, 20, 2.0
+Swimming, 2023-11-05, 10, 40

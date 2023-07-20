@@ -1,0 +1,77 @@
+using System;
+
+class Program {
+  static void Main(string[] args) {
+    // Ask the user for the range of the magic number
+    Console.WriteLine("Welcome to the Guess My Number game!");
+    
+    while (true) {
+
+      Console.WriteLine("Enter the range of the magic number:");
+      Console.Write("Minimum value: ");
+      int minRange = int.Parse(Console.ReadLine());
+      Console.Write("Maximum value: ");
+      int maxRange = int.Parse(Console.ReadLine());
+
+      // Initialize the random number generator
+      Random random = new Random();
+      
+      // Generate a random number from the specified range
+      int magicNumber = random.Next(minRange, maxRange + 1);
+
+      // Initialize the number of guesses to 0
+      int numGuesses = 0;
+
+      // Start a loop to play the game
+      while (true) {
+        // Get a guess from the user
+        Console.Write("Enter your guess: ");
+        int guess = int.Parse(Console.ReadLine());
+
+        // Increment the number of guesses
+        numGuesses++;
+
+        // Check if the guess is correct
+        if (guess == magicNumber) {
+          Console.WriteLine("You guessed it! The magic number was {0}", magicNumber);
+          Console.WriteLine("It took you {0} guesses.", numGuesses);
+          break;
+        }
+        // If the guess is not correct, give the user a hint and tell them if they need to guess higher or lower
+        else if (guess < magicNumber) {
+          if (magicNumber % 2 == 0) {
+            Console.WriteLine("The magic number is even. Guess higher.");
+          }
+          else {
+            Console.WriteLine("The magic number is odd. Guess higher.");
+          }
+        }
+        else {
+          if (magicNumber % 2 == 0) {
+            Console.WriteLine("The magic number is even. Guess lower.");
+          }
+          else {
+            Console.WriteLine("The magic number is odd. Guess lower.");
+          }
+        }
+      }
+
+      // Ask the user if they want to play again
+      Console.Write("Do you want to play again? (yes/no) ");
+      string playAgain = Console.ReadLine();
+
+      if (playAgain.ToLower() == "yes") {
+        // If the user wants to play again, start a new game
+        Console.WriteLine();
+      }
+      else {
+        // If the user doesn't want to play again, exit the game
+        Console.WriteLine("Thanks for playing! Goodbye.");
+        break;
+      }
+    }
+  }
+}
+
+// This version is from my python class that allows the user to choose the range of the magic number, 
+// and it gives the user a hint about the magic number (whether it is odd or even). 

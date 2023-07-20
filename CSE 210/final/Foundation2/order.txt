@@ -1,0 +1,38 @@
+Customer_Id: 1
+Product_Id: A001
+Product_Name: Product A
+Product_Price: 10.99
+Product_Quantity: 2
+Product_Id: B002
+Product_Name: Product B
+Product_Price: 5.49
+Product_Quantity: 3
+-- End of Order List for ‘Customer_Id: 1’ --
+Customer_Id: 2
+Product_Id: B002
+Product_Name: Product B
+Product_Price: 5.49
+Product_Quantity: 3
+Product_Id: C003
+Product_Name: Product C
+Product_Price: 8.99
+Product_Quantity: 1
+-- End of Order List for ‘Customer_Id: 2’ --
+Customer_Id: 3
+Product_Id: B002
+Product_Name: Product B
+Product_Price: 5.49
+Product_Quantity: 1
+Product_Id: C003
+Product_Name: Product C
+Product_Price: 8.99
+Product_Quantity: 1
+Product_Id: A001
+Product_Name: Product A
+Product_Price: 10.99
+Product_Quantity: 1
+Product_Id: D004
+Product_Name: Product D
+Product_Price: 69.69
+Product_Quantity: 1
+-- End of Order List for ‘Customer_Id: 3’ --

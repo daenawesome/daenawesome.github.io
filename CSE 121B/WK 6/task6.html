@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSE 121B/WK 6/styles/main.css">
+    <link rel="icon" type="image/x-icon" href="/CSE 121B/WK 6/asset/byu-elle.png">
+    <title>CSE 121B Project | Movie & TV Series Details</title>
+  </head>
+  <body>
+    <header>
+      <div class="header" id="header">
+        <div class="logo">
+          <img src="../WK 6/asset/byu-elle.png">
+        </div>
+        <div class="navbar">
+          <ul id="menu">
+            <li>
+              <a href="/CSE 121B/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/CSE 121B/WK 1/hello.html">Lesson 1</a>
+            </li>
+            <li>
+              <a href="/CSE 121B/WK 2/task2.html">Lesson 2</a>
+            </li>
+            <li>
+              <a href="/CSE 121B/WK 3/task3.html">Lesson 3</a>
+            </li>
+            <li>
+              <a href="/CSE 121B/WK 4/task4.html">Lesson 4</a>
+            </li>
+            <li>
+              <a href="/CSE 121B/WK 5/task5.html">Lesson 5</a>
+            </li>
+            <li>
+              <a href="#" class="active">Lesson 6</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter a Movie/Series title" size="30">
+            <button type="submit" class="button">Search</button>
+            <button type="button" id="clearButton" class="button">Clear</button>
+          </form>
+        </div>
+        <div class="options">
+          <div id="filterContainer" style="display: none;">
+            <label for="filterType" class="filterType">Filter by Type:</label>
+            <select id="filterType">
+              <option value="">All Types</option>
+              <option value="movie">Movie</option>
+              <option value="tvSeries">TV Series</option>
+              <option value="tvMiniSeries">TV Mini Series</option>
+              <option value="tvMovie">TV Movie</option>
+            </select>
+            <label for="filterReleased" class="filterYear">Filter by Release Year:</label>
+            <select id="filterReleased">
+              <option value="">All Available</option>
+              <option value="2023-2021">2023 - 2021</option>
+              <option value="2020-2016">2020 - 2016</option>
+              <option value="2015-2011">2015 - 2011</option>
+              <option value="2010-2006">2010 - 2006</option>
+              <option value="2005-2001">2005 - 2001</option>
+              <option value="2000-1996">2000 - 1996</option>
+              <option value="1995-1991">1995 - 1991</option>
+              <option value="1990-1986">1990 - 1986</option>
+            </select>
+            <label for="sortOrder" class="sortTitle">Sort by Title:</label>
+            <select id="sortOrder">
+              <option value="">All</option>
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="movies"></div>
+      </section>
+    </main>
+    <footer>
+      <h2>&copy; <span id="year"></span> | Personal Project | Lesson 6 </h2>
+    </footer>
+    <script src="/CSE 121B/WK 6/scripts/main.js"></script>
+    <script src="/CSE 121B/WK 6/scripts/search.js"></script>
+  </body>
+</html>

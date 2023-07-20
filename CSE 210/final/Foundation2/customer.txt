@@ -1,0 +1,9 @@
+Customer_Id: 1
+Customer_Name: John Smith
+Customer_Address: 123 Main St, New York, NY, USA
+Customer_Id: 2
+Customer_Name: Jane Doe
+Customer_Address: 456 Elm St, London, , UK
+Customer_Id: 3
+Customer_Name: Daen Antule
+Customer_Address: 789 Lockwood St, Idaho, ID, USA

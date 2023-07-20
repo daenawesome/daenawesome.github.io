@@ -1,0 +1,42 @@
+Type: Lecture Event
+Event Title: CSE 210 Deep Dive
+Description: Exploring the latest advancements in Programming Classes
+Date: 5/30/2023
+Time: 15:00:00
+Address: 123 Main Street, New York, NY, USA
+Speaker: John Doe
+Capacity: 100
+--- END ---
+Type: Reception Event
+Event Title: Networking Mixer
+Description: Join us for an evening of networking and fun
+Date: 6/15/2023
+Time: 18:30:00
+Address: 456 Elm Street, Los Angeles, CA, USA
+RSVP Email: rsvp@example.com
+--- END ---
+Type: Outdoor Gathering Event
+Event Title: Summer Picnic
+Description: Enjoy a day of outdoor activities and delicious food
+Date: 7/10/2023
+Time: 11:00:00
+Address: 789 Oak Street, San Francisco, CA, USA
+Weather Forecast: Sunny skies
+--- END ---
+Type: Outdoor Gathering Event
+Event Title: Summer BBQ
+Description: Enjoy a day of outdoor BBQ
+Date: 5/10/2023
+Time: 11:00:00
+Address: 069 Lock Wood Street, Idaho, ID, USA
+Weather Forecast: Cool Warm
+--- END ---
+Type: Lecture Event
+Event Title: Boring Lectures
+Description: 5 Hours of silence while listening
+Date: 12/30/2023
+Time: 15:00:00
+Address: 666 Long John Street, Texas, TX, USA
+Speaker: Daen Antule
+Capacity: 5000
+--- END ---

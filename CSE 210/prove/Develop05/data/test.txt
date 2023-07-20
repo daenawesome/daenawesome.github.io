@@ -1,0 +1,4 @@
+0
+Goal|*|Test Goal|*|Test Simple Goal|*|10|*|False
+EternalGoal|*|Test Eternal Goal|*|Testing Unending Goal|*|20|*|False
+CheckListGoal|*|Test CheckList Goal|*|Testing Goal Repeat|*|30|*|0|*|3|*|100
