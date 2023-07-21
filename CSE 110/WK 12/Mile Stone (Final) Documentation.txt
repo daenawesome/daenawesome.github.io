@@ -1,0 +1,66 @@
+1.
+The first feature of the program is to find the year and country that has the lowest life expectancy in the dataset. This is achieved by first opening the "life-expectancy.csv" file using the 'open()' function in python and reading the file using the csv.DictReader() function, which converts the contents of the file into a dictionary. The program then iterates through each row of the file using a for loop and checks the value of the "Life expectancy (years)" key in the dictionary. If the value is less than the current minimum life expectancy, the program updates the minimum life expectancy and the year and country associated with it. 
+    
+2.
+the program iterates through each dictionary in the list and compares the value of the "Life expectancy (years)" key to the current highest life expectancy value. If the value is higher than the current highest, the program updates the highest value and the corresponding year and country
+
+3.
+We iterate through the rows of the file using a for loop, and for each row, we check if the year in the 'Year' column matches the year entered by the user. If it does, we add the value in the 'Life expectancy (years)' column to a list of life expectancies for that year.
+After iterating through all the rows, we use the built-in sum() and len() functions to calculate the average life expectancy for that year by dividing the sum of the life expectancies by the number of life expectancies. We also use the built-in min() and max() functions to find the minimum and maximum life expectancy for that year.
+Then, we iterate through the rows of the file again, this time checking for the row with the minimum and maximum life expectancy for that year, and storing the corresponding country in a variable.
+
+For the third feature, the program prompts the user to enter a year of interest. The program then reads the "life-expectancy.csv" file and creates a list of all the life expectancy values for that year. It uses the Python built-in function sum() to calculate the sum of all the life expectancy values, and len() to calculate the number of values. It then divides the sum by the number of values to get the average life expectancy for that year.
+
+The program then goes through the file again, this time keeping track of the minimum and maximum life expectancy values for that year. It uses the Python built-in functions min() and max() to find the minimum and maximum life expectancy values respectively. The program also keeps track of the country name associated with the minimum and maximum life expectancy values.
+
+Once all the data has been processed, the program prints out the average life expectancy for that year, as well as the country name and life expectancy for the minimum and maximum values.
+
+To accomplish this task, the code uses a combination of the following:
+
+Reading from a CSV file using the csv module
+Storing data in lists and dictionaries
+Using built-in Python functions such as sum(), len(), min(), and max()
+Using control flow statements (if/else) to keep track of the minimum and maximum values
+Printing the results to the console
+
+4.
+the code uses a while loop to allow the user to input a year of interest multiple times. The input is then stored as a variable and used to filter the dataset by year. The filtered dataset is then used to calculate the average life expectancy for that year, as well as the minimum and maximum life expectancies for that year. The code uses the 'csv' module to read the dataset and the 'statistics' module to calculate the mean, min, and max values. The code also uses an if-else statement to check if the input year is valid and exists in the dataset, and if not, prompts the user to enter a valid year. Additionally, the code uses string formatting to display the results in a readable format for the user.
+
+The fourth feature of the program allows the user to compare the life expectancy of two or more countries over time. The program first prompts the user to input the countries they want to compare, separated by commas. The input is then converted into a list of countries using the 'split()' method.
+
+The program then uses the 'open()' function to open the "life-expectancy.csv" file and reads it using the 'csv.DictReader()' method, which converts the contents of the file into a list of dictionaries. Each dictionary represents a row in the file, with the keys being the column headers and the values being the corresponding values for that row.
+
+The program then iterates through the list of dictionaries, and for each dictionary, checks if the country specified in the 'Entity' key is in the list of countries provided by the user. If it is, the program creates a new dictionary for that country if it doesn't already exist in the data dictionary, and adds the year and life expectancy for that country to the data dictionary.
+
+Finally, the program checks if the data dictionary is empty, and if not, it prints out the life expectancy over time for the specified countries, with the country name as the key and the dictionary of years and life expectancies as the value. If the data dictionary is empty, the program will print that no data was found for the specified countries.
+
+5.
+The fifth feature of the program allows the user to input a range of years and finds the minimum and maximum life expectancies for that range of years. To accomplish this, the program uses the csv library to read the "life-expectancy.csv" file and stores the data in a dictionary. The program then iterates through the dictionary, comparing the year of each row to the input range of years. If the year is within the range, the program compares the life expectancy of that row to the current minimum and maximum life expectancies stored in variables. If the life expectancy of the row is lower than the current minimum, the program updates the minimum life expectancy variable to the life expectancy of that row. If the life expectancy of the row is higher than the current maximum, the program updates the maximum life expectancy variable to the life expectancy of that row. Once all rows have been iterated through, the program prints the minimum and maximum life expectancies for the input range of years.
+
+The important details or parts of this feature include the use of the csv library to read and store the data, the use of a dictionary to store the data, the use of variables to store the minimum and maximum life expectancies, and the use of a for loop to iterate through the dictionary and compare the years and life expectancies to the input range of years. Additionally, the feature uses if-else statements to check if the year is within the range and if the life expectancy is higher or lower than the current minimum or maximum.
+
+6.
+The sixth feature of the program is used to find the country with the minimum and the one with the maximum life expectancies for a specific year entered by the user. The user is prompted to enter a year of interest and the program uses a nested loop to iterate through the rows of the csv file and retrieve the life expectancy and country for each year that matches the year entered by the user. The program then uses an if-else statement to compare the life expectancy of each row to the current minimum and maximum life expectancy values and update them if a new minimum or maximum value is found. Once all rows have been processed, the program prints the country with the minimum and maximum life expectancies for the year entered by the user. This feature uses the following methods and functions:
+
+input() - to prompt the user to enter a year of interest
+open() - to open the csv file
+csv.DictReader() - to read the csv file and retrieve the data as a dictionary
+float() - to convert the life expectancy values from strings to floats
+if-else statement - to compare the life expectancy values and update the minimum and maximum values
+print() - to display the results to the user
+
+7. 
+It uses a dictionary 'life_expectancy_data' to store the life expectancy data for each country, where the key is the country name and the value is a list of tuples containing the year and life expectancy for that country. Finally, it prints the life expectancy data for each country in the list, this way the user can compare the life expectancy of different countries and see how it changes over time.
+
+For the seventh feature, the code first prompts the user to enter a list of countries separated by commas. This input is then stored in the variable "countries" and split into a list using the .split() method. The program then opens the "life-expectancy.csv" file and reads it using the csv.DictReader() method, which converts the contents of the file into a dictionary with keys as the headers of the csv file and values as the corresponding data in the rows.
+
+The program then iterates through each row in the dictionary and checks if the "Entity" key, which corresponds to the country name, is in the list of countries specified by the user. If it is, the program creates a new dictionary for that country if it does not already exist and adds the year and life expectancy data for that country to the dictionary.
+
+After iterating through all the rows, the program checks if any data was found for the specified countries. If not, it prints "No data found for the specified countries." If data was found, the program prints "Life expectancy over time for the specified countries:" followed by the year and life expectancy data for each country specified by the user.
+
+8.
+The eighth feature that I added was the ability for the user to run the program again if the "life-expectancy.csv" file was not found or was unavailable. This feature uses the 'try' and 'except' statements to check if the file can be opened and read. If an error is encountered (such as the file not being found), the program will catch the error and prompt the user to either run the program again or close the program. If the file is found and can be read, the program will continue to run as normal. This feature uses the 'input()' function to get user input, the 'os._exit()' function to exit the program, and the 'open()' function to open and read the file.
+
+
+MAIN
+The "if name == 'main':" line is a way to check if the script is being run directly or if it is being imported as a module into another script. If it is being run directly, the function "main()" is called, which will execute the code within the function. This allows for the code to be reused in other scripts without automatically running the code every time it is imported as a module.

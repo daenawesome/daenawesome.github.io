@@ -1,0 +1,15 @@
+Completed the following:
+Ask the user for the price of a child and an adult meal and store these values properly into variables as floating point numbers.
+Ask the user for the number of adults and children and store these values properly into variables as integers.
+Ask the user for the sales tax rate and store the value properly as a floating point number.
+Compute and display the subtotal (don't worry about rounding to two decimals at this point).
+Compute and display the sales tax.
+Compute and display the total.
+Ask the user for the payment amount and store the value properly as a floating point number.
+Compute and display the change.
+Include a dollar sign ($) before each displayed value.
+Display each value to two decimals.
+Double check that the calculations are correct.
+
+
+I believe I have completed most of the necessary steps for the Meal Price Calculator. I have not added any additional features or creativity for the activity yet. For the assignment submission next week, I want to contribute any fixes and other features I can think of. For example, I'll try to be more creative by providing input validation to ensure that the user enters valid values, prompt to calculate again, and try to include features like the option to include drinks, appetizers, or a tip percentage in the meal.
