@@ -32,6 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #ecf5fe;
+  min-height: 100vh;
 }
 
 section {
@@ -41,6 +42,7 @@ section {
 }
 
 main {
+  flex: 1;
   padding: 0.5em;
 }
 
@@ -180,17 +182,21 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   padding: 1em 1em 0em 1em;
+  text-align: center;
 }
 
 footer {
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
-  width: 100%;
+  width: 55%;
   background: #c5e0fc;
   border-style: double;
   border-width: 10px;
   border-color: #091540;
+  margin-top: 20px;
+  /* padding: 5px; */
+
 }
 
 footer h2 {
@@ -213,8 +219,9 @@ footer h2 {
 
   body {
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
   }
+
   section {
     width: fit-content;
   }
@@ -227,5 +234,8 @@ footer h2 {
   }
   main {
     padding: 1em 1em 1.2em 1em;
+  }
+  footer {
+    width: 100%;
   }
 }
