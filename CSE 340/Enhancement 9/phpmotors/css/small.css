@@ -1,0 +1,232 @@
+/*---------Head/Foot-------------*/
+#wrapper {
+  background-color: white;
+}
+
+body {
+  margin: 0px auto 10px auto;
+  max-width: 1100px;
+  background-image: url("/phpmotors/images/site/checkerboard.jpg");
+  font-family: "Share Tech Mono", monospace;
+  background-size: 300px 300px;
+}
+
+#logo {
+  width: 40%;
+}
+
+body img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 -8px 0;
+}
+
+form {
+  padding-left: 20px;
+  width: auto;
+}
+
+form label {
+  display: inline-block;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.acctname, .acctpass, .acctmail{
+  padding-top: 15px;
+}
+
+form input, textarea {
+  width: 55%;
+  padding: 5px;
+}
+
+#classificationId {
+  padding: 5px;
+}
+
+#classificationList {
+  padding: 5px;
+  margin-left: 10px;
+  width: 30%;
+}
+
+
+form button {
+  margin: 15px 0;
+  padding: 5px 20px;
+}
+
+form p {
+  display: inline-block;
+  margin: 0;
+}
+
+#regbtn, #clsbtn {
+  margin: 15px 0;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+#bottom {
+  padding-bottom: 10px;
+}
+
+#acct {
+  float: right;
+  /* padding-top: 4%; */
+  /* margin: 20px; */
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+header a {
+  color: #3a3a3a;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #0571cf;
+  font-weight: 900;
+}
+
+header p {
+  position: absolute;
+  font-size: .6em;
+  color: #3a3a3a;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  left: 40%;
+  top: 6.5%;
+}
+
+hr {
+  background-color: gray;
+  height: 5px;
+}
+
+/*---------NAV-------------*/
+nav {
+  margin-top: -18px;
+  background-color: #3a3a3a;
+  height: 2.8em;
+}
+nav ul li {
+  margin-top: 13px;
+  display: inline-block;
+}
+nav ul li a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  background-color: #4c96d7;
+  padding: 17px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-left: -30px;
+}
+
+/*---------DELOREAN-------------*/
+.delorean {
+  position: relative;
+  text-align: center;
+  color: #0571cf;
+}
+.features {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  line-height: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+.btn {
+  max-width: 40%;
+  padding: 25px 5px 5px 5px;
+  cursor: pointer;
+}
+
+/*---------CONTENT-------------*/
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+  padding: 10px 10px 50px 10px;
+}
+h3 {
+  margin: 5px 0 5px 0;
+}
+.minigrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+}
+.box1 {
+  background-color: #4c96d7;
+  border-style: solid;
+  border-color: #3a3a3a;
+  width: 185px;
+  height: 85px;
+}
+.box1 img {
+  margin: 10px 0 10px 0;
+  height: 80%;
+}
+.reviews li {
+  margin-bottom: 20px;
+}
+
+.notice {
+  color: red;
+}
+
+fieldset {
+  margin: 15px;
+}
+  
+.cfile, .image-veh {
+  border: none;
+}
+
+.pImage, .image-veh input {
+  display: inline;
+  width: auto;
+}
+
+.veh-lab {
+  font-size: 1.3rem;
+}
+
+.choose {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+
+
+
+

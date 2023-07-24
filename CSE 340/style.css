@@ -1,0 +1,178 @@
+
+        body {
+            display: flex;
+            background: url(/SVG-background-animation.gif) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #tabbed_box_1 {
+            margin: 0px auto 0px auto;
+            width: 598px;
+        }
+
+        .tabbed_box h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .tabbed_area {
+            background-color: #446eac;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        ul.tabs {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul.tabs li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 2px;
+        }
+
+        ul.tabs li a {
+            background-color: #c8102e;
+            color: #fff;
+            padding: 8px 14px 8px 14px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        ul.tabs li a:hover {
+            background-color: #2f343a;
+            border-color: #2f343a;
+        }
+
+        ul.tabs li a.active {
+            background-color: #ffffff;
+            color: #282e32;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 10px;
+            border: 0px solid #464c54;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .description {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .explain {
+            background: rgba(69, 110, 172, 0.21);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(69, 110, 172, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+
+
+        .objective-btn {
+            cursor: pointer;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+        }
+    
+        .objective-btn:hover {
+            background-color: #d0d0d0;
+        }
+    
+        .objective-content {
+            display: none;
+            margin-left: 20px; /* Adjust the indentation of the content as needed */
+        }
+
+        #Part_2,
+        #Part_3,
+        #Part_4,
+        #Part_5,
+        #Part_6,
+        #Part_7,
+        #Part_8,
+        #Part_9,
+        #Part_10,
+        #Part_11 {
+            display: none;
+        }
+
+        .content ul {
+            margin: 0px;
+            padding: 0px 20px 0px 20px;
+        }
+
+        .content ul li {
+            list-style: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .content ul li:last-child {
+            border-bottom: none;
+        }
+
+        .content ul li a {
+            text-decoration: none;
+            color: #3e4346;
+        }
+
+        .content ul li a small {
+            color: #8b959c;
+            font-size: 9px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            position: relative;
+            left: 4px;
+            top: 0px;
+        }
+
+        .content ul li a:hover {
+            color: #a59c83;
+        }
+
+        .content ul li a:hover small {
+            color: #baae8e;
+        }
+
+        
+
+        @media only screen and (max-width: 600px) {
+            body {
+                display: block;
+            }
+            
+            #tabbed_box_1 {
+                width: 100%;
+            }
+
+            ul.tabs li {
+                padding: 5px 2px;
+            }
+
+            ul.tabs li a {
+                font-size: 12px;
+                padding: 6px 10px 6px 10px;
+            }
+
+            .content iframe {
+                width: 100%;
+                height: 200px;
+            }
+        }

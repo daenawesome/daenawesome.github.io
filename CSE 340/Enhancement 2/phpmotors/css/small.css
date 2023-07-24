@@ -1,0 +1,131 @@
+/*---------Head/Foot-------------*/
+#wrapper {
+    background-color: white;
+  }
+  body {
+    margin: 0px auto 10px auto;
+    max-width: 1100px;
+    background-image: url("/phpmotors/images/site/checkerboard.jpg");
+    font-family: "Share Tech Mono", monospace;
+    background-size: 300px 300px;
+  }
+  #logo {
+    width: 40%;
+  }
+  body img {
+    max-width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 -8px 0;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  #bottom {
+    padding-bottom: 10px;
+  }
+  #acct {
+    float: right;
+    padding-top: 4%;
+    padding-right: 20px;
+  }
+  hr {
+    background-color: gray;
+    height: 5px;
+  }
+  
+  /*---------NAV-------------*/
+  
+  nav {
+    margin-top: -18px;
+    background-color: #3a3a3a;
+    height: 2.8em;
+  }
+  nav ul li {
+    margin-top: 13px;
+    display: inline-block;
+  }
+  nav ul li a {
+    margin: 3px;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    background-color: #4c96d7;
+    padding: 17px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -30px;
+  }
+
+  /*---------DELOREAN-------------*/
+  .delorean {
+    position: relative;
+    text-align: center;
+    color: #0571cf;
+  }
+  
+  .features {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    line-height: 5px;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .btn {
+    max-width: 40%;
+    padding: 25px 5px 5px 5px;
+  }
+  
+  /*---------CONTENT-------------*/
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    padding: 10px 10px 50px 10px;
+  }
+  
+  h3 {
+    margin: 5px 0 5px 0;
+  }
+  
+  .minigrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  
+  .box1 {
+    background-color: #4c96d7;
+    border-style: solid;
+    border-color: #3a3a3a;
+    width: 185px;
+    height: 85px;
+  }
+  
+  .box1 img {
+    margin: 10px 0 10px 0;
+    height: 80%;
+  }
+  
+  .reviews li {
+    margin-bottom: 20px;
+  }
+  

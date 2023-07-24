@@ -1,0 +1,51 @@
+img {
+    width: 100%;
+}
+
+main p {
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2em
+}
+
+
+#inv-display li a {
+    width: 100%;
+}
+#inv-display li a img {
+    width: 100%;
+}
+
+.price {
+    text-align: center;
+    font-weight: 900;
+    color: green;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #798C6B;
+    width: 100%;
+}
+
+.dtailimg {
+    width: 100%;
+    height: fit-content;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.display {
+    padding: 15px;
+}
+
+.details {
+    padding: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+section hr {
+    height: 5px;
+    width: 100%;
+}

@@ -1,0 +1,48 @@
+@media (min-width: 750px) {
+    h1 {
+      text-align: left;
+      padding: 10px 0 10px 10px;
+      margin: 0 0 -8px 0;
+    }
+  
+    #acct {
+      padding-top: 4%;
+    }
+  
+    nav ul {
+      text-align: left;
+    }
+  
+    nav ul li a {
+      margin: 0px 5px;
+    }
+    body {
+      margin-top: 10px;
+    }
+  
+    #wrapper {
+      border: #4c96d7 5px solid;
+      border-radius: 10px;
+    }
+  
+    #logo {
+      width: 30%;
+    }
+  
+    .content {
+      gap: 150px;
+    }
+  
+    .features {
+      left: 40px;
+      font-size: 16px;
+    }
+  
+    .btn {
+      position: absolute;
+      top: 95px;
+      left: 30px;
+      width: 20%;
+    }
+  }
+  

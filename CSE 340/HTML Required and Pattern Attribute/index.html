@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" >
+    <title>HTML Required and Pattern Attributes</title>
+</head>
+
+<body>
+<section>
+    <h1>HTML Required and Pattern Attributes</h1>
+
+    <form>
+
+        <label for="UserName">User Name</label>
+        <br>
+
+        <p>User Name must be between 6 to 12 characters in length which only contain letters, numbers, and period ( . )</p>
+
+        
+        <input
+            type="text"
+            id="UserName"
+            placeholder="User Name"
+            required
+            pattern="[A-Za-z0-9\.]{6,12}"
+            title="User Name must be between 6 to 12 characters in length which only contain letters, numbers, and period ( . )"
+        >
+
+        
+        <br>
+        <button type="submit">Submit</button>
+          
+    </form>
+
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <p>User Name must be between 6 to 12 characters in length which contain only letters, numbers, and periods ( . )</p> -->
+
+        <!-- <input type="text" id="UserName" pattern="[A-Za-z0-9\.]{6,}" title="User Name must be between 6 to 12 characters in length which contain only letters, numbers, and periods ( . )" required> -->
+        
